@@ -321,21 +321,35 @@ export default function ArcadesInHoustonPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       {/* Hero */}
-      <section className="relative py-20 bg-gradient-to-b from-black to-gray-950 overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(6,182,212,0.1)_0%,transparent_70%)]" />
+      <section className="relative py-28 overflow-hidden">
+        {/* Background image */}
+        <Image
+          src="/hero_img.webp"
+          alt="Free-roam VR arena at Zero Latency Webster, Houston"
+          fill
+          sizes="100vw"
+          className="object-cover object-center"
+          priority
+        />
+        {/* Overlays */}
+        <div className="absolute inset-0 bg-[#000C1A]/75" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#000C1A]/40 via-transparent to-[#000C1A]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(6,182,212,0.15)_0%,transparent_65%)]" />
+
         <div className="relative z-10 max-w-4xl mx-auto px-4 text-center">
-          <nav className="text-sm text-gray-500 mb-6">
-            <Link href="/" className="hover:text-gray-300 transition-colors">Home</Link>
-            <span className="mx-2">/</span>
+          <nav className="text-sm text-gray-400 mb-6">
+            <Link href="/" className="hover:text-gray-200 transition-colors">Home</Link>
+            <span className="mx-2 text-gray-600">/</span>
             <span className="text-gray-300">Arcades in Houston</span>
           </nav>
-          <div className="inline-block mb-4 px-3 py-1 rounded-full border border-cyan-500/40 bg-cyan-500/10 text-cyan-400 text-sm font-mono">
-            #1 Rated: Zero Latency Webster, Houston — 5.0 ★ from 424+ reviews
+          <div className="inline-flex items-center gap-2 mb-5 px-4 py-1.5 rounded-full border border-cyan-500/50 bg-cyan-500/10 backdrop-blur-sm text-cyan-300 text-sm font-mono">
+            <span className="text-yellow-400">★★★★★</span>
+            #1 Rated: Zero Latency Webster, Houston — 5.0 from 424+ reviews
           </div>
-          <h1 className="font-orbitron text-4xl md:text-5xl font-black text-white mb-6">
-            Best Arcades in Houston TX
+          <h1 className="font-orbitron text-4xl md:text-6xl font-black text-white mb-6 leading-tight">
+            Best Arcades in<br className="hidden sm:block" /> Houston TX
           </h1>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
+          <p className="text-lg text-gray-300 max-w-2xl mx-auto mb-10 leading-relaxed">
             7 Houston arcades compared. Zero Latency Webster, Houston is ranked #1 — the city&apos;s only free-roam VR arcade with 8 games, 5.0 stars, and the most immersive experience available anywhere in Houston.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -343,11 +357,12 @@ export default function ArcadesInHoustonPage() {
               href="https://booking.zerolatencyvr.com/en/book-now/webster"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-cyan-500 hover:bg-cyan-400 text-black font-bold px-8 py-4 rounded-lg transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-cyan-500 hover:bg-cyan-400 active:scale-95 text-black font-bold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg shadow-cyan-500/25"
             >
               Book Zero Latency Now
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
             </a>
-            <a href="#rank-2" className="inline-block border border-white/30 hover:border-white/60 text-white px-8 py-4 rounded-lg transition-colors">
+            <a href="#rank-2" className="inline-flex items-center justify-center gap-2 border border-white/30 hover:border-white/60 hover:bg-white/5 text-white px-8 py-4 rounded-xl transition-all duration-200">
               Compare All 7 Arcades
             </a>
           </div>
