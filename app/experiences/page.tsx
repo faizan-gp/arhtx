@@ -256,14 +256,16 @@ export default function ExperiencesPage() {
       </section>
 
       {/* ── STATS BAR ────────────────────────────────────────── */}
-      <div className="border-y border-cyan-800/30 bg-[#001225]/80 overflow-x-auto">
-        <div className="flex items-stretch min-w-max mx-auto max-w-7xl">
-          {STATS.map((s, i) => (
-            <div key={s.label} className={`flex flex-col items-center justify-center px-8 py-5 ${i < STATS.length - 1 ? 'border-r border-cyan-800/30' : ''}`}>
-              <span className="font-orbitron text-2xl font-black text-white">{s.value}</span>
-              <span className="font-orbitron text-[9px] tracking-widest text-[#7DD3FC] mt-0.5 uppercase">{s.label}</span>
-            </div>
-          ))}
+      <div className="border-y border-cyan-800/30 bg-gradient-to-r from-cyan-950/60 via-[#001525] to-cyan-950/60 py-8">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 text-center">
+            {STATS.map((s) => (
+              <div key={s.label} className="flex flex-col items-center">
+                <span className="font-orbitron text-2xl md:text-3xl font-black text-cyan-400 leading-none">{s.value}</span>
+                <span className="font-orbitron text-[8px] md:text-[9px] tracking-widest text-[#7DD3FC]/80 mt-1.5 uppercase">{s.label}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
