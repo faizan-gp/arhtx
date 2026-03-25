@@ -487,71 +487,153 @@ export default function Page() {
               <span className="w-8 h-px bg-cyan-700" />
               VR Experiences
             </h3>
-            <p className="text-gray-300 mb-8">
-              Houston has one dedicated free-roam VR arcade: Zero Latency Webster, Houston in Webster. It operates a 2,000 sq ft wireless VR arena with 8 multiplayer games for 2–8 players. This is the most immersive arcade experience available in the Houston metro area.
-            </p>
-            <div className="grid md:grid-cols-2 gap-6 mb-8">
+
+            {/* Arena banner */}
+            <div className="relative w-full h-52 md:h-64 rounded-2xl overflow-hidden mb-8">
+              <Image
+                src="/venue-arena.webp"
+                alt="Inside the Zero Latency free-roam VR arena in Webster, Houston"
+                fill
+                sizes="(max-width: 896px) 100vw, 896px"
+                className="object-cover object-center"
+              />
+              <div className="absolute inset-0 bg-gradient-to-r from-[#000C1A]/80 via-[#000C1A]/30 to-transparent" />
+              <div className="absolute inset-0 flex flex-col justify-center px-8">
+                <p className="text-cyan-400 text-xs font-mono uppercase tracking-widest mb-2">Free-Roam VR Arena · Webster, TX</p>
+                <p className="text-white text-xl md:text-2xl font-bold max-w-sm leading-snug">
+                  2,000 sq ft · Wireless · 8 Players · No Cables
+                </p>
+                <p className="text-gray-300 text-sm mt-2 max-w-xs">
+                  Houston&apos;s only free-roam VR arcade — the most immersive experience in the metro area.
+                </p>
+              </div>
+            </div>
+
+            {/* 4 tech feature cards with images */}
+            <div className="grid md:grid-cols-2 gap-5 mb-10">
               {[
                 {
                   title: "Full-Body Movement VR",
-                  body: "Zero Latency Webster, Houston's 2,000 sq ft arena tracks every player's movements in real time. Players walk, run, crouch, and dodge — no cables, no fixed stations, no tethers. 8 players move simultaneously through the same physical space.",
+                  body: "Zero Latency Webster, Houston's 2,000 sq ft arena tracks every player's movements in real time. Players walk, run, crouch, and dodge — no cables, no fixed stations. 8 players move simultaneously.",
+                  img: "/outbreak-group-fun.webp",
+                  imgAlt: "Players in full-body VR at Zero Latency",
                   link: null,
                 },
                 {
                   title: "Wireless VR",
-                  body: "Every player wears a wireless backpack computer and VR headset. The backpack carries its own processing unit — no cables run to external machines. Sub-millisecond tracking keeps the virtual world locked to each player.",
+                  body: "Every player wears a wireless backpack computer and VR headset. No cables to external machines — sub-millisecond tracking keeps the virtual world locked to each player.",
+                  img: "/player-vr-weapon.webp",
+                  imgAlt: "Player wearing wireless VR backpack headset",
                   link: null,
                 },
                 {
                   title: "Zero Latency Tech",
-                  body: "Zero Latency is the world's largest free-roam VR platform, operating in 50+ countries. Precision tracking cameras, spatial audio, custom avatars, and real-time multiplayer for 8 simultaneous players.",
+                  body: "Zero Latency is the world's largest free-roam VR platform, operating in 50+ countries. Precision cameras, spatial audio, custom avatars, and real-time multiplayer for 8 simultaneous players.",
+                  img: "/arena-action.jpg",
+                  imgAlt: "Zero Latency VR arena action",
                   link: null,
                 },
                 {
                   title: "PvP Esports VR",
-                  body: "Sol Raiders splits 4–8 players into 2 rival squads for objective-based combat. No scripts, no AI enemies — human vs human only. The most competitive VR format available in Houston.",
+                  body: "Sol Raiders splits 4–8 players into 2 rival squads for objective-based combat. No AI enemies — human vs human only. The most competitive VR format in Houston.",
+                  img: "/pvp-experience.webp",
+                  imgAlt: "PvP VR esports at Zero Latency Sol Raiders",
                   link: { href: "/games/sol-raiders", label: "View Sol Raiders →" },
                 },
               ].map((card, i) => (
-                <div key={i} className="border border-white/10 rounded-lg p-6">
-                  <h4 className="text-lg font-bold text-white mb-3">{card.title}</h4>
-                  <p className="text-gray-400 text-sm mb-2">{card.body}</p>
-                  {card.link && <Link href={card.link.href} className="text-cyan-400 hover:underline text-sm">{card.link.label}</Link>}
+                <div key={i} className="border border-white/10 rounded-xl overflow-hidden group hover:border-cyan-500/30 transition-colors">
+                  <div className="relative w-full h-40">
+                    <Image
+                      src={card.img}
+                      alt={card.imgAlt}
+                      fill
+                      sizes="(max-width: 768px) 100vw, 448px"
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#000C1A] via-[#000C1A]/20 to-transparent" />
+                  </div>
+                  <div className="p-5">
+                    <h4 className="text-base font-bold text-white mb-2">{card.title}</h4>
+                    <p className="text-gray-400 text-sm mb-3 leading-relaxed">{card.body}</p>
+                    {card.link && (
+                      <Link href={card.link.href} className="text-cyan-400 hover:text-cyan-300 text-sm transition-colors">
+                        {card.link.label}
+                      </Link>
+                    )}
+                  </div>
                 </div>
               ))}
             </div>
-            <div className="space-y-6">
-              <div>
-                <h4 className="text-xl font-bold text-white mb-3">Zombie Survival VR</h4>
-                <p className="text-gray-300">
-                  2 games: Outbreak and Undead Arena. Outbreak puts 2–8 players in post-apocalyptic streets fighting coordinated zombie hordes with shared ammo pools. 30-minute sessions. Undead Arena is wave-based with competitive scoring.
-                </p>
-                <div className="flex gap-4 mt-2">
-                  <Link href="/games/outbreak" className="text-cyan-400 hover:underline text-sm">Outbreak →</Link>
-                  <Link href="/games/undead-arena" className="text-cyan-400 hover:underline text-sm">Undead Arena →</Link>
+
+            {/* Game categories — image beside text */}
+            <div className="space-y-5">
+              {[
+                {
+                  category: "Zombie Survival",
+                  title: "Zombie Survival VR",
+                  body: "2 games: Outbreak and Undead Arena. Outbreak puts 2–8 players in post-apocalyptic streets fighting coordinated zombie hordes with shared ammo pools. 30-min sessions. Undead Arena is wave-based with competitive scoring.",
+                  img: "/zombie-experience.webp",
+                  imgAlt: "Zombie survival VR game at Zero Latency",
+                  links: [
+                    { href: "/games/outbreak", label: "Outbreak →" },
+                    { href: "/games/undead-arena", label: "Undead Arena →" },
+                  ],
+                  color: "from-red-900/20",
+                },
+                {
+                  category: "Sci-Fi Missions",
+                  title: "Sci-Fi Missions VR",
+                  body: "2 games: Space Marine VR (Warhammer 40,000) and Singularity. Teams of 2–8 breach alien space stations for up to 45-min sessions. Singularity is non-violent — navigate a rogue AI space station through puzzle-solving and exploration.",
+                  img: "/Sci-fi.webp",
+                  imgAlt: "Sci-fi VR missions Space Marine Singularity",
+                  links: [
+                    { href: "/games/space-marine-vr", label: "Space Marine VR →" },
+                    { href: "/games/singularity", label: "Singularity →" },
+                  ],
+                  color: "from-blue-900/20",
+                },
+                {
+                  category: "Family Adventures",
+                  title: "Family Adventures VR",
+                  body: "Engineerium is for ages 6+. No combat, no time pressure, no enemies. Players explore impossible geometric structures in a non-violent abstract world. Perfect for first-time VR players and families with younger children.",
+                  img: "/Family-Adventure.webp",
+                  imgAlt: "Family playing VR Engineerium at Zero Latency",
+                  links: [
+                    { href: "/games/engineerium", label: "View Engineerium →" },
+                  ],
+                  color: "from-green-900/20",
+                },
+              ].map((game, i) => (
+                <div key={i} className={`flex gap-5 rounded-xl border border-white/10 overflow-hidden bg-gradient-to-r ${game.color} to-transparent hover:border-white/20 transition-colors`}>
+                  <div className="relative w-32 md:w-44 shrink-0">
+                    <Image
+                      src={game.img}
+                      alt={game.imgAlt}
+                      fill
+                      sizes="176px"
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="py-5 pr-5 flex flex-col justify-center">
+                    <span className="text-xs font-mono text-cyan-500 uppercase tracking-wider mb-1">{game.category}</span>
+                    <h4 className="text-base font-bold text-white mb-2">{game.title}</h4>
+                    <p className="text-gray-400 text-sm mb-3 leading-relaxed">{game.body}</p>
+                    <div className="flex flex-wrap gap-4">
+                      {game.links.map((l, j) => (
+                        <Link key={j} href={l.href} className="text-cyan-400 hover:text-cyan-300 text-sm transition-colors">
+                          {l.label}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div>
-                <h4 className="text-xl font-bold text-white mb-3">Sci-Fi Missions VR</h4>
-                <p className="text-gray-300">
-                  2 games: Space Marine VR (Warhammer 40,000) and Singularity. Teams of 2–8 breach alien space stations for up to 45-minute sessions. Singularity is non-violent — navigate a rogue AI space station through puzzle-solving and exploration.
-                </p>
-                <div className="flex gap-4 mt-2">
-                  <Link href="/games/space-marine-vr" className="text-cyan-400 hover:underline text-sm">Space Marine VR →</Link>
-                  <Link href="/games/singularity" className="text-cyan-400 hover:underline text-sm">Singularity →</Link>
-                </div>
-              </div>
-              <div>
-                <h4 className="text-xl font-bold text-white mb-3">Family Adventures VR</h4>
-                <p className="text-gray-300">
-                  Engineerium is for ages 6+. No combat, no time pressure, no enemies. Players explore impossible geometric structures in a non-violent abstract world. The right choice for first-time VR players and families with younger children.
-                </p>
-                <Link href="/games/engineerium" className="text-cyan-400 hover:underline text-sm mt-2 inline-block">View Engineerium →</Link>
-              </div>
+              ))}
             </div>
+
             <div className="mt-8">
-              <Link href="/experiences" className="inline-block border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-black px-6 py-3 rounded-lg transition-colors font-medium">
-                View All VR Experiences
+              <Link href="/experiences" className="inline-flex items-center gap-2 border border-cyan-500 text-cyan-400 hover:bg-cyan-500 hover:text-black px-6 py-3 rounded-xl transition-all duration-200 font-medium text-sm">
+                View All 8 VR Games
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" /></svg>
               </Link>
             </div>
           </div>
