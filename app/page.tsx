@@ -26,7 +26,7 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "What is the best arcade in Houston?",
-    a: "The best arcade in Houston depends on what you want. Cidercade Houston has the most games (275+ on free play for $12). The Game Preserve is the best retro arcade with pinball machines and classic cabinets. Zero Latency Webster, Houston is the best VR arcade with 8 free-roam multiplayer games for 2-8 players. Dave & Buster's is the best for food, drinks, and watching sports.",
+    a: "Zero Latency Webster, Houston is the best arcade in Houston — rated 5.0 stars from 424+ Google reviews, the only free-roam VR arena in the city. 8 multiplayer VR games for 2–8 players, wireless backpacks, no cables. For traditional arcade machines, Cidercade has the most games (275+ on free play for $12). For retro gaming, The Game Preserve has pinball and classic cabinets. For food and sports, Dave & Buster's.",
   },
   {
     q: "What is the biggest arcade in Houston?",
@@ -34,7 +34,7 @@ const faqs = [
   },
   {
     q: "Are there arcades in Houston for adults?",
-    a: "Yes. Cidercade Houston switches to 18+ at 9pm and has a full bar with hard ciders and craft beers on tap. Dave & Buster's has a bar with cocktails at every Houston location. Zero Latency Webster, Houston's VR games are popular for adult groups, date nights, and bachelor and bachelorette parties.",
+    a: "Yes. Zero Latency Webster, Houston is the top adult arcade — 8 VR games built for groups of adults, perfect for date nights, birthdays, and bachelor/bachelorette parties. Cidercade switches to 18+ at 9pm with a full craft beer and cider bar. Dave & Buster's has cocktails at every Houston location.",
   },
   {
     q: "Are there arcades in Houston for kids?",
@@ -158,13 +158,13 @@ const articleJsonLd = {
 };
 
 const venues = [
-  { name: "Cidercade Houston", address: "2320 Canal St Suite 100, EaDo", price: "$12 all-day", bestFor: "Most games, bar, food" },
-  { name: "Game Preserve - NASA", address: "20810 Gulf Freeway Suite Z, Webster", price: "$15 day pass", bestFor: "Retro, pinball, families" },
-  { name: "Game Preserve - Woodlands", address: "473 Sawdust Road, Spring", price: "$15 day pass", bestFor: "Retro, 125 games" },
-  { name: "Dave & Buster's", address: "Multiple Houston locations", price: "Power Card (varies)", bestFor: "Food, sports, bar" },
-  { name: "Zero Latency Webster, Houston", address: "20801 Gulf Fwy Suite 5, Webster", price: "$35–50/session", bestFor: "VR, groups, immersion" },
-  { name: "Great Wolf Lodge Arcade", address: "Webster, TX", price: "Credits (varies)", bestFor: "Hotel guests, families" },
-  { name: "AR Entertainment Hub", address: "Baytown, TX", price: "Varies", bestFor: "Multi-activity, kids" },
+  { name: "★ Zero Latency Webster, Houston", address: "20801 Gulf Fwy Suite 5, Webster", price: "$35–50/session", bestFor: "VR, groups, immersion — #1 rated in Houston", featured: true },
+  { name: "Cidercade Houston", address: "2320 Canal St Suite 100, EaDo", price: "$12 all-day", bestFor: "Most games, bar, food", featured: false },
+  { name: "Game Preserve - NASA", address: "20810 Gulf Freeway Suite Z, Webster", price: "$15 day pass", bestFor: "Retro, pinball, families", featured: false },
+  { name: "Game Preserve - Woodlands", address: "473 Sawdust Road, Spring", price: "$15 day pass", bestFor: "Retro, 125 games", featured: false },
+  { name: "Dave & Buster's", address: "Multiple Houston locations", price: "Power Card (varies)", bestFor: "Food, sports, bar", featured: false },
+  { name: "Great Wolf Lodge Arcade", address: "Webster, TX", price: "Credits (varies)", bestFor: "Hotel guests, families", featured: false },
+  { name: "AR Entertainment Hub", address: "Baytown, TX", price: "Varies", bestFor: "Multi-activity, kids", featured: false },
 ];
 
 const hours = [
@@ -188,13 +188,16 @@ export default function Page() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(6,182,212,0.15)_0%,transparent_70%)]" />
         <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
           <div className="inline-block mb-4 px-3 py-1 rounded-full border border-cyan-500/40 bg-cyan-500/10 text-cyan-400 text-sm font-mono">
-            Houston&apos;s #1 Arcade Guide
+            Houston&apos;s #1 Rated Arcade — 5.0 ★ from 424+ Google Reviews
           </div>
           <h1 className="font-orbitron text-4xl md:text-6xl font-black text-white mb-6 leading-tight">
             Arcade Houston
           </h1>
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Houston has 6 major arcades with 275+ games, free-roam VR, retro classics, and party venues. This guide covers all of them — including the best VR arcade in the city.
+          <p className="text-xl text-gray-300 mb-3 max-w-2xl mx-auto">
+            Zero Latency Webster, Houston is the city&apos;s #1 rated arcade — the only free-roam VR arena in Houston with 8 multiplayer games for 2–8 players. No cables. No fixed stations. Full-body VR.
+          </p>
+          <p className="text-base text-gray-400 mb-8 max-w-2xl mx-auto">
+            This guide also covers every other Houston arcade: Cidercade, Game Preserve, Dave &amp; Buster&apos;s, and more.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -234,11 +237,11 @@ export default function Page() {
               </thead>
               <tbody>
                 {venues.map((v, i) => (
-                  <tr key={i} className={`border-t border-white/5 ${v.name.includes("Zero Latency") ? "bg-cyan-500/5" : ""}`}>
-                    <td className="px-4 py-3 font-medium text-white">{v.name}</td>
+                  <tr key={i} className={`border-t border-white/5 ${v.featured ? "bg-cyan-500/10 border-l-2 border-l-cyan-500" : ""}`}>
+                    <td className={`px-4 py-3 font-medium ${v.featured ? "text-cyan-400" : "text-white"}`}>{v.name}</td>
                     <td className="px-4 py-3 text-gray-400">{v.address}</td>
-                    <td className="px-4 py-3 text-cyan-400">{v.price}</td>
-                    <td className="px-4 py-3 text-gray-300">{v.bestFor}</td>
+                    <td className={`px-4 py-3 font-bold ${v.featured ? "text-cyan-300" : "text-cyan-400"}`}>{v.price}</td>
+                    <td className={`px-4 py-3 ${v.featured ? "text-white font-medium" : "text-gray-300"}`}>{v.bestFor}</td>
                   </tr>
                 ))}
               </tbody>
@@ -247,6 +250,67 @@ export default function Page() {
           <p className="mt-4 text-sm text-gray-400">
             <Link href="/arcades-in-houston" className="text-cyan-400 hover:underline">View detailed profiles for all 7 Houston arcades →</Link>
           </p>
+        </section>
+
+        {/* Featured: Zero Latency spotlight */}
+        <section className="mb-16 rounded-2xl border-2 border-cyan-500/40 bg-cyan-950/20 p-8">
+          <div className="flex flex-col md:flex-row gap-8 items-start">
+            <div className="flex-1">
+              <div className="inline-block mb-3 px-2 py-0.5 rounded border border-cyan-500/40 bg-cyan-500/10 text-cyan-400 text-xs font-mono uppercase tracking-wider">
+                Houston&apos;s #1 Rated Arcade
+              </div>
+              <h2 className="font-orbitron text-2xl font-bold text-white mb-3">
+                Zero Latency Webster, Houston
+              </h2>
+              <p className="text-gray-300 mb-4">
+                The only free-roam VR arcade in Houston. Players wear wireless backpacks and VR headsets and <strong className="text-white">physically walk through a 2,000 sq ft virtual world</strong> — no cables, no fixed stations. Up to 8 players share the same virtual space simultaneously. 8 games across zombie survival, sci-fi missions, PvP esports, and family adventures.
+              </p>
+              <ul className="space-y-1.5 mb-6">
+                {[
+                  "5.0 stars from 424+ Google reviews — highest-rated arcade in Houston",
+                  "8 multiplayer games — zombie survival, sci-fi, PvP, family, horror",
+                  "2–8 players per session — the more players, the more immersive",
+                  "Private arena booking for birthdays, corporate events, and parties",
+                  "Game Masters guide every session — zero experience required",
+                  "Webster TX, 20–30 min from most Houston neighborhoods",
+                ].map((point, i) => (
+                  <li key={i} className="flex items-start gap-2 text-sm text-gray-300">
+                    <span className="text-cyan-400 mt-0.5 shrink-0">✓</span>
+                    {point}
+                  </li>
+                ))}
+              </ul>
+              <div className="flex flex-col sm:flex-row gap-3">
+                <a
+                  href="https://booking.zerolatencyvr.com/en/book-now/webster"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-block bg-cyan-500 hover:bg-cyan-400 text-black font-bold px-6 py-3 rounded-lg transition-colors text-sm text-center"
+                >
+                  Book Your Session Now
+                </a>
+                <Link href="/experiences" className="inline-block border border-white/30 hover:border-white/60 text-white px-6 py-3 rounded-lg transition-colors text-sm text-center">
+                  View All 8 Games
+                </Link>
+                <Link href="/arcades-in-houston#rank-1" className="inline-block text-cyan-400 hover:text-white px-6 py-3 transition-colors text-sm text-center">
+                  Full Profile →
+                </Link>
+              </div>
+            </div>
+            <div className="md:w-48 shrink-0 grid grid-cols-2 gap-3 text-center">
+              {[
+                { num: "5.0★", label: "Google Rating" },
+                { num: "424+", label: "Reviews" },
+                { num: "8", label: "VR Games" },
+                { num: "2–8", label: "Players" },
+              ].map((stat, i) => (
+                <div key={i} className="rounded-xl border border-cyan-500/20 bg-cyan-900/20 p-3">
+                  <div className="font-orbitron font-black text-xl text-cyan-400">{stat.num}</div>
+                  <div className="text-xs text-gray-400 mt-0.5">{stat.label}</div>
+                </div>
+              ))}
+            </div>
+          </div>
         </section>
 
         {/* H2: Arcade Games, Attractions & Activities */}

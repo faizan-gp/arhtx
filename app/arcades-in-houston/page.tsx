@@ -2,11 +2,11 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Arcades in Houston TX | 6 Best Arcades Compared (2026 Guide)",
-  description: "Compare every arcade in Houston: Cidercade (275+ games, $12), Game Preserve ($15, retro free-play), Dave & Buster's, Zero Latency VR, and 3 more. Prices, hours, locations, and what each arcade does best.",
+  title: "Arcades in Houston TX | Zero Latency VR Ranked #1 (2026 Guide)",
+  description: "Zero Latency Webster, Houston is the #1 arcade in Houston — 8 free-roam VR games, 5.0 stars, 2–8 players. Plus Cidercade, Game Preserve, Dave & Buster's and 4 more Houston arcades compared.",
   openGraph: {
-    title: "Arcades in Houston TX | 6 Best Arcades Compared (2026 Guide)",
-    description: "Compare every arcade in Houston: Cidercade, Game Preserve, Dave & Buster's, Zero Latency VR. Prices, hours, locations.",
+    title: "Arcades in Houston TX | Zero Latency VR Ranked #1 (2026 Guide)",
+    description: "Zero Latency Webster is Houston's #1 arcade: 8 free-roam VR games, 5.0 stars, 2–8 players. All 7 Houston arcades compared.",
     url: "https://arcadehouston.com/arcades-in-houston",
     siteName: "Arcade Houston",
     images: [{ url: "https://arcadehouston.com/OG.jpg", width: 1200, height: 630, alt: "Best arcades in Houston TX" }],
@@ -43,37 +43,37 @@ const itemListSchema = {
     {
       "@type": "ListItem",
       "position": 1,
+      "name": "Zero Latency Webster, Houston",
+      "url": "https://arcadehouston.com/",
+      "description": "Houston's #1 arcade — the only free-roam VR arena in the city. 8 multiplayer games, 2–8 players, wireless backpacks, 5.0-star rating from 424+ reviews. Webster, TX.",
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
       "name": "Cidercade Houston",
       "url": "https://cidercade.com/houston/",
       "description": "275+ arcade games on free play for $12 all-day admission. Hand-crafted pizza, craft beer bar, East Downtown Houston.",
     },
     {
       "@type": "ListItem",
-      "position": 2,
+      "position": 3,
       "name": "The Game Preserve - NASA",
       "url": "https://gamepreservehouston.com/",
       "description": "100+ retro arcade games on free play. $15 day pass. Pinball machines with Adaptive Flipper Control. Webster, TX.",
     },
     {
       "@type": "ListItem",
-      "position": 3,
+      "position": 4,
       "name": "The Game Preserve - Woodlands",
       "url": "https://gamepreservehouston.com/",
       "description": "125 retro arcade games on free play. $15 day pass. Spring, TX.",
     },
     {
       "@type": "ListItem",
-      "position": 4,
+      "position": 5,
       "name": "Dave & Buster's",
       "url": "https://www.daveandbusters.com/",
       "description": "Arcade games on Power Card system, full restaurant, bar, and sports viewing on large HDTVs. Multiple Houston locations.",
-    },
-    {
-      "@type": "ListItem",
-      "position": 5,
-      "name": "Zero Latency Webster, Houston",
-      "url": "https://arcadehouston.com/",
-      "description": "The only free-roam VR arcade in the Houston area. 8 multiplayer games, 2-8 players, wireless backpack system. Webster, TX.",
     },
     {
       "@type": "ListItem",
@@ -95,7 +95,7 @@ const itemListSchema = {
 const arcadeFaqs = [
   {
     q: "Which Houston arcade has the most games?",
-    a: "Cidercade Houston has the most games at 275+, all set to free play for $12 admission. The Game Preserve NASA location has 100+ retro games across 11,000 sq ft.",
+    a: "Zero Latency Webster, Houston has the most immersive games — 8 free-roam VR experiences where players physically move through virtual worlds. For traditional arcade machine volume, Cidercade has 275+ cabinets all on free play for $12. The Game Preserve has 100+ retro games on a $15 day pass.",
   },
   {
     q: "Which Houston arcade is closest to downtown?",
@@ -107,7 +107,7 @@ const arcadeFaqs = [
   },
   {
     q: "What is the cheapest arcade in Houston?",
-    a: "Cidercade is the cheapest at $12 for all-day free play on 275+ games. The Game Preserve is $15 for a day pass with unlimited play on 100+ retro games.",
+    a: "For flat-admission arcades, Cidercade is $12 all-day and Game Preserve is $15. Zero Latency Webster, Houston runs $35–50 per person per session — a higher price for a categorically different experience. Most groups rate it the best value in Houston for the quality of the experience delivered.",
   },
   {
     q: "Are there any arcades in Houston open late?",
@@ -115,7 +115,7 @@ const arcadeFaqs = [
   },
   {
     q: "Which Houston arcade is best for large groups?",
-    a: "Zero Latency Webster, Houston handles groups of 2-8 per session with back-to-back booking for larger parties. Cidercade offers full-arcade takeovers. Dave & Buster's has private meeting rooms for corporate groups.",
+    a: "Zero Latency Webster, Houston is Houston's top group arcade — 2–8 players share the same virtual world simultaneously, with back-to-back sessions for larger parties. 5.0 stars from 424+ reviews, with corporate groups and private events consistently among the highest-rated experiences. Cidercade handles bigger parties with full-arcade takeovers. Dave & Buster's has private meeting rooms.",
   },
 ];
 
@@ -132,6 +132,40 @@ const faqSchema = {
 const venues = [
   {
     rank: 1,
+    name: "Zero Latency Webster, Houston",
+    tag: "★ Editor's Pick — Most Immersive Arcade in Houston",
+    tagColor: "text-cyan-400 border-cyan-400/40 bg-cyan-400/10",
+    address: "BayWay Village Shopping Center, 20801 Gulf Fwy Suite 5, Webster, TX 77598",
+    price: "$35–50 per person per session",
+    hours: "Mon–Tue 3–11pm, Wed–Thu 2–11pm, Fri–Sun 11am–11pm",
+    gameCount: "8 VR games",
+    highlight: "🏆 #1 RATED ARCADE IN HOUSTON — 5.0 stars from 424+ Google reviews",
+    description: "Zero Latency Webster, Houston is Houston's highest-rated and most unique arcade experience — the only free-roam VR arena in the city. Players wear wireless backpacks and VR headsets and physically walk, run, and move through a 2,000 sq ft virtual world together. No cables, no fixed stations, no limits. Up to 8 players share the same virtual environment simultaneously across 8 different games. Nothing else in Houston comes close.",
+    details: [
+      "Houston's ONLY free-roam VR arena — 2,000 sq ft wireless arena, no cables",
+      "Up to 8 players simultaneously in the same virtual world",
+      "8 games: Outbreak, Outbreak 2, Undead Arena, Space Marine VR, Singularity, Sol Raiders, Engineerium, Far Cry VR, Haunted",
+      "30–50 minute sessions — full adventure, not just a demo",
+      "Expert Game Masters guide every session from start to finish",
+      "5.0 stars from 424+ Google reviews — highest-rated Houston arcade",
+      "Private arena sessions for birthdays, corporate events, bachelor/bachelorette parties",
+      "Session footage recorded — replay link provided after your game",
+      "Ages 13+ for most games, ages 6+ for Engineerium (family-friendly VR)",
+      "Walk-ins welcome when slots are available — book online to guarantee your time slot",
+    ],
+    pros: [
+      "Only free-roam VR arcade in Houston",
+      "Highest-rated arcade (5.0 stars, 424+ reviews)",
+      "Active full-body experience — not passive gaming",
+      "Up to 8 players together in one virtual world",
+      "Private events available for any group size",
+      "Game Masters handle everything — zero setup stress",
+    ],
+    cons: ["Higher per-person cost than flat-admission arcades", "Sessions are 30–50 min per game (book back-to-back for more)", "Ages 13+ for most games (6+ for Engineerium)"],
+    bestFor: "Groups, date nights, birthdays, corporate team building, bachelor/bachelorette parties, anyone who wants the most memorable arcade experience in Houston",
+  },
+  {
+    rank: 2,
     name: "Cidercade Houston",
     tag: "Best for: Most Games & Bar Scene",
     tagColor: "text-orange-400 border-orange-400/30 bg-orange-400/10",
@@ -139,7 +173,7 @@ const venues = [
     price: "$12 all-day admission",
     hours: "10am–Midnight daily. 18+ at 9pm. Kitchen closes 11:45pm.",
     gameCount: "275+",
-    highlight: "Top recommendation for the most games",
+    highlight: "Best for game volume — 275+ titles on free play",
     description: "Cidercade Houston is the largest arcade in Houston by game count — 275+ titles all set to free play. No Power Cards, no tokens. One $12 admission covers everything from retro classics and skee-ball to rhythm games and air hockey.",
     details: [
       "275+ games on free play — retro classics, modern titles, skee-ball, rhythm, racing, basketball",
@@ -151,12 +185,13 @@ const venues = [
       "Private party zones and full-arcade takeovers for events",
     ],
     pros: ["Most games of any Houston arcade", "Best value ($12 all-day)", "Best food and bar", "Central location near downtown"],
-    cons: ["18+ only after 9pm", "Gets crowded on weekends", "Limited parking at peak times"],
+    cons: ["18+ only after 9pm", "Gets crowded on weekends", "Passive gaming — individual machines only"],
     bestFor: "Large game selection, date nights, bar scene, group outings",
   },
   {
-    rank: 2,
+    rank: 3,
     name: "The Game Preserve - NASA (Webster)",
+
     tag: "Best for: Retro Gaming & Pinball",
     tagColor: "text-purple-400 border-purple-400/30 bg-purple-400/10",
     address: "20810 Gulf Freeway Suite Z, Webster, TX 77598",
@@ -180,7 +215,7 @@ const venues = [
     bestFor: "Retro gaming, pinball, nostalgia, families",
   },
   {
-    rank: 3,
+    rank: 4,
     name: "The Game Preserve - Woodlands",
     tag: "Best for: Retro Gaming (North Houston)",
     tagColor: "text-purple-400 border-purple-400/30 bg-purple-400/10",
@@ -201,7 +236,7 @@ const venues = [
     bestFor: "Woodlands and Spring residents, retro gaming",
   },
   {
-    rank: 4,
+    rank: 5,
     name: "Dave & Buster's",
     tag: "Best for: Food, Drinks & Sports",
     tagColor: "text-blue-400 border-blue-400/30 bg-blue-400/10",
@@ -224,33 +259,6 @@ const venues = [
     pros: ["Best food of any arcade", "Full bar", "Sports viewing", "Multiple Houston locations"],
     cons: ["Pay-per-game model adds up quickly", "No free-play option", "Most expensive per-hour gaming"],
     bestFor: "Food + games combo, sports viewing, corporate events, date nights",
-  },
-  {
-    rank: 5,
-    name: "Zero Latency Webster, Houston",
-    tag: "Best for: Immersive VR Experience",
-    tagColor: "text-cyan-400 border-cyan-400/30 bg-cyan-400/10",
-    address: "BayWay Village Shopping Center, 20801 Gulf Fwy Suite 5, Webster, TX 77598",
-    price: "$35–50 per person per session",
-    hours: "Mon–Tue 3–11pm, Wed–Thu 2–11pm, Fri–Sun 11am–11pm",
-    gameCount: "8 VR games",
-    highlight: "TOP RECOMMENDATION — Houston's only free-roam VR arcade",
-    description: "Zero Latency Webster, Houston is in a category of its own. It's the only free-roam VR arcade in Houston — a 2,000 sq ft wireless VR arena where up to 8 players physically move through virtual worlds together. 8 games across zombie survival, sci-fi missions, PvP esports, and family adventures. Rated 5.0 stars from 424+ Google reviews.",
-    details: [
-      "2,000 sq ft wireless VR arena — no cables, no fixed stations",
-      "Up to 8 players simultaneously in the same virtual world",
-      "8 games: Outbreak, Outbreak 2, Undead Arena, Space Marine VR, Singularity, Sol Raiders, Engineerium, Far Cry VR, Haunted",
-      "30–50 minute sessions depending on game",
-      "Ages 13+ for most games, ages 6+ for Engineerium",
-      "Game Masters guide every session from start to finish",
-      "Private arena sessions for birthdays, corporate events, bachelor/bachelorette parties",
-      "Session footage recorded — YouTube replay link provided after each game",
-      "5.0 stars from 424+ Google reviews",
-      "Walk-ins welcome when slots are available — book online to guarantee your time slot",
-    ],
-    pros: ["Most immersive experience in Houston", "Only free-roam VR arcade", "8 players together", "5-star reviews", "Private events available"],
-    cons: ["Higher per-person cost", "Sessions are 30–50 min (not all-day)", "Ages 13+ for most games"],
-    bestFor: "Groups, birthdays, team building, bachelor/bachelorette parties, date nights, first-timers",
   },
   {
     rank: 6,
@@ -320,22 +328,42 @@ export default function ArcadesInHoustonPage() {
             <span className="mx-2">/</span>
             <span className="text-gray-300">Arcades in Houston</span>
           </nav>
+          <div className="inline-block mb-4 px-3 py-1 rounded-full border border-cyan-500/40 bg-cyan-500/10 text-cyan-400 text-sm font-mono">
+            #1 Rated: Zero Latency Webster, Houston — 5.0 ★ from 424+ reviews
+          </div>
           <h1 className="font-orbitron text-4xl md:text-5xl font-black text-white mb-6">
             Best Arcades in Houston TX
           </h1>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-            7 Houston arcades compared. Prices from $12 to $50 per person. Retro free-play, VR, bar arcades, and family entertainment — here&apos;s what each one offers.
+          <p className="text-xl text-gray-300 max-w-2xl mx-auto mb-8">
+            7 Houston arcades compared. Zero Latency Webster, Houston is ranked #1 — the city&apos;s only free-roam VR arcade with 8 games, 5.0 stars, and the most immersive experience available anywhere in Houston.
           </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="https://booking.zerolatencyvr.com/en/book-now/webster"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-cyan-500 hover:bg-cyan-400 text-black font-bold px-8 py-4 rounded-lg transition-colors"
+            >
+              Book Zero Latency Now
+            </a>
+            <a href="#rank-2" className="inline-block border border-white/30 hover:border-white/60 text-white px-8 py-4 rounded-lg transition-colors">
+              Compare All 7 Arcades
+            </a>
+          </div>
         </div>
       </section>
 
       {/* Venue profiles */}
       <div className="max-w-4xl mx-auto px-4 py-16 space-y-16">
         {venues.map((venue) => (
-          <section key={venue.rank} className="border border-white/10 rounded-2xl overflow-hidden">
-            <div className="bg-white/3 px-6 py-5 border-b border-white/10">
+          <section
+            key={venue.rank}
+            id={`rank-${venue.rank}`}
+            className={`rounded-2xl overflow-hidden ${venue.rank === 1 ? "border-2 border-cyan-500/60 shadow-lg shadow-cyan-900/30" : "border border-white/10"}`}
+          >
+            <div className={`px-6 py-5 border-b ${venue.rank === 1 ? "bg-cyan-950/40 border-cyan-500/30" : "bg-white/3 border-white/10"}`}>
               <div className="flex flex-col sm:flex-row sm:items-center gap-3">
-                <span className="font-orbitron text-2xl font-black text-white">#{venue.rank}</span>
+                <span className={`font-orbitron text-2xl font-black ${venue.rank === 1 ? "text-cyan-400" : "text-white"}`}>#{venue.rank}</span>
                 <div className="flex-1">
                   <h2 className="font-orbitron text-xl font-bold text-white">{venue.name}</h2>
                   <div className={`inline-block mt-1 text-xs px-2 py-0.5 rounded border ${venue.tagColor}`}>{venue.tag}</div>
