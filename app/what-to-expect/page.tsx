@@ -28,7 +28,7 @@ const steps = [
     img: "/what-to-expect-thumbnail.webp",
     imgAlt: "Zero Latency Houston booking confirmation screen",
     details: [
-      { label: "Reserve Online", text: "Book at zerolatencyhouston.com. Weekends book out days in advance — secure your slot early." },
+      { label: "Reserve Online", text: "Book at arcadehouston.com. Weekends book out days in advance — secure your slot early." },
       { label: "Age Requirement", text: "Players must be 13 years or older. Some games carry a 16+ recommendation listed on the game page." },
       { label: "Group Size", text: "Sessions support 1–8 players at the same time. Groups of 9 or more can book back-to-back sessions." },
       { label: "Arrive Early", text: "Arrive 10–15 minutes before your session start time so check-in does not cut into gameplay." },
@@ -125,8 +125,8 @@ const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "item": { "name": "Home", "id": "https://zerolatencyhouston.com/" } },
-    { "@type": "ListItem", "position": 2, "item": { "name": "What to Expect", "id": "https://zerolatencyhouston.com/what-to-expect" } },
+    { "@type": "ListItem", "position": 1, "item": { "name": "Home", "id": "https://arcadehouston.com/" } },
+    { "@type": "ListItem", "position": 2, "item": { "name": "What to Expect", "id": "https://arcadehouston.com/what-to-expect" } },
   ],
 };
 
@@ -141,7 +141,7 @@ const howToSchema = {
     "position": i + 1,
     "name": s.title,
     "text": s.subtitle,
-    "url": `https://zerolatencyhouston.com/what-to-expect#step-${s.num}`,
+    "url": `https://arcadehouston.com/what-to-expect#step-${s.num}`,
   })),
   "supply": [{ "@type": "HowToSupply", "name": "Comfortable closed-toe shoes" }],
   "tool": [
@@ -158,8 +158,8 @@ const articleSchema = {
   "description": "Everything you need to know before your Zero Latency Houston visit — booking, check-in, gear-up, gameplay, and post-session highlights.",
   "datePublished": "2025-01-01",
   "dateModified": "2025-12-01",
-  "author": { "@type": "Organization", "name": "Zero Latency Houston", "url": "https://zerolatencyhouston.com" },
-  "publisher": { "@type": "Organization", "name": "Zero Latency Houston", "url": "https://zerolatencyhouston.com" },
+  "author": { "@type": "Organization", "name": "Zero Latency Houston", "url": "https://arcadehouston.com" },
+  "publisher": { "@type": "Organization", "name": "Zero Latency Houston", "url": "https://arcadehouston.com" },
 };
 
 const faqSchema = {

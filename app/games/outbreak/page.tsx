@@ -10,12 +10,12 @@ import Script from "next/script";
 export const metadata: Metadata = {
   title: "Outbreak at Zero Latency Houston | Zombie Survival Free-Roam VR",
   description: "Outbreak at Zero Latency Houston puts 2–8 players in a free-roam VR zombie survival mission across post-apocalyptic environments. 30-minute sessions. Book now in Houston, Texas.",
-  alternates: { canonical: "https://zerolatencyhouston.com/games/outbreak" },
+  alternates: { canonical: "https://arcadehouston.com/games/outbreak" },
   openGraph: {
     title: "Outbreak at Zero Latency Houston",
     description: "Play Outbreak at Zero Latency Houston — free-roam multiplayer VR for 2–8 players set in a zombie-overrun world. 30-minute sessions in Houston, Texas.",
-    url: "https://zerolatencyhouston.com/games/outbreak",
-    images: [{ url: "https://zerolatencyhouston.com/game-outbreak.webp", width: 1200, height: 630, alt: "Outbreak zombie survival VR at Zero Latency Houston" }],
+    url: "https://arcadehouston.com/games/outbreak",
+    images: [{ url: "https://arcadehouston.com/game-outbreak.webp", width: 1200, height: 630, alt: "Outbreak zombie survival VR at Zero Latency Houston" }],
   },
 };
 
@@ -27,17 +27,17 @@ const gameSchema = {
   "genre": "Zombie Survival",
   "numberOfPlayers": { "@type": "QuantitativeValue", "minValue": 2, "maxValue": 8 },
   "gamePlatform": "Virtual Reality",
-  "url": "https://zerolatencyhouston.com/games/outbreak",
-  "provider": { "@type": "Organization", "name": "Zero Latency Houston", "url": "https://zerolatencyhouston.com" },
+  "url": "https://arcadehouston.com/games/outbreak",
+  "provider": { "@type": "Organization", "name": "Zero Latency Houston", "url": "https://arcadehouston.com" },
 };
 
 const breadcrumb = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "item": { "name": "Home", "id": "https://zerolatencyhouston.com/" } },
-    { "@type": "ListItem", "position": 2, "item": { "name": "Games", "id": "https://zerolatencyhouston.com/games" } },
-    { "@type": "ListItem", "position": 3, "item": { "name": "Outbreak", "id": "https://zerolatencyhouston.com/games/outbreak" } },
+    { "@type": "ListItem", "position": 1, "item": { "name": "Home", "id": "https://arcadehouston.com/" } },
+    { "@type": "ListItem", "position": 2, "item": { "name": "Games", "id": "https://arcadehouston.com/games" } },
+    { "@type": "ListItem", "position": 3, "item": { "name": "Outbreak", "id": "https://arcadehouston.com/games/outbreak" } },
   ],
 };
 
@@ -235,7 +235,7 @@ export default function OutbreakPage() {
             {otherGames.slice(0, 8).map((game) => (
               <Link key={game.slug} href={`/games/${game.slug}`} className="group block glass rounded-xl overflow-hidden hover:border-cyan-500/50 transition-colors">
                 <div className="relative aspect-square">
-                  <Image src={game.imageSrc} alt={game.title} fill sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 20vw" className="object-cover transition-transform duration-300 group-hover:scale-105" />
+                  <Image src={game.thumbnail} alt={game.title} fill sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 20vw" className="object-cover transition-transform duration-300 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#000C1A]/90 to-transparent" />
                   <p className="absolute bottom-2 left-2 right-2 font-orbitron text-xs font-bold text-white">{game.title}</p>
                 </div>

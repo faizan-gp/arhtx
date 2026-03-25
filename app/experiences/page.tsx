@@ -13,20 +13,20 @@ const schemaData = [
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "item": { "@id": "https://zerolatencyhouston.com/", "name": "Home" } },
-      { "@type": "ListItem", "position": 2, "item": { "@id": "https://zerolatencyhouston.com/experiences", "name": "Experiences" } }
+      { "@type": "ListItem", "position": 1, "item": { "@id": "https://arcadehouston.com/", "name": "Home" } },
+      { "@type": "ListItem", "position": 2, "item": { "@id": "https://arcadehouston.com/experiences", "name": "Experiences" } }
     ]
   },
   {
     "@context": "https://schema.org",
     "@type": ["WebPage", "CollectionPage"],
-    "@id": "https://zerolatencyhouston.com/experiences",
-    "url": "https://zerolatencyhouston.com/experiences",
+    "@id": "https://arcadehouston.com/experiences",
+    "url": "https://arcadehouston.com/experiences",
     "name": "VR Experiences Houston | Zero Latency Houston",
     "description": "Six free-roam VR experience categories in Houston — zombie survival, sci-fi missions, PvP esports, family adventures, tropical action, and VR horror.",
     "inLanguage": "en",
-    "isPartOf": { "@id": "https://zerolatencyhouston.com/#website" },
-    "publisher": { "@id": "https://zerolatencyhouston.com/#organization" }
+    "isPartOf": { "@id": "https://arcadehouston.com/#website" },
+    "publisher": { "@id": "https://arcadehouston.com/#organization" }
   }
 ];
 

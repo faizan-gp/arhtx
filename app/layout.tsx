@@ -11,33 +11,33 @@ import { Suspense } from "react";
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
 
-const siteUrl = "https://zerolatencyhouston.com";
+const siteUrl = "https://arcadehouston.com";
 
 export const metadata: Metadata = {
-  title: "Zero Latency Houston | Free-Roam VR Gaming in Houston TX",
-  description: "Houston's premier free-roam VR arena. Up to 8 players. Zombie survival, sci-fi missions, PvP esports, and family-friendly worlds. Book now at Zero Latency Houston.",
+  title: "Arcade Houston | Best Arcades, VR, Games & Entertainment Guide (2026)",
+  description: "Houston has 6 top arcades with 275+ games, free-roam VR, retro classics, and party venues. Cidercade charges $12 for all-day play. Zero Latency VR runs $35-50 per session. Complete guide to every arcade in Houston TX.",
   keywords: seoKeywords,
-  authors: [{ name: "Zero Latency Houston" }],
-  creator: "Zero Latency Houston",
-  publisher: "Zero Latency Houston",
-  applicationName: "Zero Latency Houston",
+  authors: [{ name: "Arcade Houston" }],
+  creator: "Arcade Houston",
+  publisher: "Arcade Houston",
+  applicationName: "Arcade Houston",
   generator: "Next.js",
-  metadataBase: new URL("https://zerolatencyhouston.com/"),
+  metadataBase: new URL("https://arcadehouston.com/"),
   referrer: "origin-when-cross-origin",
   openGraph: {
-    title: "Zero Latency Houston | Free-Roam VR Gaming in Houston TX",
-    description: "Houston's premier free-roam VR arena. Up to 8 players. Zombie survival, sci-fi missions, PvP esports, and family-friendly worlds.",
-    siteName: "Zero Latency Houston",
-    url: "https://zerolatencyhouston.com/",
-    images: [{ url: "https://zerolatencyhouston.com/OG.jpg", width: 1200, height: 630, alt: "Players enjoying a VR experience at Zero Latency Houston" }],
+    title: "Arcade Houston | Best Arcades, VR, Games & Entertainment Guide (2026)",
+    description: "Houston has 6 top arcades with 275+ games, free-roam VR, retro classics, and party venues. Complete guide to every arcade in Houston TX.",
+    siteName: "Arcade Houston",
+    url: "https://arcadehouston.com/",
+    images: [{ url: "https://arcadehouston.com/OG.jpg", width: 1200, height: 630, alt: "Arcade Houston — best arcades and VR gaming in Houston TX" }],
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Zero Latency Houston | Free-Roam VR Gaming in Houston TX",
-    description: "Houston's premier free-roam VR arena. Up to 8 players. Book now.",
-    images: ["https://zerolatencyhouston.com/OG.jpg"],
+    title: "Arcade Houston | Best Arcades, VR, Games & Entertainment Guide (2026)",
+    description: "6 top arcades in Houston TX. Retro, VR, bar arcades, family gaming. Complete guide.",
+    images: ["https://arcadehouston.com/OG.jpg"],
     creator: "@zlwebster",
   },
   robots: {
@@ -52,8 +52,8 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://zerolatencyhouston.com/",
-    languages: { "en-US": "https://zerolatencyhouston.com/" },
+    canonical: "https://arcadehouston.com/",
+    languages: { "en-US": "https://arcadehouston.com/" },
   },
 };
 
@@ -64,11 +64,11 @@ export const metadata: Metadata = {
 const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  "@id": "https://zerolatencyhouston.com/#organization",
-  "name": "Zero Latency Houston",
-  "legalName": "Zero Latency Houston",
-  "url": "https://zerolatencyhouston.com/",
-  "logo": "https://zerolatencyhouston.com/ZL-W.png",
+  "@id": "https://arcadehouston.com/#organization",
+  "name": "Arcade Houston",
+  "legalName": "Arcade Houston",
+  "url": "https://arcadehouston.com/",
+  "logo": "https://arcadehouston.com/ZL-W.png",
   "foundingDate": "2025",
   "contactPoint": {
     "@type": "ContactPoint",
@@ -98,20 +98,21 @@ const organizationSchema = {
 const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
-  "@id": "https://zerolatencyhouston.com/#website",
-  "url": "https://zerolatencyhouston.com/",
-  "name": "Zero Latency Houston",
-  "description": "Houston's premier free-roam VR arena. Up to 8 players. Zombie survival, sci-fi missions, PvP esports, and family-friendly worlds.",
-  "publisher": { "@id": "https://zerolatencyhouston.com/#organization" },
+  "@id": "https://arcadehouston.com/#website",
+  "url": "https://arcadehouston.com/",
+  "name": "Arcade Houston",
+  "description": "Houston's comprehensive arcade guide. 6 top arcades with 275+ games, free-roam VR, retro classics, and party venues.",
+  "publisher": { "@id": "https://arcadehouston.com/#organization" },
   "potentialAction": {
     "@type": "SearchAction",
-    "target": { "@type": "EntryPoint", "urlTemplate": "https://zerolatencyhouston.com/?s={search_term_string}" },
+    "target": { "@type": "EntryPoint", "urlTemplate": "https://arcadehouston.com/?s={search_term_string}" },
     "query-input": "required name=search_term_string"
   }
 };
 
 // SiteNavigationElement — each nav item is its own schema entity
 const navSchemas = [
+  { "@context": "https://schema.org", "@type": "SiteNavigationElement", "name": "Arcades in Houston", "url": `${siteUrl}/arcades-in-houston` },
   { "@context": "https://schema.org", "@type": "SiteNavigationElement", "name": "Experiences", "url": `${siteUrl}/experiences` },
   { "@context": "https://schema.org", "@type": "SiteNavigationElement", "name": "Games",       "url": `${siteUrl}/games` },
   { "@context": "https://schema.org", "@type": "SiteNavigationElement", "name": "Private Events", "url": `${siteUrl}/private-events` },

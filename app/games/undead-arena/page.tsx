@@ -10,12 +10,12 @@ import Script from "next/script";
 export const metadata: Metadata = {
   title: "Undead Arena at Zero Latency Houston | Wave Survival Zombie VR",
   description: "Undead Arena at Zero Latency Houston is a free-roam VR wave survival game for 2–8 players. Fight escalating zombie hordes in a multi-level arena for 30 minutes in Houston, Texas. Book now.",
-  alternates: { canonical: "https://zerolatencyhouston.com/games/undead-arena" },
+  alternates: { canonical: "https://arcadehouston.com/games/undead-arena" },
   openGraph: {
     title: "Undead Arena at Zero Latency Houston",
     description: "Undead Arena at Zero Latency Houston puts 2–8 players in a free-roam VR zombie wave survival arena for 30 minutes. Each wave increases in intensity. Ages 13+. Houston, Texas.",
-    url: "https://zerolatencyhouston.com/games/undead-arena",
-    images: [{ url: "https://zerolatencyhouston.com/game-undead-arena.webp", width: 1200, height: 630, alt: "Undead Arena zombie VR at Zero Latency Houston" }],
+    url: "https://arcadehouston.com/games/undead-arena",
+    images: [{ url: "https://arcadehouston.com/game-undead-arena.webp", width: 1200, height: 630, alt: "Undead Arena zombie VR at Zero Latency Houston" }],
   },
 };
 
@@ -27,17 +27,17 @@ const gameSchema = {
   "genre": "Zombie Action",
   "numberOfPlayers": { "@type": "QuantitativeValue", "minValue": 2, "maxValue": 8 },
   "gamePlatform": "Virtual Reality",
-  "url": "https://zerolatencyhouston.com/games/undead-arena",
-  "provider": { "@type": "Organization", "name": "Zero Latency Houston", "url": "https://zerolatencyhouston.com" },
+  "url": "https://arcadehouston.com/games/undead-arena",
+  "provider": { "@type": "Organization", "name": "Zero Latency Houston", "url": "https://arcadehouston.com" },
 };
 
 const breadcrumb = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "item": { "name": "Home", "id": "https://zerolatencyhouston.com/" } },
-    { "@type": "ListItem", "position": 2, "item": { "name": "Games", "id": "https://zerolatencyhouston.com/games" } },
-    { "@type": "ListItem", "position": 3, "item": { "name": "Undead Arena", "id": "https://zerolatencyhouston.com/games/undead-arena" } },
+    { "@type": "ListItem", "position": 1, "item": { "name": "Home", "id": "https://arcadehouston.com/" } },
+    { "@type": "ListItem", "position": 2, "item": { "name": "Games", "id": "https://arcadehouston.com/games" } },
+    { "@type": "ListItem", "position": 3, "item": { "name": "Undead Arena", "id": "https://arcadehouston.com/games/undead-arena" } },
   ],
 };
 
@@ -222,7 +222,7 @@ export default function UndeadArenaPage() {
             {otherGames.slice(0, 8).map((game) => (
               <Link key={game.slug} href={`/games/${game.slug}`} className="group block glass rounded-xl overflow-hidden hover:border-cyan-500/50 transition-colors">
                 <div className="relative aspect-square">
-                  <Image src={game.imageSrc} alt={game.title} fill sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 20vw" className="object-cover transition-transform duration-300 group-hover:scale-105" />
+                  <Image src={game.thumbnail} alt={game.title} fill sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 20vw" className="object-cover transition-transform duration-300 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#000C1A]/90 to-transparent" />
                   <p className="absolute bottom-2 left-2 right-2 font-orbitron text-xs font-bold text-white">{game.title}</p>
                 </div>

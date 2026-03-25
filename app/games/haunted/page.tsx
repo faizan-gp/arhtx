@@ -10,12 +10,12 @@ import Script from "next/script";
 export const metadata: Metadata = {
   title: "Haunted VR at Zero Latency Houston | Full-Body Horror Free-Roam VR",
   description: "Haunted at Zero Latency Houston is a free-roam VR horror game for 2–8 players aged 16+. Walk physically through a horror house with spatial 3D audio and room-scale tracking. 30-minute sessions in Houston, Texas.",
-  alternates: { canonical: "https://zerolatencyhouston.com/games/haunted" },
+  alternates: { canonical: "https://arcadehouston.com/games/haunted" },
   openGraph: {
     title: "Haunted VR at Zero Latency Houston",
     description: "Haunted at Zero Latency Houston puts 2–8 players in a free-roam VR horror environment with spatial audio and room-scale tracking. 30 minutes. Ages 16+. Houston, Texas.",
-    url: "https://zerolatencyhouston.com/games/haunted",
-    images: [{ url: "https://zerolatencyhouston.com/haunted-house-bg.webp", width: 1200, height: 630, alt: "Haunted VR horror experience at Zero Latency Houston" }],
+    url: "https://arcadehouston.com/games/haunted",
+    images: [{ url: "https://arcadehouston.com/haunted-house-bg.webp", width: 1200, height: 630, alt: "Haunted VR horror experience at Zero Latency Houston" }],
   },
 };
 
@@ -27,17 +27,17 @@ const gameSchema = {
   "genre": "Horror",
   "numberOfPlayers": { "@type": "QuantitativeValue", "minValue": 2, "maxValue": 8 },
   "gamePlatform": "Virtual Reality",
-  "url": "https://zerolatencyhouston.com/games/haunted",
-  "provider": { "@type": "Organization", "name": "Zero Latency Houston", "url": "https://zerolatencyhouston.com" },
+  "url": "https://arcadehouston.com/games/haunted",
+  "provider": { "@type": "Organization", "name": "Zero Latency Houston", "url": "https://arcadehouston.com" },
 };
 
 const breadcrumb = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "item": { "name": "Home", "id": "https://zerolatencyhouston.com/" } },
-    { "@type": "ListItem", "position": 2, "item": { "name": "Games", "id": "https://zerolatencyhouston.com/games" } },
-    { "@type": "ListItem", "position": 3, "item": { "name": "Haunted", "id": "https://zerolatencyhouston.com/games/haunted" } },
+    { "@type": "ListItem", "position": 1, "item": { "name": "Home", "id": "https://arcadehouston.com/" } },
+    { "@type": "ListItem", "position": 2, "item": { "name": "Games", "id": "https://arcadehouston.com/games" } },
+    { "@type": "ListItem", "position": 3, "item": { "name": "Haunted", "id": "https://arcadehouston.com/games/haunted" } },
   ],
 };
 
@@ -223,7 +223,7 @@ export default function HauntedPage() {
             {otherGames.slice(0, 8).map((game) => (
               <Link key={game.slug} href={`/games/${game.slug}`} className="group block glass rounded-xl overflow-hidden hover:border-cyan-500/50 transition-colors">
                 <div className="relative aspect-square">
-                  <Image src={game.imageSrc} alt={game.title} fill sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 20vw" className="object-cover transition-transform duration-300 group-hover:scale-105" />
+                  <Image src={game.thumbnail} alt={game.title} fill sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 20vw" className="object-cover transition-transform duration-300 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#000C1A]/90 to-transparent" />
                   <p className="absolute bottom-2 left-2 right-2 font-orbitron text-xs font-bold text-white">{game.title}</p>
                 </div>

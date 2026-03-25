@@ -2,14 +2,15 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Site Map | Zero Latency Houston',
-  description: 'Complete HTML sitemap for Zero Latency Houston — all pages including games, blog posts, experiences, and booking information.',
-  alternates: { canonical: 'https://zerolatencyhouston.com/sitemap-html' },
+  title: 'Site Map | Arcade Houston',
+  description: 'Complete HTML sitemap for Arcade Houston — all pages including Houston arcade guides, VR games, blog posts, experiences, and booking information.',
+  alternates: { canonical: 'https://arcadehouston.com/sitemap-html' },
   robots: { index: true, follow: true },
 };
 
 const mainPages = [
   { label: 'Home', href: '/' },
+  { label: 'Arcades in Houston', href: '/arcades-in-houston' },
   { label: 'Experiences', href: '/experiences' },
   { label: 'Games', href: '/games' },
   { label: 'What to Expect', href: '/what-to-expect' },
@@ -31,33 +32,26 @@ const gamePages = [
 ];
 
 const blogSlugs = [
+  { label: 'Best Arcades in Houston TX (2026)', slug: 'best-arcades-in-houston' },
+  { label: 'Cidercade Houston Review', slug: 'cidercade-houston-review' },
+  { label: 'Game Preserve Houston Review', slug: 'game-preserve-houston-review' },
+  { label: 'Retro Arcade Houston', slug: 'retro-arcade-houston' },
+  { label: 'Arcade Bar Houston', slug: 'arcade-bar-houston' },
+  { label: 'Arcades in Houston for Kids', slug: 'arcades-in-houston-for-kids' },
+  { label: 'Arcades in Houston for Adults', slug: 'arcades-in-houston-for-adults' },
+  { label: 'Free Play Arcades Houston', slug: 'free-play-arcades-houston' },
+  { label: 'Houston Arcade Birthday Party Guide', slug: 'houston-arcade-birthday-party-guide' },
+  { label: 'Bachelor & Bachelorette Party Houston', slug: 'bachelor-bachelorette-party-houston' },
+  { label: 'VR Arcade Houston', slug: 'vr-arcade-houston' },
+  { label: 'Best VR Games in Houston', slug: 'best-vr-games-houston-zero-latency' },
   { label: 'Zero Latency Houston Complete Guide', slug: 'zero-latency-houston-complete-guide' },
-  { label: 'Free-Roam VR Houston Texas', slug: 'free-roam-vr-houston-texas' },
-  { label: 'Virtual Reality Houston Experience', slug: 'virtual-reality-houston-experience' },
-  { label: 'VR Gaming Houston: What to Expect', slug: 'vr-gaming-houston-what-to-expect' },
-  { label: 'Zero Latency Technology Houston', slug: 'zero-latency-technology-houston' },
   { label: 'Things to Do in Houston This Weekend', slug: 'things-to-do-houston-texas-this-weekend' },
   { label: 'Things to Do in Clear Lake Houston', slug: 'things-to-do-clear-lake-houston' },
-  { label: 'Houston Entertainment Guide: VR', slug: 'houston-entertainment-guide-vr' },
-  { label: 'Best Attractions in Houston TX', slug: 'best-attractions-houston-tx' },
+  { label: 'Things to Do in Webster TX', slug: 'things-to-do-webster-tx' },
   { label: 'Birthday Party Ideas Houston', slug: 'birthday-party-ideas-houston' },
   { label: 'Team Building Activities Houston', slug: 'team-building-activities-houston' },
-  { label: 'Bachelor Party Houston VR', slug: 'bachelor-party-houston-vr' },
-  { label: 'Group Activities Houston TX', slug: 'group-activities-houston-tx' },
-  { label: 'Space Marine VR Houston', slug: 'space-marine-vr-houston' },
-  { label: 'Best VR Games Houston: Zero Latency', slug: 'best-vr-games-houston-zero-latency' },
-  { label: 'Zombie VR Games Houston', slug: 'zombie-vr-games-houston' },
-  { label: 'VR Horror Experience Houston', slug: 'vr-horror-experience-houston' },
-  { label: 'Zero Latency Houston Prices', slug: 'zero-latency-houston-prices' },
   { label: 'Date Night Ideas Houston', slug: 'date-night-ideas-houston' },
-  { label: 'VR for Kids Houston', slug: 'vr-for-kids-houston' },
-  { label: 'Far Cry VR Houston', slug: 'far-cry-vr-houston' },
-  { label: 'Sol Raiders PvP VR Houston', slug: 'sol-raiders-pvp-vr-houston' },
-  { label: 'Bachelorette Party Ideas Houston', slug: 'bachelorette-party-ideas-houston' },
-  { label: 'Things to Do in Webster TX', slug: 'things-to-do-webster-tx' },
-  { label: 'VR Arcade Houston', slug: 'vr-arcade-houston' },
-  { label: 'Engineerium VR Houston', slug: 'engineerium-vr-houston' },
-  { label: 'Houston Corporate Events & Team Building', slug: 'houston-corporate-events-team-building' },
+  { label: 'Group Activities Houston TX', slug: 'group-activities-houston-tx' },
 ];
 
 const legalPages = [

@@ -16,8 +16,8 @@ const schemaData = [
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "item": { "@id": "https://zerolatencyhouston.com/", "name": "Home" } },
-      { "@type": "ListItem", "position": 2, "item": { "@id": "https://zerolatencyhouston.com/private-events", "name": "Private Events" } }
+      { "@type": "ListItem", "position": 1, "item": { "@id": "https://arcadehouston.com/", "name": "Home" } },
+      { "@type": "ListItem", "position": 2, "item": { "@id": "https://arcadehouston.com/private-events", "name": "Private Events" } }
     ]
   },
   {
@@ -26,20 +26,20 @@ const schemaData = [
     "name": "Private VR Events at Zero Latency Houston",
     "description": "Host birthday parties, corporate team building, bachelor parties, and group outings in Houston's premier free-roam VR arena. Sessions for 2–8 players. Book online.",
     "serviceType": "Private VR Event Venue",
-    "provider": { "@id": "https://zerolatencyhouston.com/#organization" },
+    "provider": { "@id": "https://arcadehouston.com/#organization" },
     "areaServed": {
       "@type": "City",
       "name": "Houston",
       "sameAs": "https://en.wikipedia.org/wiki/Houston"
     },
-    "url": "https://zerolatencyhouston.com/private-events",
-    "image": "https://zerolatencyhouston.com/venue-team-building.webp",
+    "url": "https://arcadehouston.com/private-events",
+    "image": "https://arcadehouston.com/venue-team-building.webp",
     "offers": {
       "@type": "Offer",
       "url": "https://booking.zerolatencyvr.com/en/book-now/webster",
       "priceCurrency": "USD",
       "availability": "https://schema.org/InStock",
-      "seller": { "@id": "https://zerolatencyhouston.com/#organization" }
+      "seller": { "@id": "https://arcadehouston.com/#organization" }
     }
   }
 ];

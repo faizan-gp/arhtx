@@ -1,20 +1,26 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'About Zero Latency Houston | Free-Roam VR Arena in Houston TX',
-  description: "Zero Latency Houston is Houston's premier free-roam VR arena — 2,000 sq ft of cable-free virtual reality for groups of 2 to 8 players. Located in Webster, TX.",
-  alternates: { canonical: 'https://zerolatencyhouston.com/about' },
+  title: 'About Arcade Houston | VR Arcade & Entertainment Guide',
+  description: "Arcade Houston covers every arcade in the Houston metro area and operates Zero Latency Houston — the city's only free-roam VR arena. 2,000 sq ft arena, 8 games, 2-8 players. Webster TX.",
+  alternates: { canonical: 'https://arcadehouston.com/about' },
+  openGraph: {
+    title: 'About Arcade Houston | VR Arcade & Entertainment Guide',
+    description: "Arcade Houston covers every arcade in Houston and operates Zero Latency VR. 2,000 sq ft arena, 8 games. Webster TX.",
+    url: 'https://arcadehouston.com/about',
+    siteName: 'Arcade Houston',
+  },
   robots: { index: true, follow: true },
 };
 
 const aboutPageSchema = {
   '@context': 'https://schema.org',
   '@type': 'AboutPage',
-  '@id': 'https://zerolatencyhouston.com/about',
-  url: 'https://zerolatencyhouston.com/about',
-  name: 'About Zero Latency Houston',
-  description: "Zero Latency Houston is Houston's premier free-roam virtual reality arena.",
-  publisher: { '@id': 'https://zerolatencyhouston.com/#organization' },
+  '@id': 'https://arcadehouston.com/about',
+  url: 'https://arcadehouston.com/about',
+  name: 'About Arcade Houston',
+  description: "Arcade Houston is a comprehensive guide to every arcade in Houston and operates Zero Latency Houston — the city's only free-roam VR arena.",
+  publisher: { '@id': 'https://arcadehouston.com/#organization' },
 };
 
 const stats = [

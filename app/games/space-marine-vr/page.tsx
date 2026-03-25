@@ -10,12 +10,12 @@ import Script from "next/script";
 export const metadata: Metadata = {
   title: "Space Marine VR at Zero Latency Houston | Warhammer 40K Free-Roam VR",
   description: "Space Marine VR at Zero Latency Houston puts 1–8 players in Warhammer 40K Space Marine armor to fight Tyranid swarms in free-roam VR. 30–45 minute sessions in Houston, Texas.",
-  alternates: { canonical: "https://zerolatencyhouston.com/games/space-marine-vr" },
+  alternates: { canonical: "https://arcadehouston.com/games/space-marine-vr" },
   openGraph: {
     title: "Space Marine VR at Zero Latency Houston",
     description: "Fight Tyranid hordes as a Warhammer 40K Space Marine in this free-roam multiplayer VR experience for 1–8 players at Zero Latency Houston, Texas.",
-    url: "https://zerolatencyhouston.com/games/space-marine-vr",
-    images: [{ url: "https://zerolatencyhouston.com/game-hero-space-marine.webp", width: 1200, height: 630, alt: "Space Marine VR at Zero Latency Houston" }],
+    url: "https://arcadehouston.com/games/space-marine-vr",
+    images: [{ url: "https://arcadehouston.com/game-hero-space-marine.webp", width: 1200, height: 630, alt: "Space Marine VR at Zero Latency Houston" }],
   },
 };
 
@@ -27,17 +27,17 @@ const gameSchema = {
   "genre": "Sci-Fi Action",
   "numberOfPlayers": { "@type": "QuantitativeValue", "minValue": 1, "maxValue": 8 },
   "gamePlatform": "Virtual Reality",
-  "url": "https://zerolatencyhouston.com/games/space-marine-vr",
-  "provider": { "@type": "Organization", "name": "Zero Latency Houston", "url": "https://zerolatencyhouston.com" },
+  "url": "https://arcadehouston.com/games/space-marine-vr",
+  "provider": { "@type": "Organization", "name": "Zero Latency Houston", "url": "https://arcadehouston.com" },
 };
 
 const breadcrumb = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "item": { "name": "Home", "id": "https://zerolatencyhouston.com/" } },
-    { "@type": "ListItem", "position": 2, "item": { "name": "Games", "id": "https://zerolatencyhouston.com/games" } },
-    { "@type": "ListItem", "position": 3, "item": { "name": "Space Marine VR", "id": "https://zerolatencyhouston.com/games/space-marine-vr" } },
+    { "@type": "ListItem", "position": 1, "item": { "name": "Home", "id": "https://arcadehouston.com/" } },
+    { "@type": "ListItem", "position": 2, "item": { "name": "Games", "id": "https://arcadehouston.com/games" } },
+    { "@type": "ListItem", "position": 3, "item": { "name": "Space Marine VR", "id": "https://arcadehouston.com/games/space-marine-vr" } },
   ],
 };
 
@@ -225,7 +225,7 @@ export default function SpaceMarineVRPage() {
             {otherGames.slice(0, 8).map((game) => (
               <Link key={game.slug} href={`/games/${game.slug}`} className="group block glass rounded-xl overflow-hidden hover:border-cyan-500/50 transition-colors">
                 <div className="relative aspect-square">
-                  <Image src={game.imageSrc} alt={game.title} fill sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 20vw" className="object-cover transition-transform duration-300 group-hover:scale-105" />
+                  <Image src={game.thumbnail} alt={game.title} fill sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 20vw" className="object-cover transition-transform duration-300 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#000C1A]/90 to-transparent" />
                   <p className="absolute bottom-2 left-2 right-2 font-orbitron text-xs font-bold text-white">{game.title}</p>
                 </div>

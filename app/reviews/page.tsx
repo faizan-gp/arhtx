@@ -10,9 +10,9 @@ export async function generateMetadata(): Promise<Metadata> {
   const total = live?.totalRatings ?? STATIC_TOTAL;
 
   return {
-    title: "Reviews | Zero Latency Houston",
-    description: `Read real customer reviews of Zero Latency Houston. Rated 5.0 stars from ${total}+ Google reviews. See what Houston VR fans are saying about our free-roam experience.`,
-    alternates: { canonical: "https://zerolatencyhouston.com/reviews" },
+    title: "Arcade Houston Reviews | Google Reviews & Customer Ratings",
+    description: `Read real customer reviews of Arcade Houston's VR arena. Rated 5.0 stars from ${total}+ Google reviews. See what Houston arcade fans are saying about our free-roam VR experience.`,
+    alternates: { canonical: "https://arcadehouston.com/reviews" },
   };
 }
 

@@ -16,16 +16,16 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = getBlogPost(slug);
   if (!post) return { title: "Post Not Found" };
   return {
-    title: `${post.title} | Zero Latency Houston`,
+    title: `${post.title} | Arcade Houston`,
     description: post.description,
     keywords: post.keywords,
-    alternates: { canonical: `https://zerolatencyhouston.com/blog/${post.slug}` },
+    alternates: { canonical: `https://arcadehouston.com/blog/${post.slug}` },
     openGraph: {
       title: post.title,
       description: post.description,
-      url: `https://zerolatencyhouston.com/blog/${post.slug}`,
-      siteName: "Zero Latency Houston",
-      images: [{ url: `https://zerolatencyhouston.com${post.featuredImage}`, width: 1200, height: 630, alt: post.title }],
+      url: `https://arcadehouston.com/blog/${post.slug}`,
+      siteName: "Arcade Houston",
+      images: [{ url: `https://arcadehouston.com${post.featuredImage}`, width: 1200, height: 630, alt: post.title }],
       type: "article",
       publishedTime: post.publishDate,
     },
@@ -251,6 +251,79 @@ const blogContent: Record<string, string[]> = {
     "Engineerium is available year-round at Zero Latency Houston during standard operating hours. The experience changes on repeat visits — participants who have overcome VR novelty on a first visit tend to explore the environment's geometric details more deliberately the second time. Replayability is moderate compared to competitive titles, but the accessibility of Engineerium ensures that any group member who had reservations on visit one is converted before the group moves on to other titles. This is why Engineerium is the recommended starting point for groups containing any first-time VR players.",
   ],
 
+  "best-arcades-in-houston": [
+    "Houston has 6 arcades worth visiting in 2026, ranging from a 275-game all-day admission venue to a free-roam VR arena. The right choice depends on group size, age range, budget, and what kind of experience you're after — tokens and redemption games, retro classics, bar-style social gaming, or full-body virtual reality.",
+    "Cidercade Houston leads the list for sheer game volume: 275+ machines, $12 all-day admission, hand-crafted pizza, and a craft beer bar in East Downtown. If you want to spend 4–6 hours working through classic and modern arcade cabinets with unlimited plays, Cidercade is the value benchmark. The venue becomes 18+ after 9 PM on weekends, making it equally viable for adults-only nights.",
+    "The Game Preserve operates 2 Houston-area locations — Webster (near NASA) and The Woodlands — each with 100+ retro games, pinball machines, and a curated classic arcade atmosphere on a $15 day pass. The emphasis is on quality selection over raw volume: if you specifically want original Pac-Man cabinets, vintage pinball, and Street Fighter II in working condition, Game Preserve delivers this more reliably than any other Houston venue.",
+    "Dave & Buster's has 3 Houston locations (Katy, Sugar Land, Willowbrook) and represents the corporate chain side of the arcade market: hundreds of modern redemption machines, full-service dining, cocktails, and a reliable if predictable experience. Token-based pricing makes costs harder to predict than all-day-admission venues, but D&B's private event rooms make it a solid corporate group option.",
+    "AR Entertainment Hub in Spring offers a family-focused format with laser tag, arcade games, and indoor go-karts — competitive with D&B's for family programming at a suburban location convenient to North Houston residents.",
+    "Arcade Houston (Zero Latency VR) rounds out the list as the category-defining option for groups who want something no other Houston arcade can match: free-roam virtual reality. 8 multiplayer games, 2–8 players per session, no cables, 2,000 sq ft arena. The per-session cost runs higher than all-day admission venues, but the experience is categorically different — active, immersive, and consistently rated 5.0 stars by Houston groups.",
+  ],
+  "cidercade-houston-review": [
+    "Cidercade Houston is a 275+ game all-you-can-play arcade located at 3203 Center St in East Downtown, open 7 days a week. Admission is $12 for unlimited play on all machines, with no tokens required — every cabinet is set to free play from the moment you walk in. The arcade spans a large warehouse-style space and contains one of the highest concentrations of playable arcade machines in the Houston metro.",
+    "The game selection covers multiple eras: modern rhythm games, 80s and 90s classics (Pac-Man, Galaga, Street Fighter, Mortal Kombat), racing cabinets, light gun games, pinball machines, and a substantial section of Japanese import titles. Cidercade's curation leans toward playability — the machines are maintained regularly and the proportion of out-of-order cabinets is lower than most independent arcades.",
+    "The food and drink setup is a genuine differentiator. Cidercade makes its own hand-crafted hard cider on-site and serves it alongside a craft beer and spirits menu. The kitchen offers wood-fired pizza and bar snacks. The combination of unlimited games plus a full bar and food menu makes Cidercade function as a bar-and-dinner venue as much as an arcade — you can spend an entire evening there without leaving.",
+    "Age policy matters for planning purposes. Cidercade is family-friendly during daytime and early evening hours — children are welcome throughout the day. After 9 PM on Fridays and Saturdays, the venue transitions to 18+ only. Groups planning an adults-only night should time their arrival for the evening transition; families with kids should plan afternoon visits.",
+    "Pricing comparison: the $12 flat rate makes Cidercade the best all-day value in Houston for solo visitors or couples. For groups of 4–8 wanting a focused 60–90 minute experience, the math shifts depending on how much time the group actually spends playing versus socializing. Cidercade is not the right choice for groups who want private arena access or a structured shared experience — it's optimized for individual exploration of a large game library at your own pace.",
+  ],
+  "game-preserve-houston-review": [
+    "The Game Preserve operates 2 Houston-area locations: one at 1201 NASA Pkwy in Webster and one in The Woodlands. Both follow the same model — a curated collection of 100+ classic arcade games and pinball machines on a $15 all-day pass with free play on every machine. The Game Preserve is specifically positioned as a classic and retro arcade, not a modern redemption or VR venue.",
+    "The game selection is the strongest in Houston for anyone whose primary interest is vintage arcade hardware. Original 1980s Pac-Man cocktail tables, Donkey Kong, Galaga, Centipede, and Asteroids cabinets coexist with 1990s fighting games (Street Fighter II, Mortal Kombat series), beat-em-ups, and an unusually complete pinball section spanning 3 decades of Williams and Bally machines. The Webster location has a specific draw for local gaming history enthusiasts: proximity to the NASA community has made it a long-running institution in that area.",
+    "Maintenance standards at Game Preserve are above average for the Houston independent arcade market. The emphasis on a smaller, curated collection rather than volume allows the staff to keep machines in playable condition more consistently. Visitors specifically seeking pinball in working order will find Game Preserve more reliable than Cidercade's pinball section or the few machines scattered through Dave & Buster's locations.",
+    "The atmosphere is quieter and more focused than Cidercade. There's no full-service bar, no kitchen, and no loud DJ music — Game Preserve is optimized for people who came specifically to play classic arcade games, not for a social bar scene. This makes it the right choice for retro gaming enthusiasts, couples who prefer a quieter environment, and anyone who finds high-energy bar-arcade atmospheres overstimulating.",
+    "Value comparison: the $15 all-day pass is competitive with Cidercade's $12 given the quality of the game selection. Game Preserve does not try to compete on game volume — it competes on curation and condition. If the specific games you want are classics from the 1980s–90s arcade era, Game Preserve is the better choice. If you want 275 machines across all eras with a bar attached, Cidercade is the better choice.",
+  ],
+  "retro-arcade-houston": [
+    "Houston's retro arcade options cover everything from dedicated classic gaming venues to retro sections inside larger arcade complexes. The Game Preserve is the city's primary retro-focused venue with 100+ original cabinets across both its Webster (NASA Pkwy) and Woodlands locations — working Pac-Man cocktail tables, vintage pinball machines, fighting game cabinets from the early 90s, and a flat $15 all-day admission.",
+    "Cidercade Houston at 3203 Center St in East Downtown has a significant retro section alongside its modern game library. The 275+ machine collection includes enough classic content to satisfy retro enthusiasts, though the primary orientation is toward the full arcade library rather than a curated retro experience. For visitors who want retro games but also want the bar-and-food setup that Game Preserve doesn't offer, Cidercade covers both.",
+    "Pinball specifically is best covered by Game Preserve, which maintains a larger and more consistently operational pinball collection than any other Houston arcade. Houston's pinball community uses Game Preserve as its primary local venue. Cidercade has pinball machines but in smaller numbers. Dave & Buster's locations have a handful of modern pinball machines but no vintage titles.",
+    "For arcade cabinets from the golden age (1978–1986), Game Preserve Webster is the most reliable source in the Houston metro. The NASA-area location has maintained its retro focus since opening and has an established local reputation for keeping original hardware running. Visitors seeking specific titles should call ahead or check the venue's current game list, as individual cabinet availability can change with maintenance cycles.",
+    "Driving distance from central Houston: Game Preserve Webster is approximately 25 miles from downtown via I-45 South. The Woodlands location is approximately 35 miles via I-45 North. Cidercade is in East Downtown, less than 5 miles from most inner-loop Houston neighborhoods. For retro gaming, Game Preserve is worth the drive if original hardware and a focused classic atmosphere are priorities.",
+  ],
+  "arcade-bar-houston": [
+    "Houston's arcade bar category has 2 strong options in 2026: Cidercade Houston and Dave & Buster's. Both combine arcade gaming with a full drink menu, but they operate on different models and attract different crowds.",
+    "Cidercade Houston at 3203 Center St is the most distinctive arcade bar in Houston. The venue makes its own hard cider on-site — a genuine craft production setup, not just a branded drink menu. The craft beer selection, spirits, and house cider pair with hand-crafted wood-fired pizza in a large warehouse space housing 275+ machines. The $12 all-day admission covers all games. Drinks are priced separately. Cidercade transitions to 18+ after 9 PM on weekends, making it genuinely bar-oriented during evening hours.",
+    "Dave & Buster's operates 3 Houston-area locations (Katy, Sugar Land, Willowbrook) with a full cocktail and beer menu alongside its token-based modern game selection. D&B's is more corporate and louder than Cidercade, with a greater emphasis on sports TV and a larger food menu. It's the reliable choice for groups that want a recognizable brand experience and multiple locations to choose from.",
+    "For couples and small groups after a specifically bar-and-games experience, Cidercade's atmosphere is more interesting. The craft cider, warehouse layout, and mix of classic and modern games create a venue identity that D&B's doesn't match. For larger corporate groups or anyone who needs private event room booking at a predictable price, D&B's private events infrastructure is more developed.",
+    "Arcade Houston (Zero Latency VR) does not serve alcohol and is not a bar venue — it's a VR arena. Groups who want to combine arcade gaming with drinking typically use one of the above options or pair a Zero Latency session with nearby bar and dining in the Clear Lake or Midtown area afterward.",
+  ],
+  "arcades-in-houston-for-kids": [
+    "Houston has 4 arcades suitable for children in 2026, each covering a different age range, price point, and experience type. The right choice depends on whether you're planning for younger children (under 10), tweens (10–13), or teenagers who can participate in VR.",
+    "The Game Preserve Webster and Woodlands locations are the most family-oriented classic arcade venues in Houston. The all-ages atmosphere, quiet operation, and classic game selection make it accessible for children who can operate a joystick. The $15 all-day pass is transparent pricing that works for family budget planning. There's no alcohol service at Game Preserve, making it a daytime family destination without the bar-atmosphere transition that Cidercade undergoes in the evenings.",
+    "Cidercade Houston is family-friendly during daytime and early evening hours on weekdays. The $12 all-day admission and 275+ games provide exceptional value for older children who can navigate a large game library independently. After 9 PM on Fridays and Saturdays, Cidercade becomes 18+ — families should plan for daytime or weekday visits.",
+    "AR Entertainment Hub in Spring covers family programming including laser tag, indoor go-karts, and arcade games under one roof. It's the most complete family entertainment center option for North Houston residents, similar to the Dave & Buster's format but more family-oriented and without the adult bar positioning.",
+    "Arcade Houston (Zero Latency VR) accepts players aged 6+ for the Engineerium family VR experience and 13+ for all other games. The Haunted horror experience requires 16+. For families with children in the 6–12 age range, Engineerium is the recommended entry game — a peaceful, non-combat VR exploration experience that consistently produces wonder reactions in younger visitors. Teenagers who qualify for the full game library find VR the most immediately impressive activity in Houston's entertainment market.",
+  ],
+  "arcades-in-houston-for-adults": [
+    "Houston's adult arcade options in 2026 range from a craft cider bar with 275 machines to the city's only free-roam VR arena. The best choice depends on whether your group is after social bar gaming, competitive multiplayer, nostalgia-driven retro play, or a physically active VR experience.",
+    "Cidercade Houston is the strongest 18+ arcade bar in the city. The $12 all-day admission, 275+ machines across all eras, in-house craft cider, craft beer, and wood-fired pizza in East Downtown create a venue that works equally well for dates, friend groups, and corporate outings. The transition to 18+ after 9 PM on weekends makes evening visits decidedly adults-only in atmosphere.",
+    "Dave & Buster's three Houston-area locations (Katy, Sugar Land, Willowbrook) serve the adults-wanting-cocktails-and-games market with predictable effectiveness. The corporate format is less interesting than Cidercade's warehouse-bar atmosphere, but D&B's private event rooms make it a reliable corporate outing venue with established group booking infrastructure.",
+    "Game Preserve Webster and Woodlands are all-ages venues but skew adult in practice — the retro game library is most meaningful to visitors with 1980s–90s arcade memories. An evening at Game Preserve with a group of people who played Pac-Man in childhood produces a specific kind of nostalgia experience that no modern venue replicates.",
+    "Arcade Houston (Zero Latency VR) is the adult option for groups who want an active experience rather than bar gaming. 8 free-roam multiplayer VR games, 2–8 players per session, no alcohol on-site. The VR format is particularly effective for adult date nights (Far Cry VR and Engineerium are the most popular couple selections), corporate team building (Outbreak and Sol Raiders), and mixed-age adult groups (Engineerium accommodates non-gamers completely).",
+  ],
+  "free-play-arcades-houston": [
+    "Houston has 2 all-inclusive free-play arcades where unlimited gaming is covered by a flat admission price: Cidercade Houston ($12 all-day, 275+ machines) and The Game Preserve ($15 all-day, 100+ retro games). Both operate on the same model — no tokens, no per-game credits — just unlimited play from open to close.",
+    "Cidercade Houston at 3203 Center St in East Downtown is the larger of the 2 venues by game count. The 275+ machine library spans modern rhythm games, 1980s–90s classics, racing cabinets, light gun games, Japanese import titles, and a substantial pinball section. The $12 admission is among the lowest all-day rates of any large arcade in Texas. Drinks and food are priced separately.",
+    "The Game Preserve's Webster and Woodlands locations offer 100+ games each on a $15 day pass, with the selection focused on curated classic and retro hardware rather than volume. The pinball collection is the strongest in Houston. For players whose target games are specific vintage titles, Game Preserve's more focused approach to machine maintenance produces better playability rates per cabinet.",
+    "Value comparison for different group types: a solo visitor spending 3+ hours playing classic games gets the best value at Cidercade due to the $12 price and higher game volume. A couple that specifically wants pinball and retro games in a quieter venue may prefer Game Preserve at $15 despite the lower machine count. Groups of 4 wanting a shared gaming session will find Cidercade's bar-and-food setup more versatile for a full evening.",
+    "Arcade Houston (Zero Latency VR) does not use an all-day admission model — sessions are booked and priced per person per session. But for groups specifically seeking a free-play unlimited-time experience, Cidercade and Game Preserve are the two Houston venues that deliver this without token management.",
+  ],
+  "houston-arcade-birthday-party-guide": [
+    "Houston has 4 arcade venues with dedicated birthday party packages in 2026: Cidercade, The Game Preserve, Dave & Buster's, and Arcade Houston (Zero Latency VR). Each covers a different group size, age range, and budget. Here's exactly what each venue includes and what to expect.",
+    "Cidercade Houston handles birthday groups through standard admission plus food and drink ordering — the venue doesn't have formal party packages in the same structured sense as Dave & Buster's, but large groups arriving together during daytime or evening hours are accommodated easily. The $12 per-person admission makes it the most affordable option for groups of 10–20, especially for teens and adults who want full arcade access with bar options.",
+    "The Game Preserve offers private room rentals starting around $250 for 2 hours, which includes unlimited game play for the group. This is the best option for retro gaming birthday parties with groups of 8–15 who want a dedicated space. The Webster and Woodlands locations are both suitable; call ahead to confirm room availability and pricing.",
+    "Dave & Buster's has the most developed birthday party infrastructure of any Houston arcade chain. Private event rooms accommodate groups of 10–50+, with all-inclusive packages covering food, unlimited game play, and party setup. D&B's party coordinator handles logistics in a way that reduces planning burden — useful for corporate-style event management but more expensive per person than independent venues.",
+    "Arcade Houston (Zero Latency VR) provides the most unique birthday format: private arena access for 2–8 players per session, with the ability to book consecutive sessions for larger groups. A birthday group of 16 would run 2 consecutive sessions of 8 players. The VR experience — fighting zombies, exploring alien worlds, or competing in PvP — creates memorable specific moments that guests reference for months. Game Masters acknowledge the occasion during briefings. Recommended for groups with at least 4 players aged 10+.",
+    "Booking lead times differ across venues. Dave & Buster's private rooms book out 2–4 weeks in advance for weekend dates. Game Preserve private room availability is more limited — contact directly at least 3 weeks ahead. Arcade Houston weekend slots for groups of 6–8 should be booked 1–2 weeks ahead. Cidercade doesn't require advance booking for standard-admission birthday visits but benefits from arriving before peak evening hours for seating.",
+  ],
+  "bachelor-bachelorette-party-houston": [
+    "Houston's bachelor and bachelorette party scene has more options than most cities — but for groups who want an activity that generates genuine shared stories rather than just a venue to drink in, the list gets shorter. Arcade Houston (Zero Latency VR) has become one of the top-rated bachelor and bachelorette options in the Houston metro specifically because the experience produces specific, memorable moments that guests reference at the event itself.",
+    "For bachelor parties: Sol Raiders at Zero Latency VR is the anchor recommendation. The team-versus-team PvP format splits groups competitively, creates genuine tension between friend groups, and generates a definitive outcome — someone wins. For groups of 6–8 where the groom's crew vs. college friends competitive dynamic is already present, Sol Raiders surfaces it in the best possible way. Outbreak (zombie survival) is the cooperative alternative for groups who prefer shared adversity over direct competition.",
+    "For bachelorette parties: Engineerium and Outbreak both work well depending on the group. Engineerium is the accessible choice for groups including VR newcomers or participants who want immersion without combat — the non-threatening exploration experience accommodates any fitness level or gaming background. Outbreak converts VR skeptics within the first 2 minutes because the zombie survival format is immediately legible to anyone.",
+    "Cidercade Houston is the natural complement activity or follow-up for bachelor and bachelorette groups. The 18+ evening atmosphere (Fridays and Saturdays after 9 PM), craft cider bar, and 275+ machines create a social gaming environment that extends the party after the VR session. The East Downtown location is a short drive from Midtown bar neighborhoods if the group wants to continue the evening.",
+    "Practical details for bachelor and bachelorette groups at Arcade Houston: closed-toe shoes required for VR (no heels in the arena), sashes welcome but should not drag on the floor, personal items stored in lockers during sessions. The Game Masters acknowledge the occasion during briefings. Book weekend slots 2 weeks ahead — Friday and Saturday evening VR sessions fill faster than weekday availability.",
+    "For groups comparing Arcade Houston VR to axe throwing, bowling, or escape rooms as a bachelor or bachelorette activity: the distinguishing factor is simultaneity. All 8 players share the same virtual space at the same time — every player experiences the same situation together, not in parallel. This produces different conversation afterward than activities where participants take turns or compete individually.",
+  ],
   "houston-corporate-events-team-building": [
     "Zero Latency Houston hosts corporate team-building events across Houston's 5 primary business sectors: energy, healthcare, aerospace, technology, and professional services. The free-roam virtual reality (FRVR) format produces team development outcomes that conventional corporate activities — ropes courses, cooking classes, escape rooms — replicate with less consistency. The reason is structural: Zero Latency Houston games require distributed coordination, real-time communication under pressure, and genuine role emergence among participants. These 3 conditions together develop team chemistry between people, not between participants and an external challenge.",
     "Corporate groups at Zero Latency Houston choose from 8 games. For team-building outcomes, 3 provide the clearest results: Outbreak (cooperative zombie survival, up to 8 players), Space Marine VR (cooperative wave defense, up to 8 players), and Sol Raiders (team-versus-team competition, minimum 4 players). Outbreak and Space Marine VR both require continuous inter-player communication and task distribution under pressure. Sol Raiders creates a competitive framework that surfaces individual leadership styles and inter-team dynamics. The Game Master can brief the group on which format aligns with the organization's specific team-building objectives before the session begins.",
@@ -266,20 +339,20 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   const post = getBlogPost(slug);
   if (!post) notFound();
 
-  const content = blogContent[slug] || [post.description, "Visit Zero Latency Houston for an unforgettable free-roam VR experience in the Houston metro area. Book your session today."];
-  const relatedGames = allGames.filter(g => post.games.includes(g.slug));
+  const content = blogContent[slug] || [post.description, "Visit Arcade Houston for an unforgettable free-roam VR experience in the Houston metro area. Book your session today."];
+  const relatedGames = allGames.filter(g => (post.games ?? []).includes(g.slug));
 
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "headline": post.title,
     "description": post.description,
-    "image": `https://zerolatencyhouston.com${post.featuredImage}`,
+    "image": `https://arcadehouston.com${post.featuredImage}`,
     "datePublished": post.publishDate,
     "dateModified": post.publishDate,
-    "author": { "@type": "Organization", "name": "Zero Latency Houston", "url": "https://zerolatencyhouston.com" },
-    "publisher": { "@type": "Organization", "name": "Zero Latency Houston", "url": "https://zerolatencyhouston.com" },
-    "url": `https://zerolatencyhouston.com/blog/${post.slug}`,
+    "author": { "@type": "Organization", "name": "Arcade Houston", "url": "https://arcadehouston.com" },
+    "publisher": { "@type": "Organization", "name": "Arcade Houston", "url": "https://arcadehouston.com" },
+    "url": `https://arcadehouston.com/blog/${post.slug}`,
     "keywords": post.keywords?.join(", "),
   };
 
@@ -287,9 +360,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
-      { "@type": "ListItem", "position": 1, "item": { "name": "Home", "id": "https://zerolatencyhouston.com/" } },
-      { "@type": "ListItem", "position": 2, "item": { "name": "Blog", "id": "https://zerolatencyhouston.com/blog" } },
-      { "@type": "ListItem", "position": 3, "item": { "name": post.title, "id": `https://zerolatencyhouston.com/blog/${post.slug}` } },
+      { "@type": "ListItem", "position": 1, "item": { "name": "Home", "id": "https://arcadehouston.com/" } },
+      { "@type": "ListItem", "position": 2, "item": { "name": "Blog", "id": "https://arcadehouston.com/blog" } },
+      { "@type": "ListItem", "position": 3, "item": { "name": post.title, "id": `https://arcadehouston.com/blog/${post.slug}` } },
     ],
   };
 
@@ -334,8 +407,8 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
           {/* CTA */}
           <div className="mt-12 glass rounded-2xl p-8 text-center" style={{ background: 'linear-gradient(135deg, rgba(34,211,238,0.1) 0%, rgba(56,189,248,0.05) 100%)' }}>
-            <h2 className="font-orbitron text-xl font-black text-white mb-3">Ready to Experience Zero Latency Houston?</h2>
-            <p className="text-[#7DD3FC] text-sm mb-5">Book your free-roam VR session today. Walk-ins welcome when available.</p>
+            <h2 className="font-orbitron text-xl font-black text-white mb-3">Book Your Arcade Houston VR Session</h2>
+            <p className="text-[#7DD3FC] text-sm mb-5">Houston's only free-roam VR arena — 8 games, 2–8 players. Walk-ins welcome when available.</p>
             <BookGameButton label="Book Your Session" source={`blog-${post.slug}`} />
           </div>
 
@@ -347,7 +420,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
                 {relatedGames.map((game) => (
                   <Link key={game.slug} href={`/games/${game.slug}`} className="group glass rounded-xl overflow-hidden hover:border-cyan-500/50 transition-colors">
                     <div className="relative aspect-square">
-                      <Image src={game.imageSrc} alt={game.title} fill sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 20vw" className="object-cover transition-transform duration-300 group-hover:scale-105" />
+                      <Image src={game.thumbnail} alt={game.title} fill sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 20vw" className="object-cover transition-transform duration-300 group-hover:scale-105" />
                       <div className="absolute inset-0 bg-gradient-to-t from-[#000C1A]/90 to-transparent" />
                       <p className="absolute bottom-2 left-2 right-2 font-orbitron text-xs font-bold text-white">{game.title}</p>
                     </div>

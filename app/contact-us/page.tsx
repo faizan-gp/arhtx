@@ -3,9 +3,9 @@ import BookGameButton from "@/components/BookBtn";
 import { Clock, Mail, MapPin, Phone } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Contact Us | Zero Latency Houston",
-  description: "Get in touch with Zero Latency Houston. Find our location, hours, phone number, and email. Serving the Houston metro area including Clear Lake, League City, and Pearland.",
-  alternates: { canonical: "https://zerolatencyhouston.com/contact-us" },
+  title: "Contact Arcade Houston | Location, Hours & Booking Help",
+  description: "Get in touch with Arcade Houston. Find our VR arena location, hours, phone number, and email. Serving Houston, Clear Lake, League City, and Pearland in Webster TX.",
+  alternates: { canonical: "https://arcadehouston.com/contact-us" },
 };
 
 export default function ContactPage() {

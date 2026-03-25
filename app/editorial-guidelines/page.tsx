@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Editorial Guidelines | Zero Latency Houston',
-  description: 'Editorial standards for content published on Zero Latency Houston — accuracy, expertise, and transparency policies for our VR gaming blog.',
-  alternates: { canonical: 'https://zerolatencyhouston.com/editorial-guidelines' },
+  title: 'Editorial Guidelines | Arcade Houston',
+  description: 'Editorial standards for content published on Arcade Houston — accuracy, expertise, and transparency policies for our Houston arcade and VR gaming guide.',
+  alternates: { canonical: 'https://arcadehouston.com/editorial-guidelines' },
   robots: { index: true, follow: true },
 };
 
@@ -12,7 +12,7 @@ const sections = [
     title: 'Who We Are',
     content: (
       <p className="text-sm text-[#7DD3FC]/80 leading-relaxed">
-        Content published on zerolatencyhouston.com is written and reviewed by the Zero Latency Houston team — staff with direct, hands-on experience running and playing free-roam VR sessions in Houston. Our writers have operated sessions, briefed hundreds of players, and tested every game title available in our arena.
+        Content published on arcadehouston.com is written and reviewed by the Zero Latency Houston team — staff with direct, hands-on experience running and playing free-roam VR sessions in Houston. Our writers have operated sessions, briefed hundreds of players, and tested every game title available in our arena.
       </p>
     ),
   },
@@ -74,7 +74,7 @@ export default function EditorialGuidelinesPage() {
           </h1>
           <div className="glass rounded-2xl p-6">
             <p className="text-sm text-[#7DD3FC]/80 leading-relaxed">
-              All content published on zerolatencyhouston.com meets the following editorial standards. Last reviewed: March 20, 2026.
+              All content published on arcadehouston.com meets the following editorial standards. Last reviewed: March 20, 2026.
             </p>
           </div>
         </div>

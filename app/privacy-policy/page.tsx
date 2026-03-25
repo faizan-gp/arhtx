@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Zero Latency Houston',
-  description: 'Privacy Policy for Zero Latency Houston. Learn how we collect, use, and protect your personal information.',
-  alternates: { canonical: 'https://zerolatencyhouston.com/privacy-policy' },
+  title: 'Privacy Policy | Arcade Houston',
+  description: 'Privacy Policy for Arcade Houston. Learn how we collect, use, and protect your personal information.',
+  alternates: { canonical: 'https://arcadehouston.com/privacy-policy' },
   robots: { index: true, follow: true },
 };
 

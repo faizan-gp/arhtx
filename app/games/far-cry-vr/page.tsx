@@ -10,12 +10,12 @@ import Script from "next/script";
 export const metadata: Metadata = {
   title: "Far Cry VR at Zero Latency Houston | Escape the Island Free-Roam VR",
   description: "Far Cry VR at Zero Latency Houston sends 2–6 players into the Far Cry 3 universe for a 50-minute free-roam VR mission across jungle, caves, and enemy territory. Book now in Houston, Texas.",
-  alternates: { canonical: "https://zerolatencyhouston.com/games/far-cry-vr" },
+  alternates: { canonical: "https://arcadehouston.com/games/far-cry-vr" },
   openGraph: {
     title: "Far Cry VR at Zero Latency Houston",
     description: "Play Far Cry VR at Zero Latency Houston — a 50-minute free-roam VR co-op adventure for 2–6 players based on Far Cry 3. Escape a pirate island. Ages 13+. Houston, Texas.",
-    url: "https://zerolatencyhouston.com/games/far-cry-vr",
-    images: [{ url: "https://zerolatencyhouston.com/game-far-cry-vr.webp", width: 1200, height: 630, alt: "Far Cry VR at Zero Latency Houston" }],
+    url: "https://arcadehouston.com/games/far-cry-vr",
+    images: [{ url: "https://arcadehouston.com/game-far-cry-vr.webp", width: 1200, height: 630, alt: "Far Cry VR at Zero Latency Houston" }],
   },
 };
 
@@ -27,17 +27,17 @@ const gameSchema = {
   "genre": "Tropical Action",
   "numberOfPlayers": { "@type": "QuantitativeValue", "minValue": 2, "maxValue": 6 },
   "gamePlatform": "Virtual Reality",
-  "url": "https://zerolatencyhouston.com/games/far-cry-vr",
-  "provider": { "@type": "Organization", "name": "Zero Latency Houston", "url": "https://zerolatencyhouston.com" },
+  "url": "https://arcadehouston.com/games/far-cry-vr",
+  "provider": { "@type": "Organization", "name": "Zero Latency Houston", "url": "https://arcadehouston.com" },
 };
 
 const breadcrumb = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": [
-    { "@type": "ListItem", "position": 1, "item": { "name": "Home", "id": "https://zerolatencyhouston.com/" } },
-    { "@type": "ListItem", "position": 2, "item": { "name": "Games", "id": "https://zerolatencyhouston.com/games" } },
-    { "@type": "ListItem", "position": 3, "item": { "name": "Far Cry VR", "id": "https://zerolatencyhouston.com/games/far-cry-vr" } },
+    { "@type": "ListItem", "position": 1, "item": { "name": "Home", "id": "https://arcadehouston.com/" } },
+    { "@type": "ListItem", "position": 2, "item": { "name": "Games", "id": "https://arcadehouston.com/games" } },
+    { "@type": "ListItem", "position": 3, "item": { "name": "Far Cry VR", "id": "https://arcadehouston.com/games/far-cry-vr" } },
   ],
 };
 
@@ -227,7 +227,7 @@ export default function FarCryVRPage() {
             {otherGames.slice(0, 8).map((game) => (
               <Link key={game.slug} href={`/games/${game.slug}`} className="group block glass rounded-xl overflow-hidden hover:border-cyan-500/50 transition-colors">
                 <div className="relative aspect-square">
-                  <Image src={game.imageSrc} alt={game.title} fill sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 20vw" className="object-cover transition-transform duration-300 group-hover:scale-105" />
+                  <Image src={game.thumbnail} alt={game.title} fill sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 20vw" className="object-cover transition-transform duration-300 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#000C1A]/90 to-transparent" />
                   <p className="absolute bottom-2 left-2 right-2 font-orbitron text-xs font-bold text-white">{game.title}</p>
                 </div>
