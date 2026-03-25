@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Arcades in Houston TX | Zero Latency VR Ranked #1 (2026 Guide)",
@@ -378,7 +379,39 @@ export default function ArcadesInHoustonPage() {
               )}
             </div>
 
+            {/* Hero image strip — rank 1 only */}
+            {venue.rank === 1 && (
+              <div className="relative w-full h-56 md:h-72 overflow-hidden">
+                <Image
+                  src="/hero_img.webp"
+                  alt="Players in free-roam VR at Zero Latency Webster, Houston"
+                  fill
+                  sizes="(max-width: 896px) 100vw, 896px"
+                  className="object-cover"
+                  priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#000C1A]/70 via-transparent to-transparent" />
+                <div className="absolute bottom-4 left-6 text-white text-sm font-medium">
+                  Houston&apos;s #1 Rated Arcade — Zero Latency Webster
+                </div>
+              </div>
+            )}
+
             <div className="px-6 py-6">
+              {/* Image gallery — rank 1 only */}
+              {venue.rank === 1 && (
+                <div className="grid grid-cols-3 gap-2 mb-6">
+                  {[
+                    { src: "/outbreak-group-fun.webp", alt: "Group playing free-roam VR together at Zero Latency" },
+                    { src: "/pvp-experience.webp", alt: "PvP VR battle at Zero Latency Webster" },
+                    { src: "/party.webp", alt: "Birthday party VR session at Zero Latency Houston" },
+                  ].map((img, i) => (
+                    <div key={i} className="relative aspect-video rounded-lg overflow-hidden">
+                      <Image src={img.src} alt={img.alt} fill sizes="(max-width: 768px) 33vw, 280px" className="object-cover" />
+                    </div>
+                  ))}
+                </div>
+              )}
               <div className="grid md:grid-cols-2 gap-6 mb-6">
                 <div>
                   <p className="text-gray-300 mb-4">{venue.description}</p>

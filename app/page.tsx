@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Arcade Houston | Best Arcades, VR, Games & Entertainment Guide (2026)",
@@ -253,62 +254,100 @@ export default function Page() {
         </section>
 
         {/* Featured: Zero Latency spotlight */}
-        <section className="mb-16 rounded-2xl border-2 border-cyan-500/40 bg-cyan-950/20 p-8">
-          <div className="flex flex-col md:flex-row gap-8 items-start">
-            <div className="flex-1">
-              <div className="inline-block mb-3 px-2 py-0.5 rounded border border-cyan-500/40 bg-cyan-500/10 text-cyan-400 text-xs font-mono uppercase tracking-wider">
+        <section className="mb-16 rounded-2xl border-2 border-cyan-500/40 bg-cyan-950/20 overflow-hidden">
+          {/* Top hero image */}
+          <div className="relative w-full h-64 md:h-80">
+            <Image
+              src="/hero_img.webp"
+              alt="Players in free-roam VR at Zero Latency Webster, Houston"
+              fill
+              sizes="(max-width: 896px) 100vw, 896px"
+              className="object-cover"
+              priority
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#000C1A] via-[#000C1A]/40 to-transparent" />
+            <div className="absolute bottom-4 left-6 right-6 flex items-end justify-between">
+              <div className="inline-block px-2 py-0.5 rounded border border-cyan-500/50 bg-cyan-500/20 text-cyan-400 text-xs font-mono uppercase tracking-wider">
                 Houston&apos;s #1 Rated Arcade
               </div>
-              <h2 className="font-orbitron text-2xl font-bold text-white mb-3">
-                Zero Latency Webster, Houston
-              </h2>
-              <p className="text-gray-300 mb-4">
-                The only free-roam VR arcade in Houston. Players wear wireless backpacks and VR headsets and <strong className="text-white">physically walk through a 2,000 sq ft virtual world</strong> — no cables, no fixed stations. Up to 8 players share the same virtual space simultaneously. 8 games across zombie survival, sci-fi missions, PvP esports, and family adventures.
-              </p>
-              <ul className="space-y-1.5 mb-6">
-                {[
-                  "5.0 stars from 424+ Google reviews — highest-rated arcade in Houston",
-                  "8 multiplayer games — zombie survival, sci-fi, PvP, family, horror",
-                  "2–8 players per session — the more players, the more immersive",
-                  "Private arena booking for birthdays, corporate events, and parties",
-                  "Game Masters guide every session — zero experience required",
-                  "Webster TX, 20–30 min from most Houston neighborhoods",
-                ].map((point, i) => (
-                  <li key={i} className="flex items-start gap-2 text-sm text-gray-300">
-                    <span className="text-cyan-400 mt-0.5 shrink-0">✓</span>
-                    {point}
-                  </li>
-                ))}
-              </ul>
-              <div className="flex flex-col sm:flex-row gap-3">
-                <a
-                  href="https://booking.zerolatencyvr.com/en/book-now/webster"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block bg-cyan-500 hover:bg-cyan-400 text-black font-bold px-6 py-3 rounded-lg transition-colors text-sm text-center"
-                >
-                  Book Your Session Now
-                </a>
-                <Link href="/experiences" className="inline-block border border-white/30 hover:border-white/60 text-white px-6 py-3 rounded-lg transition-colors text-sm text-center">
-                  View All 8 Games
-                </Link>
-                <Link href="/arcades-in-houston#rank-1" className="inline-block text-cyan-400 hover:text-white px-6 py-3 transition-colors text-sm text-center">
-                  Full Profile →
-                </Link>
+              <div className="flex items-center gap-1.5 bg-black/60 rounded-lg px-3 py-1.5">
+                <span className="text-yellow-400 text-sm">★★★★★</span>
+                <span className="text-white text-xs font-bold">5.0</span>
+                <span className="text-gray-400 text-xs">424+ reviews</span>
               </div>
             </div>
-            <div className="md:w-48 shrink-0 grid grid-cols-2 gap-3 text-center">
-              {[
-                { num: "5.0★", label: "Google Rating" },
-                { num: "424+", label: "Reviews" },
-                { num: "8", label: "VR Games" },
-                { num: "2–8", label: "Players" },
-              ].map((stat, i) => (
-                <div key={i} className="rounded-xl border border-cyan-500/20 bg-cyan-900/20 p-3">
-                  <div className="font-orbitron font-black text-xl text-cyan-400">{stat.num}</div>
-                  <div className="text-xs text-gray-400 mt-0.5">{stat.label}</div>
+          </div>
+
+          <div className="p-8">
+            <div className="flex flex-col md:flex-row gap-8 items-start">
+              <div className="flex-1">
+                <h2 className="font-orbitron text-2xl font-bold text-white mb-3">
+                  Zero Latency Webster, Houston
+                </h2>
+                <p className="text-gray-300 mb-4">
+                  The only free-roam VR arcade in Houston. Players wear wireless backpacks and VR headsets and <strong className="text-white">physically walk through a 2,000 sq ft virtual world</strong> — no cables, no fixed stations. Up to 8 players share the same virtual space simultaneously. 8 games across zombie survival, sci-fi missions, PvP esports, and family adventures.
+                </p>
+                <ul className="space-y-1.5 mb-6">
+                  {[
+                    "5.0 stars from 424+ Google reviews — highest-rated arcade in Houston",
+                    "8 multiplayer games — zombie survival, sci-fi, PvP, family, horror",
+                    "2–8 players per session — the more players, the more immersive",
+                    "Private arena booking for birthdays, corporate events, and parties",
+                    "Game Masters guide every session — zero experience required",
+                    "Webster TX, 20–30 min from most Houston neighborhoods",
+                  ].map((point, i) => (
+                    <li key={i} className="flex items-start gap-2 text-sm text-gray-300">
+                      <span className="text-cyan-400 mt-0.5 shrink-0">✓</span>
+                      {point}
+                    </li>
+                  ))}
+                </ul>
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <a
+                    href="https://booking.zerolatencyvr.com/en/book-now/webster"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-cyan-500 hover:bg-cyan-400 text-black font-bold px-6 py-3 rounded-lg transition-colors text-sm text-center"
+                  >
+                    Book Your Session Now
+                  </a>
+                  <Link href="/experiences" className="inline-block border border-white/30 hover:border-white/60 text-white px-6 py-3 rounded-lg transition-colors text-sm text-center">
+                    View All 8 Games
+                  </Link>
+                  <Link href="/arcades-in-houston#rank-1" className="inline-block text-cyan-400 hover:text-white px-6 py-3 transition-colors text-sm text-center">
+                    Full Profile →
+                  </Link>
                 </div>
-              ))}
+              </div>
+              <div className="md:w-48 shrink-0 space-y-3">
+                {/* Stats */}
+                <div className="grid grid-cols-2 gap-2 text-center">
+                  {[
+                    { num: "5.0★", label: "Google Rating" },
+                    { num: "424+", label: "Reviews" },
+                    { num: "8", label: "VR Games" },
+                    { num: "2–8", label: "Players" },
+                  ].map((stat, i) => (
+                    <div key={i} className="rounded-xl border border-cyan-500/20 bg-cyan-900/20 p-3">
+                      <div className="font-orbitron font-black text-xl text-cyan-400">{stat.num}</div>
+                      <div className="text-xs text-gray-400 mt-0.5">{stat.label}</div>
+                    </div>
+                  ))}
+                </div>
+                {/* Side image grid */}
+                <div className="grid grid-cols-2 gap-2">
+                  {[
+                    { src: "/outbreak-group-fun.webp", alt: "Group playing VR together" },
+                    { src: "/pvp-experience.webp", alt: "PvP VR competition" },
+                    { src: "/party.webp", alt: "Birthday party at Zero Latency" },
+                    { src: "/post-game-group.jpg", alt: "Post-game group photo" },
+                  ].map((img, i) => (
+                    <div key={i} className="relative aspect-square rounded-lg overflow-hidden">
+                      <Image src={img.src} alt={img.alt} fill sizes="100px" className="object-cover" />
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </section>
