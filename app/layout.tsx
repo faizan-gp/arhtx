@@ -5,7 +5,6 @@ import Script from "next/script";
 import { orbitron, inter } from './fonts';
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
-import MobileNav from "@/components/MobileNav";
 import AnalyticsProvider from "@/components/AnalyticsProvider";
 import { Suspense } from "react";
 
@@ -160,7 +159,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <AnalyticsProvider>
           <main id="main-content" role="main">{children}</main>
           <Footer />
-          <MobileNav />
         </AnalyticsProvider>
       </body>
     </html>
