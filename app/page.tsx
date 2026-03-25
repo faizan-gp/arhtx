@@ -184,156 +184,229 @@ export default function Page() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
 
-      {/* Hero */}
-      <section className="relative min-h-[60vh] flex items-center justify-center bg-gradient-to-b from-black to-gray-950 overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(6,182,212,0.15)_0%,transparent_70%)]" />
-        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-          <div className="inline-block mb-4 px-3 py-1 rounded-full border border-cyan-500/40 bg-cyan-500/10 text-cyan-400 text-sm font-mono">
-            Houston&apos;s #1 Rated Arcade — 5.0 ★ from 424+ Google Reviews
+      {/* Hero — full-height with background image */}
+      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+        {/* Background image */}
+        <Image
+          src="/hero_img.webp"
+          alt="Free-roam VR arena at Zero Latency Webster, Houston"
+          fill
+          sizes="100vw"
+          className="object-cover object-center"
+          priority
+        />
+        {/* Dark overlay layers */}
+        <div className="absolute inset-0 bg-[#000C1A]/70" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#000C1A]/30 via-transparent to-[#000C1A]" />
+        {/* Cyan radial glow */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(6,182,212,0.18)_0%,transparent_65%)]" />
+
+        <div className="relative z-10 text-center px-4 max-w-4xl mx-auto py-24">
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full border border-cyan-500/50 bg-cyan-500/10 backdrop-blur-sm">
+            <span className="text-yellow-400 text-sm">★★★★★</span>
+            <span className="text-cyan-300 text-sm font-mono">5.0 · 424+ Google Reviews · Houston&apos;s #1 Rated Arcade</span>
           </div>
-          <h1 className="font-orbitron text-4xl md:text-6xl font-black text-white mb-6 leading-tight">
-            Arcade Houston
+
+          <h1 className="font-orbitron text-5xl md:text-7xl font-black text-white mb-6 leading-[1.05] tracking-tight">
+            Arcade<br className="md:hidden" />{" "}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-cyan-200">Houston</span>
           </h1>
-          <p className="text-xl text-gray-300 mb-3 max-w-2xl mx-auto">
-            Zero Latency Webster, Houston is the city&apos;s #1 rated arcade — the only free-roam VR arena in Houston with 8 multiplayer games for 2–8 players. No cables. No fixed stations. Full-body VR.
+
+          <p className="text-xl md:text-2xl text-gray-200 mb-3 max-w-2xl mx-auto font-light leading-relaxed">
+            Zero Latency Webster is Houston&apos;s only free-roam VR arena — 8 multiplayer games, wireless backpacks, 2,000 sq ft. No cables.
           </p>
-          <p className="text-base text-gray-400 mb-8 max-w-2xl mx-auto">
-            This guide also covers every other Houston arcade: Cidercade, Game Preserve, Dave &amp; Buster&apos;s, and more.
+          <p className="text-base text-gray-400 mb-10 max-w-xl mx-auto">
+            Plus every other Houston arcade reviewed: Cidercade, Game Preserve, Dave &amp; Buster&apos;s, and more.
           </p>
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="https://booking.zerolatencyvr.com/en/book-now/webster"
-              className="inline-block bg-cyan-500 hover:bg-cyan-400 text-black font-bold px-8 py-4 rounded-lg transition-colors"
+              className="inline-flex items-center justify-center gap-2 bg-cyan-500 hover:bg-cyan-400 active:scale-95 text-black font-bold px-8 py-4 rounded-xl transition-all duration-200 shadow-lg shadow-cyan-500/25 text-base"
             >
               Book VR Session
+              <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
             </a>
             <Link
               href="/arcades-in-houston"
-              className="inline-block border border-white/30 hover:border-white/60 text-white px-8 py-4 rounded-lg transition-colors"
+              className="inline-flex items-center justify-center gap-2 border border-white/30 hover:border-white/60 hover:bg-white/5 text-white px-8 py-4 rounded-xl transition-all duration-200 text-base"
             >
-              Compare All Arcades
+              Compare All 7 Arcades
             </Link>
           </div>
+
+          {/* Trust strip */}
+          <div className="mt-12 flex flex-wrap justify-center gap-x-8 gap-y-3 text-sm text-gray-400">
+            {[
+              { icon: "🏆", text: "#1 Rated in Houston" },
+              { icon: "🎮", text: "8 VR Games" },
+              { icon: "👥", text: "2–8 Players" },
+              { icon: "📍", text: "Webster, TX" },
+            ].map((item, i) => (
+              <span key={i} className="flex items-center gap-1.5">
+                <span>{item.icon}</span>
+                <span>{item.text}</span>
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {/* Scroll indicator */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-gray-500 text-xs animate-bounce">
+          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
         </div>
       </section>
+
+      {/* Stats bar */}
+      <div className="bg-cyan-950/40 border-y border-cyan-900/40 py-5">
+        <div className="max-w-4xl mx-auto px-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+            {[
+              { num: "5.0★", label: "Google Rating" },
+              { num: "424+", label: "Verified Reviews" },
+              { num: "8", label: "VR Games" },
+              { num: "2–8", label: "Players / Session" },
+            ].map((stat, i) => (
+              <div key={i} className="flex flex-col">
+                <span className="font-orbitron font-black text-2xl text-cyan-400">{stat.num}</span>
+                <span className="text-xs text-gray-400 mt-0.5">{stat.label}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
 
       {/* Main pillar article */}
       <article className="max-w-4xl mx-auto px-4 py-16 text-gray-200">
 
         {/* H2: Find an Arcade Near You */}
-        <section className="mb-16">
-          <h2 className="font-orbitron text-3xl font-bold text-white mb-6">Find an Arcade Near You</h2>
-          <p className="text-gray-300 mb-8">
-            Houston has 7 arcade and entertainment venues, ranging from $12 all-day free play to $50 VR sessions. The right one depends on what you want: the most games, the most immersive experience, or the best bar scene.
-          </p>
-          <div className="overflow-x-auto rounded-lg border border-white/10">
+        <section className="mb-20">
+          <div className="mb-8">
+            <span className="text-xs font-mono text-cyan-500 uppercase tracking-widest">Houston Arcade Guide</span>
+            <h2 className="font-orbitron text-3xl md:text-4xl font-bold text-white mt-2 mb-3">Find an Arcade Near You</h2>
+            <p className="text-gray-400 max-w-2xl">
+              Houston has 7 arcade and entertainment venues, from $12 all-day free play to $50 VR sessions. The right one depends on what you want: most games, most immersive, or best bar scene.
+            </p>
+          </div>
+          <div className="overflow-x-auto rounded-xl border border-white/10 shadow-xl">
             <table className="w-full text-sm">
               <thead>
-                <tr className="bg-white/5 text-gray-400 uppercase text-xs tracking-wider">
-                  <th className="text-left px-4 py-3">Venue</th>
-                  <th className="text-left px-4 py-3">Location</th>
-                  <th className="text-left px-4 py-3">Price</th>
-                  <th className="text-left px-4 py-3">Best For</th>
+                <tr className="bg-white/5 text-gray-400 uppercase text-xs tracking-wider border-b border-white/10">
+                  <th className="text-left px-5 py-3.5">Venue</th>
+                  <th className="text-left px-5 py-3.5 hidden sm:table-cell">Location</th>
+                  <th className="text-left px-5 py-3.5">Price</th>
+                  <th className="text-left px-5 py-3.5 hidden md:table-cell">Best For</th>
                 </tr>
               </thead>
               <tbody>
                 {venues.map((v, i) => (
-                  <tr key={i} className={`border-t border-white/5 ${v.featured ? "bg-cyan-500/10 border-l-2 border-l-cyan-500" : ""}`}>
-                    <td className={`px-4 py-3 font-medium ${v.featured ? "text-cyan-400" : "text-white"}`}>{v.name}</td>
-                    <td className="px-4 py-3 text-gray-400">{v.address}</td>
-                    <td className={`px-4 py-3 font-bold ${v.featured ? "text-cyan-300" : "text-cyan-400"}`}>{v.price}</td>
-                    <td className={`px-4 py-3 ${v.featured ? "text-white font-medium" : "text-gray-300"}`}>{v.bestFor}</td>
+                  <tr
+                    key={i}
+                    className={`border-t border-white/5 transition-colors hover:bg-white/3 ${
+                      v.featured
+                        ? "bg-gradient-to-r from-cyan-500/10 to-transparent border-l-2 border-l-cyan-500"
+                        : ""
+                    }`}
+                  >
+                    <td className={`px-5 py-3.5 font-medium ${v.featured ? "text-cyan-400" : "text-white"}`}>
+                      {v.featured && <span className="mr-1 text-yellow-400 text-xs">★</span>}
+                      {v.name.replace("★ ", "")}
+                    </td>
+                    <td className="px-5 py-3.5 text-gray-400 hidden sm:table-cell">{v.address}</td>
+                    <td className={`px-5 py-3.5 font-bold tabular-nums ${v.featured ? "text-cyan-300" : "text-cyan-400/80"}`}>{v.price}</td>
+                    <td className={`px-5 py-3.5 hidden md:table-cell ${v.featured ? "text-white font-medium" : "text-gray-400"}`}>{v.bestFor}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
-          <p className="mt-4 text-sm text-gray-400">
-            <Link href="/arcades-in-houston" className="text-cyan-400 hover:underline">View detailed profiles for all 7 Houston arcades →</Link>
-          </p>
+          <div className="mt-4 flex items-center justify-between text-sm text-gray-500">
+            <span>★ Editor&apos;s pick</span>
+            <Link href="/arcades-in-houston" className="text-cyan-400 hover:text-cyan-300 transition-colors flex items-center gap-1">
+              Full profiles for all 7 arcades
+              <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" /></svg>
+            </Link>
+          </div>
         </section>
 
         {/* Featured: Zero Latency spotlight */}
-        <section className="mb-16 rounded-2xl border-2 border-cyan-500/40 bg-cyan-950/20 overflow-hidden">
+        <section className="mb-20 rounded-2xl overflow-hidden border border-cyan-500/30 shadow-2xl shadow-cyan-950/50">
           {/* Top hero image */}
-          <div className="relative w-full h-64 md:h-80">
+          <div className="relative w-full h-72 md:h-96">
             <Image
               src="/hero_img.webp"
               alt="Players in free-roam VR at Zero Latency Webster, Houston"
               fill
               sizes="(max-width: 896px) 100vw, 896px"
-              className="object-cover"
+              className="object-cover object-center"
               priority
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#000C1A] via-[#000C1A]/40 to-transparent" />
-            <div className="absolute bottom-4 left-6 right-6 flex items-end justify-between">
-              <div className="inline-block px-2 py-0.5 rounded border border-cyan-500/50 bg-cyan-500/20 text-cyan-400 text-xs font-mono uppercase tracking-wider">
+            <div className="absolute inset-0 bg-gradient-to-t from-[#000C1A] via-[#000C1A]/20 to-transparent" />
+            <div className="absolute top-4 left-5">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-cyan-500/50 bg-black/60 backdrop-blur-sm text-cyan-400 text-xs font-mono uppercase tracking-wider">
+                <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse" />
                 Houston&apos;s #1 Rated Arcade
+              </span>
+            </div>
+            <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between gap-4">
+              <div>
+                <h2 className="font-orbitron text-2xl md:text-3xl font-black text-white drop-shadow-lg">
+                  Zero Latency Webster, Houston
+                </h2>
+                <p className="text-gray-300 text-sm mt-1">The only free-roam VR arena in Houston</p>
               </div>
-              <div className="flex items-center gap-1.5 bg-black/60 rounded-lg px-3 py-1.5">
-                <span className="text-yellow-400 text-sm">★★★★★</span>
-                <span className="text-white text-xs font-bold">5.0</span>
-                <span className="text-gray-400 text-xs">424+ reviews</span>
+              <div className="flex items-center gap-1.5 bg-black/70 backdrop-blur-sm rounded-xl px-3 py-2 shrink-0">
+                <span className="text-yellow-400 text-sm leading-none">★★★★★</span>
+                <div>
+                  <div className="text-white text-sm font-bold leading-none">5.0</div>
+                  <div className="text-gray-400 text-xs leading-none mt-0.5">424+ reviews</div>
+                </div>
               </div>
             </div>
           </div>
 
-          <div className="p-8">
+          <div className="bg-gradient-to-b from-[#000C1A] to-[#001525] p-6 md:p-8">
             <div className="flex flex-col md:flex-row gap-8 items-start">
-              <div className="flex-1">
-                <h2 className="font-orbitron text-2xl font-bold text-white mb-3">
-                  Zero Latency Webster, Houston
-                </h2>
-                <p className="text-gray-300 mb-4">
-                  The only free-roam VR arcade in Houston. Players wear wireless backpacks and VR headsets and <strong className="text-white">physically walk through a 2,000 sq ft virtual world</strong> — no cables, no fixed stations. Up to 8 players share the same virtual space simultaneously. 8 games across zombie survival, sci-fi missions, PvP esports, and family adventures.
+              <div className="flex-1 min-w-0">
+                <p className="text-gray-300 mb-5 leading-relaxed">
+                  Players wear wireless backpacks and VR headsets and <strong className="text-white">physically walk through a 2,000 sq ft virtual world</strong> — no cables, no fixed stations. Up to 8 players share the same virtual space simultaneously across 8 different games.
                 </p>
-                <ul className="space-y-1.5 mb-6">
+                <ul className="space-y-2 mb-6">
                   {[
                     "5.0 stars from 424+ Google reviews — highest-rated arcade in Houston",
                     "8 multiplayer games — zombie survival, sci-fi, PvP, family, horror",
-                    "2–8 players per session — the more players, the more immersive",
+                    "2–8 players per session — more players = more immersive",
                     "Private arena booking for birthdays, corporate events, and parties",
                     "Game Masters guide every session — zero experience required",
-                    "Webster TX, 20–30 min from most Houston neighborhoods",
+                    "Webster TX — 20–30 min from most Houston neighborhoods",
                   ].map((point, i) => (
-                    <li key={i} className="flex items-start gap-2 text-sm text-gray-300">
-                      <span className="text-cyan-400 mt-0.5 shrink-0">✓</span>
+                    <li key={i} className="flex items-start gap-2.5 text-sm text-gray-300">
+                      <svg className="w-4 h-4 text-cyan-500 mt-0.5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
                       {point}
                     </li>
                   ))}
                 </ul>
-                <div className="flex flex-col sm:flex-row gap-3">
+                <div className="flex flex-wrap gap-3">
                   <a
                     href="https://booking.zerolatencyvr.com/en/book-now/webster"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block bg-cyan-500 hover:bg-cyan-400 text-black font-bold px-6 py-3 rounded-lg transition-colors text-sm text-center"
+                    className="inline-flex items-center gap-2 bg-cyan-500 hover:bg-cyan-400 active:scale-95 text-black font-bold px-6 py-3 rounded-xl transition-all duration-200 text-sm shadow-lg shadow-cyan-500/20"
                   >
                     Book Your Session Now
+                    <svg className="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
                   </a>
-                  <Link href="/experiences" className="inline-block border border-white/30 hover:border-white/60 text-white px-6 py-3 rounded-lg transition-colors text-sm text-center">
+                  <Link href="/experiences" className="inline-flex items-center gap-2 border border-white/20 hover:border-white/40 hover:bg-white/5 text-white px-6 py-3 rounded-xl transition-all duration-200 text-sm">
                     View All 8 Games
                   </Link>
-                  <Link href="/arcades-in-houston#rank-1" className="inline-block text-cyan-400 hover:text-white px-6 py-3 transition-colors text-sm text-center">
+                  <Link href="/arcades-in-houston#rank-1" className="inline-flex items-center gap-1 text-cyan-400 hover:text-cyan-300 px-3 py-3 transition-colors text-sm">
                     Full Profile →
                   </Link>
                 </div>
               </div>
-              <div className="md:w-48 shrink-0 space-y-3">
-                {/* Stats */}
-                <div className="grid grid-cols-2 gap-2 text-center">
-                  {[
-                    { num: "5.0★", label: "Google Rating" },
-                    { num: "424+", label: "Reviews" },
-                    { num: "8", label: "VR Games" },
-                    { num: "2–8", label: "Players" },
-                  ].map((stat, i) => (
-                    <div key={i} className="rounded-xl border border-cyan-500/20 bg-cyan-900/20 p-3">
-                      <div className="font-orbitron font-black text-xl text-cyan-400">{stat.num}</div>
-                      <div className="text-xs text-gray-400 mt-0.5">{stat.label}</div>
-                    </div>
-                  ))}
-                </div>
+
+              <div className="md:w-52 shrink-0 space-y-3">
                 {/* Side image grid */}
                 <div className="grid grid-cols-2 gap-2">
                   {[
@@ -342,8 +415,22 @@ export default function Page() {
                     { src: "/party.webp", alt: "Birthday party at Zero Latency" },
                     { src: "/post-game-group.jpg", alt: "Post-game group photo" },
                   ].map((img, i) => (
-                    <div key={i} className="relative aspect-square rounded-lg overflow-hidden">
-                      <Image src={img.src} alt={img.alt} fill sizes="100px" className="object-cover" />
+                    <div key={i} className="relative aspect-square rounded-lg overflow-hidden ring-1 ring-white/10">
+                      <Image src={img.src} alt={img.alt} fill sizes="110px" className="object-cover hover:scale-105 transition-transform duration-300" />
+                    </div>
+                  ))}
+                </div>
+                {/* Quick facts */}
+                <div className="rounded-xl border border-cyan-900/40 bg-cyan-950/30 p-4 space-y-2">
+                  {[
+                    { label: "Price", value: "$35–50 / person" },
+                    { label: "Duration", value: "30–50 min" },
+                    { label: "Min Age", value: "6+ (13+ most games)" },
+                    { label: "Location", value: "Webster, TX" },
+                  ].map((f, i) => (
+                    <div key={i} className="flex justify-between text-xs">
+                      <span className="text-gray-500">{f.label}</span>
+                      <span className="text-white font-medium">{f.value}</span>
                     </div>
                   ))}
                 </div>
@@ -353,12 +440,18 @@ export default function Page() {
         </section>
 
         {/* H2: Arcade Games, Attractions & Activities */}
-        <section className="mb-16">
-          <h2 className="font-orbitron text-3xl font-bold text-white mb-6">Arcade Games, Attractions, &amp; Activities</h2>
+        <section className="mb-20">
+          <div className="mb-8">
+            <span className="text-xs font-mono text-cyan-500 uppercase tracking-widest">What to Play</span>
+            <h2 className="font-orbitron text-3xl md:text-4xl font-bold text-white mt-2">Arcade Games, Attractions, &amp; Activities</h2>
+          </div>
 
           {/* H3: Types of Arcade Games */}
           <div className="mb-12">
-            <h3 className="font-orbitron text-2xl font-bold text-cyan-400 mb-6">Types of Arcade Games</h3>
+            <h3 className="font-orbitron text-xl font-bold text-cyan-400 mb-6 flex items-center gap-3">
+              <span className="w-8 h-px bg-cyan-700" />
+              Types of Arcade Games
+            </h3>
             <div className="space-y-8">
               <div>
                 <h4 className="text-xl font-bold text-white mb-3">Classic Arcade Games</h4>
@@ -390,7 +483,10 @@ export default function Page() {
 
           {/* H3: VR Experiences */}
           <div className="mb-12">
-            <h3 className="font-orbitron text-2xl font-bold text-cyan-400 mb-6">VR Experiences</h3>
+            <h3 className="font-orbitron text-xl font-bold text-cyan-400 mb-6 flex items-center gap-3">
+              <span className="w-8 h-px bg-cyan-700" />
+              VR Experiences
+            </h3>
             <p className="text-gray-300 mb-8">
               Houston has one dedicated free-roam VR arcade: Zero Latency Webster, Houston in Webster. It operates a 2,000 sq ft wireless VR arena with 8 multiplayer games for 2–8 players. This is the most immersive arcade experience available in the Houston metro area.
             </p>
@@ -462,7 +558,10 @@ export default function Page() {
 
           {/* H3: Indoor Playground + Other Activities */}
           <div className="mb-8">
-            <h3 className="font-orbitron text-2xl font-bold text-cyan-400 mb-6">Other Activities</h3>
+            <h3 className="font-orbitron text-xl font-bold text-cyan-400 mb-6 flex items-center gap-3">
+              <span className="w-8 h-px bg-cyan-700" />
+              Other Activities
+            </h3>
             <div className="grid md:grid-cols-2 gap-4">
               {[
                 { title: "Roller Skating", desc: "AR Entertainment Hub in Baytown offers roller skating alongside their 72 arcade games." },
@@ -488,11 +587,17 @@ export default function Page() {
         </section>
 
         {/* H2: Planning Your Visit */}
-        <section className="mb-16">
-          <h2 className="font-orbitron text-3xl font-bold text-white mb-6">Planning Your Visit</h2>
+        <section className="mb-20">
+          <div className="mb-8">
+            <span className="text-xs font-mono text-cyan-500 uppercase tracking-widest">Before You Go</span>
+            <h2 className="font-orbitron text-3xl md:text-4xl font-bold text-white mt-2">Planning Your Visit</h2>
+          </div>
 
           <div className="mb-10">
-            <h3 className="font-orbitron text-2xl font-bold text-cyan-400 mb-4">Admission &amp; Pricing</h3>
+            <h3 className="font-orbitron text-xl font-bold text-cyan-400 mb-5 flex items-center gap-3">
+              <span className="w-8 h-px bg-cyan-700" />
+              Admission &amp; Pricing
+            </h3>
             <div className="grid md:grid-cols-2 gap-6 mb-4">
               <div className="border border-white/10 rounded-lg p-6">
                 <h4 className="text-xl font-bold text-white mb-3">Day Pass</h4>
@@ -514,7 +619,10 @@ export default function Page() {
           </div>
 
           <div className="mb-10">
-            <h3 className="font-orbitron text-2xl font-bold text-cyan-400 mb-4">Memberships &amp; Parties</h3>
+            <h3 className="font-orbitron text-xl font-bold text-cyan-400 mb-5 flex items-center gap-3">
+              <span className="w-8 h-px bg-cyan-700" />
+              Memberships &amp; Parties
+            </h3>
             <div className="grid md:grid-cols-3 gap-4 mb-4">
               <div className="border border-white/10 rounded-lg p-5">
                 <h4 className="font-bold text-white mb-1">Individual Recurring Plan</h4>
@@ -539,7 +647,10 @@ export default function Page() {
           </div>
 
           <div className="mb-10">
-            <h3 className="font-orbitron text-2xl font-bold text-cyan-400 mb-4">Events &amp; Specials</h3>
+            <h3 className="font-orbitron text-xl font-bold text-cyan-400 mb-5 flex items-center gap-3">
+              <span className="w-8 h-px bg-cyan-700" />
+              Events &amp; Specials
+            </h3>
             <div className="grid md:grid-cols-2 gap-6 mb-6">
               <div>
                 <h4 className="text-lg font-bold text-white mb-3">Birthday Specials</h4>
@@ -578,7 +689,10 @@ export default function Page() {
           </div>
 
           <div className="mb-10">
-            <h3 className="font-orbitron text-2xl font-bold text-cyan-400 mb-4">Food &amp; Drink</h3>
+            <h3 className="font-orbitron text-xl font-bold text-cyan-400 mb-5 flex items-center gap-3">
+              <span className="w-8 h-px bg-cyan-700" />
+              Food &amp; Drink
+            </h3>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <h4 className="text-lg font-bold text-white mb-3">Award-Winning Food</h4>
@@ -602,7 +716,10 @@ export default function Page() {
           </div>
 
           <div className="mb-4">
-            <h3 className="font-orbitron text-2xl font-bold text-cyan-400 mb-4">Tips for a Great Experience</h3>
+            <h3 className="font-orbitron text-xl font-bold text-cyan-400 mb-5 flex items-center gap-3">
+              <span className="w-8 h-px bg-cyan-700" />
+              Tips for a Great Experience
+            </h3>
             <ul className="space-y-3">
               {[
                 { title: "Get Powered Up Before You Come In", tip: "Dave & Buster's: load your Power Card through the D&B Rewards App before arriving to skip kiosk lines." },
@@ -621,11 +738,17 @@ export default function Page() {
         </section>
 
         {/* H2: Additional Information */}
-        <section className="mb-16">
-          <h2 className="font-orbitron text-3xl font-bold text-white mb-6">Additional Information</h2>
+        <section className="mb-20">
+          <div className="mb-8">
+            <span className="text-xs font-mono text-cyan-500 uppercase tracking-widest">Need to Know</span>
+            <h2 className="font-orbitron text-3xl md:text-4xl font-bold text-white mt-2">Additional Information</h2>
+          </div>
 
           <div className="mb-10">
-            <h3 className="font-orbitron text-xl font-bold text-cyan-400 mb-4">Hours</h3>
+            <h3 className="font-orbitron text-xl font-bold text-cyan-400 mb-5 flex items-center gap-3">
+              <span className="w-8 h-px bg-cyan-700" />
+              Hours
+            </h3>
             <div className="border border-white/10 rounded-lg overflow-hidden">
               <table className="w-full text-sm">
                 <thead>
@@ -647,7 +770,10 @@ export default function Page() {
           </div>
 
           <div className="mb-10">
-            <h3 className="font-orbitron text-xl font-bold text-cyan-400 mb-4">Location</h3>
+            <h3 className="font-orbitron text-xl font-bold text-cyan-400 mb-5 flex items-center gap-3">
+              <span className="w-8 h-px bg-cyan-700" />
+              Location
+            </h3>
             <p className="text-gray-300 mb-3">
               Zero Latency Webster, Houston is at BayWay Village Shopping Center, 20801 Gulf Fwy Suite 5, Webster, TX 77598. Ample free parking on site.
             </p>
@@ -658,13 +784,21 @@ export default function Page() {
           </div>
 
           <div className="mb-10">
-            <h3 className="font-orbitron text-xl font-bold text-cyan-400 mb-6">Frequently Asked Questions</h3>
-            <div className="space-y-4">
+            <h3 className="font-orbitron text-xl font-bold text-cyan-400 mb-6 flex items-center gap-3">
+              <span className="w-8 h-px bg-cyan-700" />
+              Frequently Asked Questions
+            </h3>
+            <div className="space-y-3">
               {faqs.map((faq, i) => (
-                <div key={i} className="border border-white/10 rounded-lg p-5">
-                  <h4 className="font-bold text-white mb-2">{faq.q}</h4>
-                  <p className="text-gray-300 text-sm">{faq.a}</p>
-                </div>
+                <details key={i} className="group border border-white/10 rounded-xl overflow-hidden">
+                  <summary className="flex items-center justify-between gap-4 cursor-pointer px-5 py-4 bg-white/2 hover:bg-white/5 transition-colors list-none">
+                    <h4 className="font-medium text-white text-sm">{faq.q}</h4>
+                    <svg className="w-4 h-4 text-cyan-500 shrink-0 transition-transform group-open:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" /></svg>
+                  </summary>
+                  <div className="px-5 pb-4 pt-2 border-t border-white/5">
+                    <p className="text-gray-300 text-sm leading-relaxed">{faq.a}</p>
+                  </div>
+                </details>
               ))}
             </div>
           </div>
@@ -688,24 +822,37 @@ export default function Page() {
         </section>
 
         {/* Final CTA */}
-        <section className="text-center border border-cyan-500/30 rounded-2xl p-10 bg-cyan-500/5">
-          <h2 className="font-orbitron text-2xl font-bold text-white mb-4">Book the Best VR Arcade in Houston</h2>
-          <p className="text-gray-300 mb-6 max-w-lg mx-auto">
-            Zero Latency Webster, Houston at Arcade Houston is the city&apos;s only free-roam VR arena. 8 games, 2–8 players, wireless — no cables. Sessions fill fast on weekends.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://booking.zerolatencyvr.com/en/book-now/webster"
-              className="inline-block bg-cyan-500 hover:bg-cyan-400 text-black font-bold px-8 py-4 rounded-lg transition-colors"
-            >
-              Book Your Session
-            </a>
-            <Link
-              href="/arcades-in-houston"
-              className="inline-block border border-white/30 hover:border-white/60 text-white px-8 py-4 rounded-lg transition-colors"
-            >
-              Compare All Houston Arcades
-            </Link>
+        <section className="relative rounded-2xl overflow-hidden text-center">
+          <div className="absolute inset-0">
+            <Image src="/hero_img.webp" alt="" fill sizes="896px" className="object-cover object-center opacity-25" />
+            <div className="absolute inset-0 bg-gradient-to-br from-[#000C1A]/90 via-cyan-950/70 to-[#000C1A]/90" />
+          </div>
+          <div className="relative z-10 px-8 py-16">
+            <div className="inline-flex items-center gap-2 mb-5 px-4 py-1.5 rounded-full border border-cyan-500/40 bg-cyan-500/10">
+              <span className="text-yellow-400 text-sm">★★★★★</span>
+              <span className="text-cyan-300 text-sm">5.0 · 424+ reviews</span>
+            </div>
+            <h2 className="font-orbitron text-3xl md:text-4xl font-black text-white mb-4 leading-tight">
+              Book Houston&apos;s Best<br />VR Arcade
+            </h2>
+            <p className="text-gray-300 mb-8 max-w-md mx-auto">
+              Zero Latency Webster is Houston&apos;s only free-roam VR arena. 8 games, 2–8 players, wireless. Sessions fill fast on weekends — book online to lock your slot.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="https://booking.zerolatencyvr.com/en/book-now/webster"
+                className="inline-flex items-center justify-center gap-2 bg-cyan-500 hover:bg-cyan-400 active:scale-95 text-black font-bold px-8 py-4 rounded-xl transition-all duration-200 shadow-xl shadow-cyan-500/30"
+              >
+                Book Your Session Now
+                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
+              </a>
+              <Link
+                href="/arcades-in-houston"
+                className="inline-flex items-center justify-center gap-2 border border-white/30 hover:border-white/60 hover:bg-white/5 text-white px-8 py-4 rounded-xl transition-all duration-200"
+              >
+                Compare All Houston Arcades
+              </Link>
+            </div>
           </div>
         </section>
 
