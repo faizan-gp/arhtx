@@ -8,14 +8,14 @@ import VideoPlayer from "@/components/VideoPlayer";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Haunted VR at Zero Latency Houston | Full-Body Horror Free-Roam VR",
-  description: "Haunted at Zero Latency Houston is a free-roam VR horror game for 2–8 players aged 16+. Walk physically through a horror house with spatial 3D audio and room-scale tracking. 30-minute sessions in Houston, Texas.",
+  title: "Haunted VR at Zero Latency Webster, Houston | Full-Body Horror Free-Roam VR",
+  description: "Haunted at Zero Latency Webster, Houston is a free-roam VR horror game for 2–8 players aged 16+. Walk physically through a horror house with spatial 3D audio and room-scale tracking. 30-minute sessions in Houston, Texas.",
   alternates: { canonical: "https://arcadehouston.com/games/haunted" },
   openGraph: {
-    title: "Haunted VR at Zero Latency Houston",
-    description: "Haunted at Zero Latency Houston puts 2–8 players in a free-roam VR horror environment with spatial audio and room-scale tracking. 30 minutes. Ages 16+. Houston, Texas.",
+    title: "Haunted VR at Zero Latency Webster, Houston",
+    description: "Haunted at Zero Latency Webster, Houston puts 2–8 players in a free-roam VR horror environment with spatial audio and room-scale tracking. 30 minutes. Ages 16+. Houston, Texas.",
     url: "https://arcadehouston.com/games/haunted",
-    images: [{ url: "https://arcadehouston.com/haunted-house-bg.webp", width: 1200, height: 630, alt: "Haunted VR horror experience at Zero Latency Houston" }],
+    images: [{ url: "https://arcadehouston.com/haunted-house-bg.webp", width: 1200, height: 630, alt: "Haunted VR horror experience at Zero Latency Webster, Houston" }],
   },
 };
 
@@ -23,12 +23,12 @@ const gameSchema = {
   "@context": "https://schema.org",
   "@type": "VideoGame",
   "name": "Haunted",
-  "description": "Haunted is a free-roam VR horror experience at Zero Latency Houston for 2–8 players aged 16 and older. Players walk physically through horror environments using room-scale tracking and spatial 3D audio in a 30-minute session in Houston, Texas.",
+  "description": "Haunted is a free-roam VR horror experience at Zero Latency Webster, Houston for 2–8 players aged 16 and older. Players walk physically through horror environments using room-scale tracking and spatial 3D audio in a 30-minute session in Houston, Texas.",
   "genre": "Horror",
   "numberOfPlayers": { "@type": "QuantitativeValue", "minValue": 2, "maxValue": 8 },
   "gamePlatform": "Virtual Reality",
   "url": "https://arcadehouston.com/games/haunted",
-  "provider": { "@type": "Organization", "name": "Zero Latency Houston", "url": "https://arcadehouston.com" },
+  "provider": { "@type": "Organization", "name": "Zero Latency Webster, Houston", "url": "https://arcadehouston.com" },
 };
 
 const breadcrumb = {
@@ -81,7 +81,7 @@ export default function HauntedPage() {
 
       {/* Hero */}
       <section className="relative min-h-[80vh] flex items-end pb-16">
-        <Image src="/haunted-house-bg.webp" alt="Haunted VR — full-body horror experience at Zero Latency Houston" fill sizes="100vw" className="object-cover" priority />
+        <Image src="/haunted-house-bg.webp" alt="Haunted VR — full-body horror experience at Zero Latency Webster, Houston" fill sizes="100vw" className="object-cover" priority />
         <div className="absolute inset-0 bg-gradient-to-t from-[#000C1A] via-[#000C1A]/60 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#000C1A]/70 to-transparent" />
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 w-full">
@@ -90,7 +90,7 @@ export default function HauntedPage() {
             <span className="inline-block px-3 py-1 rounded-full text-xs font-bold font-orbitron bg-white/5 border border-white/10 text-[#7DD3FC] uppercase tracking-widest">Extreme Intensity · 16+</span>
           </div>
           <h1 className="font-orbitron text-5xl md:text-7xl font-black text-white leading-none">Haunted</h1>
-          <p className="mt-4 text-lg text-[#7DD3FC] max-w-xl">Zero Latency Houston's horror free-roam VR game. 2–8 players walk physically through a horror house using room-scale tracking and spatial 3D audio. Ages 16 and up only. 30-minute session.</p>
+          <p className="mt-4 text-lg text-[#7DD3FC] max-w-xl">Zero Latency Webster, Houston's horror free-roam VR game. 2–8 players walk physically through a horror house using room-scale tracking and spatial 3D audio. Ages 16 and up only. 30-minute session.</p>
           <div className="flex flex-wrap gap-3 mt-5 text-sm text-[#7DD3FC]/80">
             <span className="glass px-3 py-1 rounded-full border border-white/10">2–8 players</span>
             <span className="glass px-3 py-1 rounded-full border border-white/10">30 min</span>
@@ -136,9 +136,9 @@ export default function HauntedPage() {
               <p className="font-orbitron text-xs tracking-[0.3em] text-red-400 uppercase mb-3">About the Game</p>
               <h2 className="font-orbitron text-2xl md:text-3xl font-black text-white mb-6">Haunted VR: <span className="text-red-400">How It Works</span></h2>
               <div className="space-y-4 text-[#7DD3FC] leading-relaxed text-sm">
-                <p>Haunted at Zero Latency Houston is a free-roam VR horror game where 2–8 players physically walk through a haunted environment using room-scale tracking in a shared arena. The game runs for 30 minutes. Players aged 16 and older can book a session in Houston, Texas. Unlike a seated or stationary VR experience, Haunted requires players to move their bodies — walking into rooms, backing away from threats, and reacting physically to what the virtual reality environment presents.</p>
+                <p>Haunted at Zero Latency Webster, Houston is a free-roam VR horror game where 2–8 players physically walk through a haunted environment using room-scale tracking in a shared arena. The game runs for 30 minutes. Players aged 16 and older can book a session in Houston, Texas. Unlike a seated or stationary VR experience, Haunted requires players to move their bodies — walking into rooms, backing away from threats, and reacting physically to what the virtual reality environment presents.</p>
                 <p>The horror design relies on two technical elements: full room-scale free-roam movement and spatial 3D audio. Sounds — footsteps, breathing, creaking floors, distant voices — are positioned in three-dimensional space around each player's head. A sound from behind means something is behind you. A sound from above means look up. The audio system works alongside the visual design to create multi-directional scares that a flat-screen horror game cannot replicate.</p>
-                <p>Haunted is rated for ages 16 and older at Zero Latency Houston. The game contains sustained horror content, jump scares, and dark environments. Game Masters monitor every session from a control room and can assist players who need to exit the experience early. Groups that finish the 30-minute session together report it as one of the most memorable shared experiences available in Houston.</p>
+                <p>Haunted is rated for ages 16 and older at Zero Latency Webster, Houston. The game contains sustained horror content, jump scares, and dark environments. Game Masters monitor every session from a control room and can assist players who need to exit the experience early. Groups that finish the 30-minute session together report it as one of the most memorable shared experiences available in Houston.</p>
               </div>
             </div>
             <div className="space-y-3">
@@ -208,7 +208,7 @@ export default function HauntedPage() {
         <div className="relative z-10 text-center px-4 max-w-2xl mx-auto">
           <p className="font-orbitron text-xs tracking-[0.3em] text-red-400 uppercase mb-3">Book a Session</p>
           <h2 className="font-orbitron text-2xl md:text-3xl font-black text-white mb-3">
-            Book Haunted at <span className="text-red-400">Zero Latency Houston</span>
+            Book Haunted at <span className="text-red-400">Zero Latency Webster, Houston</span>
           </h2>
           <p className="text-[#7DD3FC] text-sm mb-8">2–8 players. 30-minute free-roam VR horror session. Ages 16 and older. Available now in Houston, Texas — book your Haunted session online.</p>
           <BookGameButton label="Book Haunted — If You Dare" source="game-cta" />
@@ -218,7 +218,7 @@ export default function HauntedPage() {
       {/* Other Games */}
       <section className="py-12 pb-24" style={{ background: 'radial-gradient(ellipse at center, rgba(8,145,178,0.1) 0%, #000C1A 70%)' }}>
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <h2 className="font-orbitron text-2xl font-black text-white mb-6">More Free-Roam VR Games at Zero Latency Houston</h2>
+          <h2 className="font-orbitron text-2xl font-black text-white mb-6">More Free-Roam VR Games at Zero Latency Webster, Houston</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {otherGames.slice(0, 8).map((game) => (
               <Link key={game.slug} href={`/games/${game.slug}`} className="group block glass rounded-xl overflow-hidden hover:border-cyan-500/50 transition-colors">

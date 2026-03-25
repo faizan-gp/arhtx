@@ -44,7 +44,7 @@ const blogSlugs = [
   { label: 'Bachelor & Bachelorette Party Houston', slug: 'bachelor-bachelorette-party-houston' },
   { label: 'VR Arcade Houston', slug: 'vr-arcade-houston' },
   { label: 'Best VR Games in Houston', slug: 'best-vr-games-houston-zero-latency' },
-  { label: 'Zero Latency Houston Complete Guide', slug: 'zero-latency-houston-complete-guide' },
+  { label: 'Zero Latency Webster, Houston Complete Guide', slug: 'zero-latency-houston-complete-guide' },
   { label: 'Things to Do in Houston This Weekend', slug: 'things-to-do-houston-texas-this-weekend' },
   { label: 'Things to Do in Clear Lake Houston', slug: 'things-to-do-clear-lake-houston' },
   { label: 'Things to Do in Webster TX', slug: 'things-to-do-webster-tx' },

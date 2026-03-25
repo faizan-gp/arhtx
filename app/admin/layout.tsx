@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Admin Dashboard | Zero Latency Houston",
+  title: "Admin Dashboard | Zero Latency Webster, Houston",
   robots: { index: false, follow: false },
 };
 

@@ -38,14 +38,14 @@ export default function GamesPage() {
                 </div>
                 <div className="p-4">
                   <h2 className="font-orbitron text-sm font-bold text-white group-hover:text-cyan-400 transition-colors">{game.title}</h2>
-                  <p className="mt-1 text-xs text-[#7DD3FC]/60">Free-roam VR · Zero Latency Houston</p>
+                  <p className="mt-1 text-xs text-[#7DD3FC]/60">Free-roam VR · Zero Latency Webster, Houston</p>
                 </div>
               </Link>
             ))}
           </div>
           <div className="text-center mt-14">
-            <p className="text-[#7DD3FC] mb-4">Not sure which game to pick? Zero Latency Houston's Game Masters will match your group to the right session before you step in.</p>
-            <BookGameButton label="Book at Zero Latency Houston" source="games-listing" />
+            <p className="text-[#7DD3FC] mb-4">Not sure which game to pick? Zero Latency Webster, Houston's Game Masters will match your group to the right session before you step in.</p>
+            <BookGameButton label="Book at Zero Latency Webster, Houston" source="games-listing" />
           </div>
         </div>
       </section>

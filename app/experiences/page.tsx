@@ -22,7 +22,7 @@ const schemaData = [
     "@type": ["WebPage", "CollectionPage"],
     "@id": "https://arcadehouston.com/experiences",
     "url": "https://arcadehouston.com/experiences",
-    "name": "VR Experiences Houston | Zero Latency Houston",
+    "name": "VR Experiences Houston | Zero Latency Webster, Houston",
     "description": "Six free-roam VR experience categories in Houston — zombie survival, sci-fi missions, PvP esports, family adventures, tropical action, and VR horror.",
     "inLanguage": "en",
     "isPartOf": { "@id": "https://arcadehouston.com/#website" },
@@ -49,7 +49,7 @@ const EXPERIENCES = [
     intensity: 5,
     img: '/Outbreak-Digital-Square.webp',
     tagline: '2 to 8 players. Ammo is shared. Survival is not guaranteed.',
-    desc: 'Zero Latency Houston\'s zombie survival games — Outbreak and Undead Arena — put 2 to 8 players inside a free-roam arena where undead attack from every direction. Players share a limited ammo pool and must coordinate movement and fire to survive each wave.',
+    desc: 'Zero Latency Webster, Houston\'s zombie survival games — Outbreak and Undead Arena — put 2 to 8 players inside a free-roam arena where undead attack from every direction. Players share a limited ammo pool and must coordinate movement and fire to survive each wave.',
     specs: [
       { label: 'Players', value: '2 – 8' },
       { label: 'Duration', value: '50 min' },
@@ -72,7 +72,7 @@ const EXPERIENCES = [
     intensity: 4,
     img: '/Sci-fi.webp',
     tagline: '2 to 8 players. Alien stations. Rogue AI.',
-    desc: 'Zero Latency Houston\'s sci-fi games — Space Marine VR and Singularity — place 2 to 8 players inside alien-controlled space stations and rogue AI environments. Players use weapons built for zero-gravity combat and must move strategically through multi-room virtual environments.',
+    desc: 'Zero Latency Webster, Houston\'s sci-fi games — Space Marine VR and Singularity — place 2 to 8 players inside alien-controlled space stations and rogue AI environments. Players use weapons built for zero-gravity combat and must move strategically through multi-room virtual environments.',
     specs: [
       { label: 'Players', value: '2 – 8' },
       { label: 'Duration', value: '50 min' },
@@ -95,7 +95,7 @@ const EXPERIENCES = [
     intensity: 5,
     img: '/pvp.webp',
     tagline: '4 to 8 players. 2 teams. One winner.',
-    desc: 'Sol Raiders splits 4 to 8 players into 2 competing squads inside a shared arena-scale VR space. Teams fight across objective-based maps with no scripted outcomes — Zero Latency Houston\'s most competitive multiplayer VR format.',
+    desc: 'Sol Raiders splits 4 to 8 players into 2 competing squads inside a shared arena-scale VR space. Teams fight across objective-based maps with no scripted outcomes — Zero Latency Webster, Houston\'s most competitive multiplayer VR format.',
     specs: [
       { label: 'Players', value: '4 – 8' },
       { label: 'Duration', value: '50 min' },
@@ -117,7 +117,7 @@ const EXPERIENCES = [
     intensity: 1,
     img: '/Family-Adventure.webp',
     tagline: 'Ages 6 and up. No combat. No pressure.',
-    desc: 'Engineerium is Zero Latency Houston\'s non-combat family VR game — players aged 6 and up walk through large-scale geometric structures and physics-driven environments together. There are no enemies, no shooting, and no time limits to stress over.',
+    desc: 'Engineerium is Zero Latency Webster, Houston\'s non-combat family VR game — players aged 6 and up walk through large-scale geometric structures and physics-driven environments together. There are no enemies, no shooting, and no time limits to stress over.',
     specs: [
       { label: 'Players', value: '2 – 8' },
       { label: 'Duration', value: '50 min' },
@@ -139,7 +139,7 @@ const EXPERIENCES = [
     intensity: 3,
     img: '/far-cry-team.webp',
     tagline: '2 to 6 players. Pirate island. Fight out or stay trapped.',
-    desc: 'Far Cry VR at Zero Latency Houston puts 2 to 6 players on a pirate-controlled tropical island with no extraction point. Players navigate jungle terrain, engage enemy combatants, and must complete objectives as a coordinated team to escape.',
+    desc: 'Far Cry VR at Zero Latency Webster, Houston puts 2 to 6 players on a pirate-controlled tropical island with no extraction point. Players navigate jungle terrain, engage enemy combatants, and must complete objectives as a coordinated team to escape.',
     specs: [
       { label: 'Players', value: '2 – 6' },
       { label: 'Duration', value: '50 min' },
@@ -161,7 +161,7 @@ const EXPERIENCES = [
     intensity: 5,
     img: '/haunted-house-bg.webp',
     tagline: 'Ages 15+. Total darkness. Designed to scare.',
-    desc: 'Haunted is Zero Latency Houston\'s horror game — players aged 15 and up move through pitch-black virtual environments where threats are audible before they are visible. The game uses spatial audio and jump mechanics built specifically for free-roam VR.',
+    desc: 'Haunted is Zero Latency Webster, Houston\'s horror game — players aged 15 and up move through pitch-black virtual environments where threats are audible before they are visible. The game uses spatial audio and jump mechanics built specifically for free-roam VR.',
     specs: [
       { label: 'Players', value: '2 – 8' },
       { label: 'Duration', value: '50 min' },
@@ -201,7 +201,7 @@ export default function ExperiencesPage() {
       <section className="relative min-h-[55vh] flex flex-col items-center justify-center text-center overflow-hidden py-20">
         {/* bg image */}
         <div className="absolute inset-0">
-          <Image src="/Sci-fi.webp" alt="VR experiences at Zero Latency Houston" fill sizes="100vw" className="object-cover opacity-15" priority />
+          <Image src="/Sci-fi.webp" alt="VR experiences at Zero Latency Webster, Houston" fill sizes="100vw" className="object-cover opacity-15" priority />
           <div className="absolute inset-0 bg-gradient-to-b from-[#000C1A] via-[#000C1A]/60 to-[#000C1A]" />
           {/* scanline grid */}
           <div
@@ -223,7 +223,7 @@ export default function ExperiencesPage() {
           </div>
 
           <h1 className="font-orbitron text-4xl sm:text-5xl md:text-6xl font-black text-white leading-tight">
-            Zero Latency Houston{' '}
+            Zero Latency Webster, Houston{' '}
             <span
               className="text-transparent"
               style={{ WebkitTextStroke: '1px #22D3EE', filter: 'drop-shadow(0 0 20px rgba(34,211,238,0.6))' }}
@@ -232,7 +232,7 @@ export default function ExperiencesPage() {
             </span>
           </h1>
           <p className="mt-5 text-[#7DD3FC] text-lg max-w-2xl mx-auto leading-relaxed">
-            Zero Latency Houston offers 8 multiplayer VR games across 6 experience categories — zombie survival, sci-fi combat, PvP esports, family adventures, tropical action, and VR horror. Every game runs in the same wireless, free-roam arena with 2 to 8 players.
+            Zero Latency Webster, Houston offers 8 multiplayer VR games across 6 experience categories — zombie survival, sci-fi combat, PvP esports, family adventures, tropical action, and VR horror. Every game runs in the same wireless, free-roam arena with 2 to 8 players.
           </p>
 
           {/* quick-jump pills */}
@@ -271,10 +271,10 @@ export default function ExperiencesPage() {
       <section className="py-12 md:py-20">
         <div className="mx-auto max-w-5xl px-4 sm:px-6">
           <div className="text-center mb-8">
-            <p className="font-orbitron text-xs tracking-[0.3em] text-cyan-400 uppercase mb-2">Zero Latency Houston — Arena Overview</p>
+            <p className="font-orbitron text-xs tracking-[0.3em] text-cyan-400 uppercase mb-2">Zero Latency Webster, Houston — Arena Overview</p>
             <h2 className="font-orbitron text-2xl md:text-3xl font-black text-white">See What Happens <span className="text-cyan-400">Inside the Arena</span></h2>
           </div>
-          <VideoPlayer videoSrc="/experience.mp4" thumbnailSrc="/Sci-fi.webp" title="Zero Latency Houston — Experiences Overview" />
+          <VideoPlayer videoSrc="/experience.mp4" thumbnailSrc="/Sci-fi.webp" title="Zero Latency Webster, Houston — Experiences Overview" />
         </div>
       </section>
 
@@ -434,7 +434,7 @@ export default function ExperiencesPage() {
                           boxShadow: `0 0 20px ${exp.color}40`,
                         }}
                       >
-                        <Zap size={14} /> Book at Zero Latency Houston
+                        <Zap size={14} /> Book at Zero Latency Webster, Houston
                       </a>
                     </div>
                   </div>
@@ -449,7 +449,7 @@ export default function ExperiencesPage() {
       <section className="py-20 md:py-28 border-t border-cyan-900/20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <div className="text-center mb-12">
-            <p className="font-orbitron text-xs tracking-[0.3em] text-cyan-400 uppercase mb-3">How Zero Latency Houston Works</p>
+            <p className="font-orbitron text-xs tracking-[0.3em] text-cyan-400 uppercase mb-3">How Zero Latency Webster, Houston Works</p>
             <h2 className="font-orbitron text-3xl md:text-4xl font-black text-white">
               The Technology Behind{' '}
               <span className="text-transparent" style={{ WebkitTextStroke: '1px #22D3EE' }}>Zero Latency VR</span>
@@ -460,7 +460,7 @@ export default function ExperiencesPage() {
               {
                 Icon: Radio,
                 title: 'Arena-Scale Free-Roam',
-                body: 'Zero Latency Houston tracks every player across a 2,000 sq ft physical space with no cables or fixed stations. Players walk, run, crouch, and dodge at full speed inside the virtual world.',
+                body: 'Zero Latency Webster, Houston tracks every player across a 2,000 sq ft physical space with no cables or fixed stations. Players walk, run, crouch, and dodge at full speed inside the virtual world.',
                 accent: '#22D3EE',
               },
               {
@@ -472,7 +472,7 @@ export default function ExperiencesPage() {
               {
                 Icon: Clock,
                 title: '50-Minute Sessions',
-                body: 'Each Zero Latency Houston session runs 50 minutes — enough time to complete full game objectives. Game Masters brief players before the session and monitor play throughout.',
+                body: 'Each Zero Latency Webster, Houston session runs 50 minutes — enough time to complete full game objectives. Game Masters brief players before the session and monitor play throughout.',
                 accent: '#C084FC',
               },
             ].map(({ Icon, title, body, accent }) => (
@@ -518,13 +518,13 @@ export default function ExperiencesPage() {
             <span className="font-orbitron text-xs text-fuchsia-300 tracking-widest uppercase">Sessions Open Now — Houston Texas</span>
           </div>
           <h2 className="font-orbitron text-4xl md:text-5xl font-black text-white leading-tight">
-            Book Zero Latency Houston<br />
+            Book Zero Latency Webster, Houston<br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-fuchsia-400">
               For Your Group.
             </span>
           </h2>
           <p className="mt-5 text-[#7DD3FC] text-lg leading-relaxed">
-            Zero Latency Houston runs sessions 7 days a week. Pick from 8 games, bring 2 to 8 players, and book the time slot your group needs online in under 2 minutes.
+            Zero Latency Webster, Houston runs sessions 7 days a week. Pick from 8 games, bring 2 to 8 players, and book the time slot your group needs online in under 2 minutes.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <a

@@ -8,14 +8,14 @@ import VideoPlayer from "@/components/VideoPlayer";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Singularity at Zero Latency Houston | Sci-Fi Co-op Free-Roam VR",
-  description: "Singularity at Zero Latency Houston sends 2–8 players into a crippled orbital space station to fight rogue AI in a 30–50 minute free-roam VR co-op mission. Book now in Houston, Texas.",
+  title: "Singularity at Zero Latency Webster, Houston | Sci-Fi Co-op Free-Roam VR",
+  description: "Singularity at Zero Latency Webster, Houston sends 2–8 players into a crippled orbital space station to fight rogue AI in a 30–50 minute free-roam VR co-op mission. Book now in Houston, Texas.",
   alternates: { canonical: "https://arcadehouston.com/games/singularity" },
   openGraph: {
-    title: "Singularity at Zero Latency Houston",
-    description: "Play Singularity at Zero Latency Houston — a sci-fi free-roam VR co-op game for 2–8 players set aboard a crippled orbital space station. 30–50 minute sessions. Ages 13+. Houston, Texas.",
+    title: "Singularity at Zero Latency Webster, Houston",
+    description: "Play Singularity at Zero Latency Webster, Houston — a sci-fi free-roam VR co-op game for 2–8 players set aboard a crippled orbital space station. 30–50 minute sessions. Ages 13+. Houston, Texas.",
     url: "https://arcadehouston.com/games/singularity",
-    images: [{ url: "https://arcadehouston.com/game-singularity.webp", width: 1200, height: 630, alt: "Singularity sci-fi VR at Zero Latency Houston" }],
+    images: [{ url: "https://arcadehouston.com/game-singularity.webp", width: 1200, height: 630, alt: "Singularity sci-fi VR at Zero Latency Webster, Houston" }],
   },
 };
 
@@ -23,12 +23,12 @@ const gameSchema = {
   "@context": "https://schema.org",
   "@type": "VideoGame",
   "name": "Singularity",
-  "description": "Singularity at Zero Latency Houston is a sci-fi free-roam VR co-op game for 2–8 players aged 13 and older. Players battle rogue AI and alien threats aboard a crippled orbital space station across zero-gravity corridors and pressurized zones in a 30–50 minute session in Houston, Texas.",
+  "description": "Singularity at Zero Latency Webster, Houston is a sci-fi free-roam VR co-op game for 2–8 players aged 13 and older. Players battle rogue AI and alien threats aboard a crippled orbital space station across zero-gravity corridors and pressurized zones in a 30–50 minute session in Houston, Texas.",
   "genre": "Sci-Fi Action",
   "numberOfPlayers": { "@type": "QuantitativeValue", "minValue": 2, "maxValue": 8 },
   "gamePlatform": "Virtual Reality",
   "url": "https://arcadehouston.com/games/singularity",
-  "provider": { "@type": "Organization", "name": "Zero Latency Houston", "url": "https://arcadehouston.com" },
+  "provider": { "@type": "Organization", "name": "Zero Latency Webster, Houston", "url": "https://arcadehouston.com" },
 };
 
 const breadcrumb = {
@@ -56,7 +56,7 @@ const GALLERY = [
 ];
 
 const FEATURES = [
-  { img: "/singularity-station-exterior.webp", title: "Orbital Space Station Setting", desc: "The entire mission takes place aboard a crippled orbital station — interior corridors, pressurized compartments, and hull-adjacent zones. The station environment is the most architecturally distinct setting in the Zero Latency Houston game lineup." },
+  { img: "/singularity-station-exterior.webp", title: "Orbital Space Station Setting", desc: "The entire mission takes place aboard a crippled orbital station — interior corridors, pressurized compartments, and hull-adjacent zones. The station environment is the most architecturally distinct setting in the Zero Latency Webster, Houston game lineup." },
   { img: "/singularity-zerog.webp", title: "Zero-Gravity Combat Zones", desc: "Sections of the station operate in zero gravity. Players physically navigate these zones using free-roam VR movement while managing 3D spatial positioning — enemies approach from above and below, not just forward and sides." },
   { img: "/singularity-beam.webp", title: "Futuristic Energy Weapons", desc: "Players use energy-based weapons — pulse rifles, beam cannons, and scatter-shot emitters — designed for the rogue AI and alien enemies aboard the station. Weapon selection and ammo management affect squad survival across the full 30–50 minute session." },
 ];
@@ -81,7 +81,7 @@ export default function SingularityPage() {
 
       {/* Hero */}
       <section className="relative min-h-[80vh] flex items-end pb-16">
-        <Image src="/singularity-hero-bg.webp" alt="Singularity sci-fi VR at Zero Latency Houston" fill sizes="100vw" className="object-cover" priority />
+        <Image src="/singularity-hero-bg.webp" alt="Singularity sci-fi VR at Zero Latency Webster, Houston" fill sizes="100vw" className="object-cover" priority />
         <div className="absolute inset-0 bg-gradient-to-t from-[#000C1A] via-[#000C1A]/50 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#000C1A]/70 to-transparent" />
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 w-full">
@@ -90,7 +90,7 @@ export default function SingularityPage() {
             <span className="inline-block px-3 py-1 rounded-full text-xs font-bold font-orbitron bg-white/5 border border-white/10 text-[#7DD3FC] uppercase tracking-widest">High Intensity</span>
           </div>
           <h1 className="font-orbitron text-5xl md:text-7xl font-black text-white leading-none">Singularity</h1>
-          <p className="mt-4 text-lg text-[#7DD3FC] max-w-xl">Zero Latency Houston's sci-fi free-roam VR co-op game. 2–8 players aged 13 and up fight rogue AI and alien threats aboard a crippled orbital space station in a 30–50 minute session in Houston, Texas.</p>
+          <p className="mt-4 text-lg text-[#7DD3FC] max-w-xl">Zero Latency Webster, Houston's sci-fi free-roam VR co-op game. 2–8 players aged 13 and up fight rogue AI and alien threats aboard a crippled orbital space station in a 30–50 minute session in Houston, Texas.</p>
           <div className="flex flex-wrap gap-3 mt-5 text-sm text-[#7DD3FC]/80">
             <span className="glass px-3 py-1 rounded-full border border-white/10">2–8 players</span>
             <span className="glass px-3 py-1 rounded-full border border-white/10">30–50 min</span>
@@ -135,9 +135,9 @@ export default function SingularityPage() {
               <p className="font-orbitron text-xs tracking-[0.3em] text-sky-400 uppercase mb-3">Mission Briefing</p>
               <h2 className="font-orbitron text-2xl md:text-3xl font-black text-white mb-6">About <span className="text-sky-400">Singularity</span></h2>
               <div className="space-y-4 text-[#7DD3FC] leading-relaxed text-sm">
-                <p>Singularity at Zero Latency Houston is a sci-fi co-op multiplayer VR game for 2–8 players aged 13 and older. The mission takes place aboard a crippled orbital space station where rogue AI systems and alien organisms have taken control. Players navigate the station's interior physically using free-roam VR movement in the Zero Latency Houston arena in Houston, Texas, across a 30–50 minute session that includes zero-gravity zones, pressurized corridors, and exterior hull sections.</p>
-                <p>The game's enemy types — rogue AI drones, automated turrets, and alien biological threats — require different tactics. AI drones respond to sound and movement and target players who break formation. Alien organisms move in patterns that reward squads who communicate positions clearly. Larger groups of 5–8 players handle wider engagement zones and face more complex simultaneous encounters than 2–4 player squads. Game Masters at Zero Latency Houston monitor session progress from a control room and adjust encounter difficulty in real time.</p>
-                <p>Singularity is the game Zero Latency Houston recommends for sci-fi fans, groups that want high-intensity co-op VR without the horror atmosphere of Haunted, and groups looking for a longer experience than the 30-minute games in the lineup. The 30–50 minute runtime allows for a narrative arc with a structured beginning, escalating middle section, and final objective.</p>
+                <p>Singularity at Zero Latency Webster, Houston is a sci-fi co-op multiplayer VR game for 2–8 players aged 13 and older. The mission takes place aboard a crippled orbital space station where rogue AI systems and alien organisms have taken control. Players navigate the station's interior physically using free-roam VR movement in the Zero Latency Webster, Houston arena in Houston, Texas, across a 30–50 minute session that includes zero-gravity zones, pressurized corridors, and exterior hull sections.</p>
+                <p>The game's enemy types — rogue AI drones, automated turrets, and alien biological threats — require different tactics. AI drones respond to sound and movement and target players who break formation. Alien organisms move in patterns that reward squads who communicate positions clearly. Larger groups of 5–8 players handle wider engagement zones and face more complex simultaneous encounters than 2–4 player squads. Game Masters at Zero Latency Webster, Houston monitor session progress from a control room and adjust encounter difficulty in real time.</p>
+                <p>Singularity is the game Zero Latency Webster, Houston recommends for sci-fi fans, groups that want high-intensity co-op VR without the horror atmosphere of Haunted, and groups looking for a longer experience than the 30-minute games in the lineup. The 30–50 minute runtime allows for a narrative arc with a structured beginning, escalating middle section, and final objective.</p>
               </div>
             </div>
             <div className="space-y-3">
@@ -205,7 +205,7 @@ export default function SingularityPage() {
         <div className="absolute inset-0 opacity-[0.04] rounded-2xl" style={{ backgroundImage: 'linear-gradient(rgba(56,189,248,1) 1px, transparent 1px), linear-gradient(90deg, rgba(56,189,248,1) 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
         <div className="relative z-10 text-center px-4 max-w-2xl mx-auto">
           <p className="font-orbitron text-xs tracking-[0.3em] text-sky-400 uppercase mb-3">Book a Session</p>
-          <h2 className="font-orbitron text-2xl md:text-3xl font-black text-white mb-3">Book Singularity at <span className="text-sky-400">Zero Latency Houston</span></h2>
+          <h2 className="font-orbitron text-2xl md:text-3xl font-black text-white mb-3">Book Singularity at <span className="text-sky-400">Zero Latency Webster, Houston</span></h2>
           <p className="text-[#7DD3FC] text-sm mb-8">2–8 players. 30–50 minute sci-fi free-roam VR co-op session in Houston, Texas. Ages 13 and up. Book your Singularity mission online now.</p>
           <BookGameButton label="Book Singularity" source="game-cta" />
         </div>
@@ -214,7 +214,7 @@ export default function SingularityPage() {
       {/* Other Games */}
       <section className="py-12 pb-24" style={{ background: 'radial-gradient(ellipse at center, rgba(8,145,178,0.1) 0%, #000C1A 70%)' }}>
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <h2 className="font-orbitron text-2xl font-black text-white mb-6">More Free-Roam VR Games at Zero Latency Houston</h2>
+          <h2 className="font-orbitron text-2xl font-black text-white mb-6">More Free-Roam VR Games at Zero Latency Webster, Houston</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {otherGames.slice(0, 8).map((game) => (
               <Link key={game.slug} href={`/games/${game.slug}`} className="group block glass rounded-xl overflow-hidden hover:border-cyan-500/50 transition-colors">

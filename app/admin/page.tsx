@@ -447,7 +447,7 @@ function Login({ onLogin }: { onLogin: () => void }) {
           <h1 className="text-xl font-black text-white tracking-wide font-[family-name:var(--font-orbitron)]">
             ZL Analytics
           </h1>
-          <p className="text-zinc-600 text-xs mt-1">Zero Latency Houston</p>
+          <p className="text-zinc-600 text-xs mt-1">Zero Latency Webster, Houston</p>
         </div>
         <form onSubmit={submit} className="space-y-3">
           <input

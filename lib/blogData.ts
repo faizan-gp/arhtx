@@ -114,7 +114,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "vr-arcade-houston",
     title: "VR Arcade Houston | Free-Roam Virtual Reality at Arcade Houston",
-    description: "Complete guide to VR arcade experiences in Houston. Zero Latency Houston's 8 free-roam multiplayer games explained: pricing, what to expect, how it compares to other options.",
+    description: "Complete guide to VR arcade experiences in Houston. Zero Latency Webster, Houston's 8 free-roam multiplayer games explained: pricing, what to expect, how it compares to other options.",
     publishDate: "2026-02-28",
     readTime: "10 min",
     featuredImage: "/blog/vr-arcade-houston.jpg",
@@ -133,8 +133,8 @@ export const blogPosts: BlogPost[] = [
   },
   {
     slug: "zero-latency-houston-complete-guide",
-    title: "Zero Latency Houston Guide | VR Arcade at ArcadeHouston.com",
-    description: "Complete Zero Latency Houston guide: location, pricing, all 8 VR games, what to expect, booking tips, and 5.0-star review summary. Everything you need before your visit.",
+    title: "Zero Latency Webster, Houston Guide | VR Arcade at ArcadeHouston.com",
+    description: "Complete Zero Latency Webster, Houston guide: location, pricing, all 8 VR games, what to expect, booking tips, and 5.0-star review summary. Everything you need before your visit.",
     publishDate: "2026-02-24",
     readTime: "8 min",
     featuredImage: "/blog/zero-latency-houston-complete-guide.jpg",

@@ -8,14 +8,14 @@ import VideoPlayer from "@/components/VideoPlayer";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Far Cry VR at Zero Latency Houston | Escape the Island Free-Roam VR",
-  description: "Far Cry VR at Zero Latency Houston sends 2–6 players into the Far Cry 3 universe for a 50-minute free-roam VR mission across jungle, caves, and enemy territory. Book now in Houston, Texas.",
+  title: "Far Cry VR at Zero Latency Webster, Houston | Escape the Island Free-Roam VR",
+  description: "Far Cry VR at Zero Latency Webster, Houston sends 2–6 players into the Far Cry 3 universe for a 50-minute free-roam VR mission across jungle, caves, and enemy territory. Book now in Houston, Texas.",
   alternates: { canonical: "https://arcadehouston.com/games/far-cry-vr" },
   openGraph: {
-    title: "Far Cry VR at Zero Latency Houston",
-    description: "Play Far Cry VR at Zero Latency Houston — a 50-minute free-roam VR co-op adventure for 2–6 players based on Far Cry 3. Escape a pirate island. Ages 13+. Houston, Texas.",
+    title: "Far Cry VR at Zero Latency Webster, Houston",
+    description: "Play Far Cry VR at Zero Latency Webster, Houston — a 50-minute free-roam VR co-op adventure for 2–6 players based on Far Cry 3. Escape a pirate island. Ages 13+. Houston, Texas.",
     url: "https://arcadehouston.com/games/far-cry-vr",
-    images: [{ url: "https://arcadehouston.com/game-far-cry-vr.webp", width: 1200, height: 630, alt: "Far Cry VR at Zero Latency Houston" }],
+    images: [{ url: "https://arcadehouston.com/game-far-cry-vr.webp", width: 1200, height: 630, alt: "Far Cry VR at Zero Latency Webster, Houston" }],
   },
 };
 
@@ -23,12 +23,12 @@ const gameSchema = {
   "@context": "https://schema.org",
   "@type": "VideoGame",
   "name": "Far Cry VR",
-  "description": "Far Cry VR at Zero Latency Houston is a free-roam multiplayer VR adventure based on Far Cry 3 by Ubisoft. Groups of 2–6 players aged 13 and older complete a 50-minute mission across jungle environments, underground caves, and enemy-controlled territory in Houston, Texas.",
+  "description": "Far Cry VR at Zero Latency Webster, Houston is a free-roam multiplayer VR adventure based on Far Cry 3 by Ubisoft. Groups of 2–6 players aged 13 and older complete a 50-minute mission across jungle environments, underground caves, and enemy-controlled territory in Houston, Texas.",
   "genre": "Tropical Action",
   "numberOfPlayers": { "@type": "QuantitativeValue", "minValue": 2, "maxValue": 6 },
   "gamePlatform": "Virtual Reality",
   "url": "https://arcadehouston.com/games/far-cry-vr",
-  "provider": { "@type": "Organization", "name": "Zero Latency Houston", "url": "https://arcadehouston.com" },
+  "provider": { "@type": "Organization", "name": "Zero Latency Webster, Houston", "url": "https://arcadehouston.com" },
 };
 
 const breadcrumb = {
@@ -50,7 +50,7 @@ const STATS = [
 
 const FEATURES = [
   { img: "/far-cry-jungle.webp", title: "Multiple Environments", desc: "Far Cry VR takes your group through 3 distinct environment types — dense jungle with enemy patrols, underground cave systems, and open coastal areas. Each section has different combat tactics and visibility conditions." },
-  { img: "/far-cry-coop.webp", title: "50-Minute Co-op Mission", desc: "At 50 minutes, Far Cry VR is Zero Latency Houston's longest single-session game. The extra runtime lets groups of 2–6 players work through a complete mission arc with story beats, escalating combat, and a final confrontation." },
+  { img: "/far-cry-coop.webp", title: "50-Minute Co-op Mission", desc: "At 50 minutes, Far Cry VR is Zero Latency Webster, Houston's longest single-session game. The extra runtime lets groups of 2–6 players work through a complete mission arc with story beats, escalating combat, and a final confrontation." },
   { img: "/far-cry-vaas.webp", title: "Vaas Montenegro as Antagonist", desc: "Vaas Montenegro from Far Cry 3 appears throughout the mission, tracking your group's progress. The encounter with Vaas in the final section of the game is the direct objective your squad works toward across the full 50 minutes." },
 ];
 
@@ -83,7 +83,7 @@ export default function FarCryVRPage() {
 
       {/* Hero */}
       <section className="relative min-h-[80vh] flex items-end pb-20">
-        <Image src="/far-cry-hero-bg.webp" alt="Far Cry VR tropical action at Zero Latency Houston" fill sizes="100vw" className="object-cover" priority />
+        <Image src="/far-cry-hero-bg.webp" alt="Far Cry VR tropical action at Zero Latency Webster, Houston" fill sizes="100vw" className="object-cover" priority />
         <div className="absolute inset-0 bg-gradient-to-t from-[#000C1A] via-[#000C1A]/60 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#000C1A]/50 to-transparent" />
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 w-full">
@@ -92,7 +92,7 @@ export default function FarCryVRPage() {
             <span className="inline-block px-3 py-1 rounded-full text-xs font-bold font-orbitron bg-yellow-500/20 border border-yellow-500/40 text-yellow-300 uppercase tracking-widest">Medium Intensity</span>
           </div>
           <h1 className="font-orbitron text-5xl md:text-7xl font-black text-white leading-none">Far Cry VR</h1>
-          <p className="mt-4 text-xl text-[#7DD3FC] max-w-2xl leading-relaxed">Zero Latency Houston's longest free-roam VR game — based on Far Cry 3. Groups of 2–6 players spend 50 minutes navigating jungle terrain and enemy territory to escape a pirate-controlled island.</p>
+          <p className="mt-4 text-xl text-[#7DD3FC] max-w-2xl leading-relaxed">Zero Latency Webster, Houston's longest free-roam VR game — based on Far Cry 3. Groups of 2–6 players spend 50 minutes navigating jungle terrain and enemy territory to escape a pirate-controlled island.</p>
           <div className="flex flex-wrap gap-3 mt-5 text-sm text-[#7DD3FC]/80">
             <span className="glass px-3 py-1.5 rounded-full border border-white/10">2–6 players</span>
             <span className="glass px-3 py-1.5 rounded-full border border-white/10">50 min</span>
@@ -139,9 +139,9 @@ export default function FarCryVRPage() {
               <p className="font-orbitron text-xs tracking-[0.3em] text-orange-400 uppercase mb-2">Mission Briefing</p>
               <h2 className="font-orbitron text-2xl md:text-3xl font-black text-white mb-6">About <span className="text-orange-400">Far Cry VR</span></h2>
               <div className="space-y-4 text-[#7DD3FC] leading-relaxed">
-                <p>Far Cry VR at Zero Latency Houston is based on the Far Cry 3 universe developed by Ubisoft. Groups of 2–6 players aged 13 and older take on a 50-minute free-roam VR mission to escape a pirate-controlled island. The session runs across 3 distinct environments — jungle terrain with enemy patrols, underground caves with limited visibility, and fortified enemy positions — all navigated physically in the Zero Latency Houston free-roam arena.</p>
-                <p>At 50 minutes, Far Cry VR is the longest single-session game at Zero Latency Houston. The extra runtime allows for a structured story arc: an opening that establishes the mission, mid-game environments with escalating enemy contact, and a final confrontation. Groups of 2–3 players experience a tighter, more personal version of the mission; groups of 4–6 handle larger engagement zones simultaneously. Game Masters monitor the session and manage difficulty from a control room throughout the full 50 minutes.</p>
-                <p>Far Cry VR is the game Zero Latency Houston recommends for groups who want medium-intensity combat without the extreme pressure of games like Haunted or Space Marine VR. The pacing works for first-time VR players alongside experienced players in the same squad.</p>
+                <p>Far Cry VR at Zero Latency Webster, Houston is based on the Far Cry 3 universe developed by Ubisoft. Groups of 2–6 players aged 13 and older take on a 50-minute free-roam VR mission to escape a pirate-controlled island. The session runs across 3 distinct environments — jungle terrain with enemy patrols, underground caves with limited visibility, and fortified enemy positions — all navigated physically in the Zero Latency Webster, Houston free-roam arena.</p>
+                <p>At 50 minutes, Far Cry VR is the longest single-session game at Zero Latency Webster, Houston. The extra runtime allows for a structured story arc: an opening that establishes the mission, mid-game environments with escalating enemy contact, and a final confrontation. Groups of 2–3 players experience a tighter, more personal version of the mission; groups of 4–6 handle larger engagement zones simultaneously. Game Masters monitor the session and manage difficulty from a control room throughout the full 50 minutes.</p>
+                <p>Far Cry VR is the game Zero Latency Webster, Houston recommends for groups who want medium-intensity combat without the extreme pressure of games like Haunted or Space Marine VR. The pacing works for first-time VR players alongside experienced players in the same squad.</p>
               </div>
             </div>
             <div className="space-y-2">
@@ -212,7 +212,7 @@ export default function FarCryVRPage() {
         <div className="relative z-10 text-center px-4 max-w-2xl mx-auto">
           <p className="font-orbitron text-xs tracking-[0.3em] text-orange-400 uppercase mb-3">Book a Session</p>
           <h2 className="font-orbitron text-2xl md:text-3xl font-black text-white mb-3">
-            Book Far Cry VR at <span className="text-[#38BDF8]">Zero Latency Houston</span>
+            Book Far Cry VR at <span className="text-[#38BDF8]">Zero Latency Webster, Houston</span>
           </h2>
           <p className="text-[#7DD3FC] text-sm mb-8 leading-relaxed">2–6 players. 50-minute free-roam VR mission in Houston, Texas. Based on Far Cry 3. Ages 13 and up — book your session online now.</p>
           <BookGameButton label="Book Far Cry VR" source="game-cta" />
@@ -222,7 +222,7 @@ export default function FarCryVRPage() {
       {/* Other Games */}
       <section className="py-12 pb-24" style={{ background: 'radial-gradient(ellipse at center, rgba(8,145,178,0.1) 0%, #000C1A 70%)' }}>
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <h2 className="font-orbitron text-2xl font-black text-white mb-6">More Free-Roam VR Games at Zero Latency Houston</h2>
+          <h2 className="font-orbitron text-2xl font-black text-white mb-6">More Free-Roam VR Games at Zero Latency Webster, Houston</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {otherGames.slice(0, 8).map((game) => (
               <Link key={game.slug} href={`/games/${game.slug}`} className="group block glass rounded-xl overflow-hidden hover:border-cyan-500/50 transition-colors">

@@ -8,14 +8,14 @@ import VideoPlayer from "@/components/VideoPlayer";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Space Marine VR at Zero Latency Houston | Warhammer 40K Free-Roam VR",
-  description: "Space Marine VR at Zero Latency Houston puts 1–8 players in Warhammer 40K Space Marine armor to fight Tyranid swarms in free-roam VR. 30–45 minute sessions in Houston, Texas.",
+  title: "Space Marine VR at Zero Latency Webster, Houston | Warhammer 40K Free-Roam VR",
+  description: "Space Marine VR at Zero Latency Webster, Houston puts 1–8 players in Warhammer 40K Space Marine armor to fight Tyranid swarms in free-roam VR. 30–45 minute sessions in Houston, Texas.",
   alternates: { canonical: "https://arcadehouston.com/games/space-marine-vr" },
   openGraph: {
-    title: "Space Marine VR at Zero Latency Houston",
-    description: "Fight Tyranid hordes as a Warhammer 40K Space Marine in this free-roam multiplayer VR experience for 1–8 players at Zero Latency Houston, Texas.",
+    title: "Space Marine VR at Zero Latency Webster, Houston",
+    description: "Fight Tyranid hordes as a Warhammer 40K Space Marine in this free-roam multiplayer VR experience for 1–8 players at Zero Latency Webster, Houston, Texas.",
     url: "https://arcadehouston.com/games/space-marine-vr",
-    images: [{ url: "https://arcadehouston.com/game-hero-space-marine.webp", width: 1200, height: 630, alt: "Space Marine VR at Zero Latency Houston" }],
+    images: [{ url: "https://arcadehouston.com/game-hero-space-marine.webp", width: 1200, height: 630, alt: "Space Marine VR at Zero Latency Webster, Houston" }],
   },
 };
 
@@ -23,12 +23,12 @@ const gameSchema = {
   "@context": "https://schema.org",
   "@type": "VideoGame",
   "name": "Space Marine VR",
-  "description": "Space Marine VR at Zero Latency Houston is a Warhammer 40,000 free-roam VR experience for 1–8 players. Players wear Space Marine armor and fight coordinated waves of Tyranid creatures across 30–45 minutes in Houston, Texas. Includes Threat: Lethal mode for advanced squads.",
+  "description": "Space Marine VR at Zero Latency Webster, Houston is a Warhammer 40,000 free-roam VR experience for 1–8 players. Players wear Space Marine armor and fight coordinated waves of Tyranid creatures across 30–45 minutes in Houston, Texas. Includes Threat: Lethal mode for advanced squads.",
   "genre": "Sci-Fi Action",
   "numberOfPlayers": { "@type": "QuantitativeValue", "minValue": 1, "maxValue": 8 },
   "gamePlatform": "Virtual Reality",
   "url": "https://arcadehouston.com/games/space-marine-vr",
-  "provider": { "@type": "Organization", "name": "Zero Latency Houston", "url": "https://arcadehouston.com" },
+  "provider": { "@type": "Organization", "name": "Zero Latency Webster, Houston", "url": "https://arcadehouston.com" },
 };
 
 const breadcrumb = {
@@ -51,7 +51,7 @@ const STATS = [
 const FEATURES = [
   { img: "/become-a-marine.webp", title: "Wear Space Marine Armor", desc: "Players physically inhabit the ceramite-armored body of a Warhammer 40K super-soldier. The scale, weight, and power of the Space Marine suit is modeled in VR — your hands and weapons match the character you see." },
   { img: "/space-marine-hero-character.webp", title: "Fight the Tyranid Swarm", desc: "Tyranid creatures — Hormagaunts, Termagants, and larger bio-forms — attack from multiple directions at once. Your squad must hold defensive positions and coordinate fire to survive each wave." },
-  { img: "/Space-Marine-VR-Threat-Lethal-Game-Scene-Fight-1.webp", title: "Threat: Lethal Mode", desc: "A 30-minute timed mode where a full squad wipe resets the level. Designed for experienced VR players who want the hardest version of the Space Marine VR mission at Zero Latency Houston." },
+  { img: "/Space-Marine-VR-Threat-Lethal-Game-Scene-Fight-1.webp", title: "Threat: Lethal Mode", desc: "A 30-minute timed mode where a full squad wipe resets the level. Designed for experienced VR players who want the hardest version of the Space Marine VR mission at Zero Latency Webster, Houston." },
 ];
 
 const GALLERY = [
@@ -81,7 +81,7 @@ export default function SpaceMarineVRPage() {
 
       {/* Hero */}
       <section className="relative min-h-[80vh] flex items-end pb-20">
-        <Image src="/game-hero-space-marine.webp" alt="Space Marine VR — Warhammer 40K free-roam VR at Zero Latency Houston" fill sizes="100vw" className="object-cover" priority />
+        <Image src="/game-hero-space-marine.webp" alt="Space Marine VR — Warhammer 40K free-roam VR at Zero Latency Webster, Houston" fill sizes="100vw" className="object-cover" priority />
         <div className="absolute inset-0 bg-gradient-to-t from-[#000C1A] via-[#000C1A]/60 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#000C1A]/50 to-transparent" />
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 w-full">
@@ -90,7 +90,7 @@ export default function SpaceMarineVRPage() {
             <span className="inline-block px-3 py-1 rounded-full text-xs font-bold font-orbitron bg-red-500/20 border border-red-500/40 text-red-300 uppercase tracking-widest">Extreme Intensity</span>
           </div>
           <h1 className="font-orbitron text-5xl md:text-7xl font-black text-white leading-none">Space Marine VR</h1>
-          <p className="mt-4 text-xl text-[#7DD3FC] max-w-2xl leading-relaxed">The Warhammer 40K free-roam VR game at Zero Latency Houston. Play as a Space Marine, fight Tyranid hordes, and survive alongside up to 7 teammates in a 30–45 minute session.</p>
+          <p className="mt-4 text-xl text-[#7DD3FC] max-w-2xl leading-relaxed">The Warhammer 40K free-roam VR game at Zero Latency Webster, Houston. Play as a Space Marine, fight Tyranid hordes, and survive alongside up to 7 teammates in a 30–45 minute session.</p>
           <div className="flex flex-wrap gap-3 mt-5 text-sm text-[#7DD3FC]/80">
             <span className="glass px-3 py-1.5 rounded-full border border-white/10">1–8 players</span>
             <span className="glass px-3 py-1.5 rounded-full border border-white/10">30–45 min</span>
@@ -137,8 +137,8 @@ export default function SpaceMarineVRPage() {
               <p className="font-orbitron text-xs tracking-[0.3em] text-amber-400 uppercase mb-2">Mission Briefing</p>
               <h2 className="font-orbitron text-2xl md:text-3xl font-black text-white mb-6">About <span className="text-amber-400">Space Marine VR</span></h2>
               <div className="space-y-4 text-[#7DD3FC] leading-relaxed">
-                <p>Space Marine VR at Zero Latency Houston puts 1–8 players in the Warhammer 40,000 universe as fully armored Space Marines fighting back a Tyranid invasion. Players move freely through the arena in Houston, Texas — physically walking, aiming, and shooting across 30–45 minutes of co-op multiplayer VR combat. The game runs on the same free-roam VR technology as all Zero Latency Houston titles, so there are no fixed positions or stationary platforms.</p>
-                <p>The mission structure focuses on coordinated defense and counterattack. Tyranid waves — Hormagaunts, Termagants, and larger organisms — attack from multiple angles simultaneously. Squads that hold formation and communicate ammo counts and threat positions last significantly longer than groups that scatter. Game Masters at Zero Latency Houston track every session and adjust wave difficulty to match your group's progress.</p>
+                <p>Space Marine VR at Zero Latency Webster, Houston puts 1–8 players in the Warhammer 40,000 universe as fully armored Space Marines fighting back a Tyranid invasion. Players move freely through the arena in Houston, Texas — physically walking, aiming, and shooting across 30–45 minutes of co-op multiplayer VR combat. The game runs on the same free-roam VR technology as all Zero Latency Webster, Houston titles, so there are no fixed positions or stationary platforms.</p>
+                <p>The mission structure focuses on coordinated defense and counterattack. Tyranid waves — Hormagaunts, Termagants, and larger organisms — attack from multiple angles simultaneously. Squads that hold formation and communicate ammo counts and threat positions last significantly longer than groups that scatter. Game Masters at Zero Latency Webster, Houston track every session and adjust wave difficulty to match your group's progress.</p>
                 <p>Threat: Lethal mode is a separate 30-minute timed mission available to squads that want the hardest version of Space Marine VR. A full team wipe sends the group back to the start of the level. This mode works best for groups of 4–8 players who have completed a standard session and want a second run with higher stakes.</p>
               </div>
             </div>
@@ -210,7 +210,7 @@ export default function SpaceMarineVRPage() {
         <div className="relative z-10 text-center px-4 max-w-2xl mx-auto">
           <p className="font-orbitron text-xs tracking-[0.3em] text-amber-400 uppercase mb-3">Book a Session</p>
           <h2 className="font-orbitron text-2xl md:text-3xl font-black text-white mb-3">
-            Book Space Marine VR at <span className="text-[#38BDF8]">Zero Latency Houston</span>
+            Book Space Marine VR at <span className="text-[#38BDF8]">Zero Latency Webster, Houston</span>
           </h2>
           <p className="text-[#7DD3FC] text-sm mb-8 leading-relaxed">1–8 players. 30–45 minute Warhammer 40K free-roam VR session in Houston, Texas. Book online now and choose your mode — standard or Threat: Lethal.</p>
           <BookGameButton label="Book Space Marine VR" source="game-cta" />
@@ -220,7 +220,7 @@ export default function SpaceMarineVRPage() {
       {/* Other Games */}
       <section className="py-12 pb-24" style={{ background: 'radial-gradient(ellipse at center, rgba(8,145,178,0.1) 0%, #000C1A 70%)' }}>
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <h2 className="font-orbitron text-2xl font-black text-white mb-6">More Free-Roam VR Games at Zero Latency Houston</h2>
+          <h2 className="font-orbitron text-2xl font-black text-white mb-6">More Free-Roam VR Games at Zero Latency Webster, Houston</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {otherGames.slice(0, 8).map((game) => (
               <Link key={game.slug} href={`/games/${game.slug}`} className="group block glass rounded-xl overflow-hidden hover:border-cyan-500/50 transition-colors">

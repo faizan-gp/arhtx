@@ -10,7 +10,7 @@ export default function Footer() {
           <div>
             <Image src="/ZL-W.png" alt="Arcade Houston" width={120} height={32} className="h-8 w-auto mb-4" />
             <p className="text-sm text-[#7DD3FC]/60 leading-relaxed max-w-xs">
-              Houston&apos;s comprehensive arcade guide. We operate Zero Latency Houston — the city&apos;s only free-roam VR arena.
+              Houston&apos;s comprehensive arcade guide. We operate Zero Latency Webster, Houston — the city&apos;s only free-roam VR arena.
             </p>
           </div>
           <div>

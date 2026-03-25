@@ -26,7 +26,7 @@ const steps = [
     title: "Book Your Session",
     subtitle: "Reserve your time slot before you arrive — weekends fill fast",
     img: "/what-to-expect-thumbnail.webp",
-    imgAlt: "Zero Latency Houston booking confirmation screen",
+    imgAlt: "Zero Latency Webster, Houston booking confirmation screen",
     details: [
       { label: "Reserve Online", text: "Book at arcadehouston.com. Weekends book out days in advance — secure your slot early." },
       { label: "Age Requirement", text: "Players must be 13 years or older. Some games carry a 16+ recommendation listed on the game page." },
@@ -41,7 +41,7 @@ const steps = [
     title: "Check In",
     subtitle: "Your Game Master takes over from here",
     img: "/registration.jpg",
-    imgAlt: "Players checking in at Zero Latency Houston front desk",
+    imgAlt: "Players checking in at Zero Latency Webster, Houston front desk",
     details: [
       { label: "Front Desk", text: "Check in at the desk and confirm your booking name. Staff confirms group size and selected game." },
       { label: "Game Master", text: "Your Game Master briefs the full group on safety rules, movement boundaries, controller use, and game objectives." },
@@ -55,7 +55,7 @@ const steps = [
     title: "Gear Up",
     subtitle: "Fully wireless — no cables between you and the arena",
     img: "/gear-up.jpg",
-    imgAlt: "Player being fitted with VR headset and backpack at Zero Latency Houston",
+    imgAlt: "Player being fitted with VR headset and backpack at Zero Latency Webster, Houston",
     details: [
       { label: "Wireless Backpack", text: "The compute unit straps on like a hiking pack. It powers your headset with no cables connecting you to any fixed point." },
       { label: "VR Headset", text: "High-resolution displays with 360° spatial audio. Staff fits every headset to your head, prescription glasses included." },
@@ -69,7 +69,7 @@ const steps = [
     title: "Play",
     subtitle: "Walk, run, crouch, and move — the arena is your world",
     img: "/arena-action.jpg",
-    imgAlt: "Players moving freely through the Zero Latency Houston VR arena",
+    imgAlt: "Players moving freely through the Zero Latency Webster, Houston VR arena",
     details: [
       { label: "Full Body Movement", text: "Your physical movements map directly to the virtual world — walk forward in the arena, move forward in the game." },
       { label: "Session Length", text: "Games run 15–45 minutes depending on which title you selected. Most groups lose track of time within the first few minutes." },
@@ -83,23 +83,23 @@ const steps = [
     title: "Rewatch and Replay",
     subtitle: "Check your scores and watch your highlights before you leave",
     img: "/post-game-group.webp",
-    imgAlt: "Group of friends celebrating after their Zero Latency Houston VR session",
+    imgAlt: "Group of friends celebrating after their Zero Latency Webster, Houston VR session",
     details: [
       { label: "Scoreboard", text: "Post-game leaderboard shows individual and team stats — kills, assists, accuracy, and final ranking." },
-      { label: "Replay Footage", text: "Zero Latency Houston captures gameplay highlights from the session. Your Game Master shares a link before you leave." },
+      { label: "Replay Footage", text: "Zero Latency Webster, Houston captures gameplay highlights from the session. Your Game Master shares a link before you leave." },
       { label: "Book Another Round", text: "Groups who want a second session can book on-site at the desk — Game Masters check slot availability immediately." },
-      { label: "Share Your Footage", text: "Post your highlight reel and tag Zero Latency Houston. We share Houston groups on our social channels." },
+      { label: "Share Your Footage", text: "Post your highlight reel and tag Zero Latency Webster, Houston. We share Houston groups on our social channels." },
     ],
   },
 ];
 
 const faqs = [
-  { q: "Do I need VR experience?", a: "No. Every session at Zero Latency Houston starts with a full briefing from your Game Master — controller basics, movement, safety, and game objectives. First-timers make up a large share of our visitors every week." },
+  { q: "Do I need VR experience?", a: "No. Every session at Zero Latency Webster, Houston starts with a full briefing from your Game Master — controller basics, movement, safety, and game objectives. First-timers make up a large share of our visitors every week." },
   { q: "Will I get motion sick?", a: "Motion sickness in free-roam VR is rare. Because your body physically moves through the arena — rather than a controller simulating movement — your brain and body stay in sync. The vast majority of visitors finish their session with zero discomfort." },
   { q: "Can I wear glasses?", a: "Yes. Our VR headsets fit over most prescription frames. Bring your glasses and Game Masters adjust the headset during gear-up to get a proper fit." },
   { q: "What if I need to stop mid-game?", a: "Signal your Game Master at any point and they pause the session immediately. There is no pressure to continue. Game Masters monitor all players throughout the session and respond within seconds." },
   { q: "How long is the whole visit?", a: "A single session takes 1–1.5 hours total — that includes check-in, briefing, gear-up, gameplay, and post-game debrief. Groups booking 2 back-to-back sessions should plan for about 2.5 hours." },
-  { q: "Is there parking?", a: "Yes. Free parking is available at BayWay Village Shopping Center in Webster, TX where Zero Latency Houston is located. Parking is abundant and you will not need to search for a spot." },
+  { q: "Is there parking?", a: "Yes. Free parking is available at BayWay Village Shopping Center in Webster, TX where Zero Latency Webster, Houston is located. Parking is abundant and you will not need to search for a spot." },
 ];
 
 const gear = [
@@ -133,8 +133,8 @@ const breadcrumbSchema = {
 const howToSchema = {
   "@context": "https://schema.org",
   "@type": "HowTo",
-  "name": "How to Experience Zero Latency Houston Free-Roam VR",
-  "description": "Step-by-step guide to your first free-roam VR experience at Zero Latency Houston",
+  "name": "How to Experience Zero Latency Webster, Houston Free-Roam VR",
+  "description": "Step-by-step guide to your first free-roam VR experience at Zero Latency Webster, Houston",
   "totalTime": "PT1H",
   "step": steps.map((s, i) => ({
     "@type": "HowToStep",
@@ -154,12 +154,12 @@ const howToSchema = {
 const articleSchema = {
   "@context": "https://schema.org",
   "@type": "Article",
-  "headline": "What to Expect at Zero Latency Houston | Your Complete VR Visit Guide",
-  "description": "Everything you need to know before your Zero Latency Houston visit — booking, check-in, gear-up, gameplay, and post-session highlights.",
+  "headline": "What to Expect at Zero Latency Webster, Houston | Your Complete VR Visit Guide",
+  "description": "Everything you need to know before your Zero Latency Webster, Houston visit — booking, check-in, gear-up, gameplay, and post-session highlights.",
   "datePublished": "2025-01-01",
   "dateModified": "2025-12-01",
-  "author": { "@type": "Organization", "name": "Zero Latency Houston", "url": "https://arcadehouston.com" },
-  "publisher": { "@type": "Organization", "name": "Zero Latency Houston", "url": "https://arcadehouston.com" },
+  "author": { "@type": "Organization", "name": "Zero Latency Webster, Houston", "url": "https://arcadehouston.com" },
+  "publisher": { "@type": "Organization", "name": "Zero Latency Webster, Houston", "url": "https://arcadehouston.com" },
 };
 
 const faqSchema = {
@@ -191,7 +191,7 @@ export default function WhatToExpectPage() {
         {/* Background */}
         <Image
           src="/background.webp"
-          alt="Zero Latency Houston VR arena"
+          alt="Zero Latency Webster, Houston VR arena"
           fill
           className="object-cover opacity-20"
           priority
@@ -222,7 +222,7 @@ export default function WhatToExpectPage() {
               <span className="text-stroke-cyan">Expect</span>
             </h1>
             <p className="mt-6 text-lg text-[#7DD3FC] max-w-xl leading-relaxed">
-              Here is exactly what happens during a Zero Latency Houston visit — from booking your free-roam VR session to rewatching your gameplay highlights.
+              Here is exactly what happens during a Zero Latency Webster, Houston visit — from booking your free-roam VR session to rewatching your gameplay highlights.
             </p>
 
             {/* Step quick-nav pills */}
@@ -450,7 +450,7 @@ export default function WhatToExpectPage() {
             Book Your Zero Latency <span className="text-stroke-cyan">Houston Session</span>
           </h2>
           <p className="mt-5 text-[#7DD3FC] text-base leading-relaxed max-w-lg mx-auto">
-            Bring 1–8 players to Zero Latency Houston in Webster, TX and step into arena-scale free-roam virtual reality. Book online in under 5 minutes.
+            Bring 1–8 players to Zero Latency Webster, Houston in Webster, TX and step into arena-scale free-roam virtual reality. Book online in under 5 minutes.
           </p>
           <BookGameButton label="BOOK YOUR SESSION" source="what-to-expect-cta" className="mt-2" />
           <p className="mt-4 text-xs text-[#7DD3FC]/40 font-orbitron">Walk-ins welcome when slots are available</p>

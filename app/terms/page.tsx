@@ -39,7 +39,7 @@ const sections = [
     title: 'Equipment & Liability',
     content: (
       <p className="text-sm text-[#7DD3FC]/80 leading-relaxed">
-        Equipment damage caused by negligence is the financial responsibility of the visitor who caused it. Zero Latency Houston is not liable for motion sickness, minor bumps, or disorientation that are typical of VR experiences. All visitors must sign a waiver before entering the arena.
+        Equipment damage caused by negligence is the financial responsibility of the visitor who caused it. Zero Latency Webster, Houston is not liable for motion sickness, minor bumps, or disorientation that are typical of VR experiences. All visitors must sign a waiver before entering the arena.
       </p>
     ),
   },
@@ -47,7 +47,7 @@ const sections = [
     title: 'Intellectual Property',
     content: (
       <p className="text-sm text-[#7DD3FC]/80 leading-relaxed">
-        All game titles available at Zero Latency Houston are the property of their respective owners and are licensed to Zero Latency VR. All site content is &copy; 2026 Zero Latency Houston.
+        All game titles available at Zero Latency Webster, Houston are the property of their respective owners and are licensed to Zero Latency VR. All site content is &copy; 2026 Zero Latency Webster, Houston.
       </p>
     ),
   },
@@ -86,7 +86,7 @@ export default function TermsPage() {
           </h1>
           <div className="glass rounded-2xl p-6">
             <p className="text-sm text-[#7DD3FC]/80 leading-relaxed">
-              By booking a session or visiting Zero Latency Houston, you agree to these terms. Last updated: March 20, 2026.
+              By booking a session or visiting Zero Latency Webster, Houston, you agree to these terms. Last updated: March 20, 2026.
             </p>
           </div>
         </div>

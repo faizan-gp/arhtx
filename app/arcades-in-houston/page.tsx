@@ -36,7 +36,7 @@ const itemListSchema = {
   "@context": "https://schema.org",
   "@type": "ItemList",
   "name": "Best Arcades in Houston TX",
-  "description": "A comprehensive list of the best arcades in Houston, Texas, including Cidercade, The Game Preserve, Dave & Buster's, Zero Latency Houston, Great Wolf Lodge Arcade, and AR Entertainment Hub.",
+  "description": "A comprehensive list of the best arcades in Houston, Texas, including Cidercade, The Game Preserve, Dave & Buster's, Zero Latency Webster, Houston, Great Wolf Lodge Arcade, and AR Entertainment Hub.",
   "url": "https://arcadehouston.com/arcades-in-houston",
   "numberOfItems": 7,
   "itemListElement": [
@@ -71,7 +71,7 @@ const itemListSchema = {
     {
       "@type": "ListItem",
       "position": 5,
-      "name": "Zero Latency Houston",
+      "name": "Zero Latency Webster, Houston",
       "url": "https://arcadehouston.com/",
       "description": "The only free-roam VR arcade in the Houston area. 8 multiplayer games, 2-8 players, wireless backpack system. Webster, TX.",
     },
@@ -111,11 +111,11 @@ const arcadeFaqs = [
   },
   {
     q: "Are there any arcades in Houston open late?",
-    a: "Cidercade and The Game Preserve are both open until midnight daily. Zero Latency Houston is open until 11pm (3pm start Mon-Tue, 2pm Wed-Thu, 11am Fri-Sun).",
+    a: "Cidercade and The Game Preserve are both open until midnight daily. Zero Latency Webster, Houston is open until 11pm (3pm start Mon-Tue, 2pm Wed-Thu, 11am Fri-Sun).",
   },
   {
     q: "Which Houston arcade is best for large groups?",
-    a: "Zero Latency Houston handles groups of 2-8 per session with back-to-back booking for larger parties. Cidercade offers full-arcade takeovers. Dave & Buster's has private meeting rooms for corporate groups.",
+    a: "Zero Latency Webster, Houston handles groups of 2-8 per session with back-to-back booking for larger parties. Cidercade offers full-arcade takeovers. Dave & Buster's has private meeting rooms for corporate groups.",
   },
 ];
 
@@ -227,7 +227,7 @@ const venues = [
   },
   {
     rank: 5,
-    name: "Zero Latency Houston",
+    name: "Zero Latency Webster, Houston",
     tag: "Best for: Immersive VR Experience",
     tagColor: "text-cyan-400 border-cyan-400/30 bg-cyan-400/10",
     address: "BayWay Village Shopping Center, 20801 Gulf Fwy Suite 5, Webster, TX 77598",
@@ -235,7 +235,7 @@ const venues = [
     hours: "Mon–Tue 3–11pm, Wed–Thu 2–11pm, Fri–Sun 11am–11pm",
     gameCount: "8 VR games",
     highlight: "TOP RECOMMENDATION — Houston's only free-roam VR arcade",
-    description: "Zero Latency Houston is in a category of its own. It's the only free-roam VR arcade in Houston — a 2,000 sq ft wireless VR arena where up to 8 players physically move through virtual worlds together. 8 games across zombie survival, sci-fi missions, PvP esports, and family adventures. Rated 5.0 stars from 424+ Google reviews.",
+    description: "Zero Latency Webster, Houston is in a category of its own. It's the only free-roam VR arcade in Houston — a 2,000 sq ft wireless VR arena where up to 8 players physically move through virtual worlds together. 8 games across zombie survival, sci-fi missions, PvP esports, and family adventures. Rated 5.0 stars from 424+ Google reviews.",
     details: [
       "2,000 sq ft wireless VR arena — no cables, no fixed stations",
       "Up to 8 players simultaneously in the same virtual world",
@@ -443,7 +443,7 @@ export default function ArcadesInHoustonPage() {
         <section className="text-center border border-cyan-500/30 rounded-2xl p-10 bg-cyan-500/5">
           <h2 className="font-orbitron text-2xl font-bold text-white mb-4">Ready to Book Houston&apos;s Top VR Arcade?</h2>
           <p className="text-gray-300 mb-6 max-w-lg mx-auto">
-            Zero Latency Houston is the city&apos;s only free-roam VR arcade. 8 games, 2–8 players, no cables. Book online — sessions fill fast on weekends.
+            Zero Latency Webster, Houston is the city&apos;s only free-roam VR arcade. 8 games, 2–8 players, no cables. Book online — sessions fill fast on weekends.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

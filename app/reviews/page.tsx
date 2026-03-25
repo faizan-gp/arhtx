@@ -28,7 +28,7 @@ export default async function ReviewsPage() {
           What <span className="text-stroke-cyan">Houston Says</span> About Us
         </h1>
         <p className="mt-4 text-[#7DD3FC] max-w-xl mx-auto">
-          {rating.toFixed(1)} stars from {total.toLocaleString()}+ reviews. Real experiences from real players at Zero Latency Houston.
+          {rating.toFixed(1)} stars from {total.toLocaleString()}+ reviews. Real experiences from real players at Zero Latency Webster, Houston.
         </p>
       </div>
       <Review

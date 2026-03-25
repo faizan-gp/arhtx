@@ -8,14 +8,14 @@ import VideoPlayer from "@/components/VideoPlayer";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Outbreak 2: Mall Mayhem at Zero Latency Houston | Zombie VR Experience",
-  description: "Outbreak 2: Mall Mayhem at Zero Latency Houston sends 1–8 players through a zombie-overrun shopping mall in 30 minutes of extreme-intensity free-roam VR. Book now in Houston, Texas.",
+  title: "Outbreak 2: Mall Mayhem at Zero Latency Webster, Houston | Zombie VR Experience",
+  description: "Outbreak 2: Mall Mayhem at Zero Latency Webster, Houston sends 1–8 players through a zombie-overrun shopping mall in 30 minutes of extreme-intensity free-roam VR. Book now in Houston, Texas.",
   alternates: { canonical: "https://arcadehouston.com/games/outbreak-2-mall-mayhem" },
   openGraph: {
-    title: "Outbreak 2: Mall Mayhem at Zero Latency Houston",
-    description: "Fight mutant zombies through a collapsing mall in this extreme-intensity free-roam VR game for 1–8 players at Zero Latency Houston. 30-minute sessions in Houston, Texas.",
+    title: "Outbreak 2: Mall Mayhem at Zero Latency Webster, Houston",
+    description: "Fight mutant zombies through a collapsing mall in this extreme-intensity free-roam VR game for 1–8 players at Zero Latency Webster, Houston. 30-minute sessions in Houston, Texas.",
     url: "https://arcadehouston.com/games/outbreak-2-mall-mayhem",
-    images: [{ url: "https://arcadehouston.com/mm_banner.webp", width: 1200, height: 630, alt: "Outbreak 2: Mall Mayhem at Zero Latency Houston" }],
+    images: [{ url: "https://arcadehouston.com/mm_banner.webp", width: 1200, height: 630, alt: "Outbreak 2: Mall Mayhem at Zero Latency Webster, Houston" }],
   },
 };
 
@@ -23,12 +23,12 @@ const gameSchema = {
   "@context": "https://schema.org",
   "@type": "VideoGame",
   "name": "Outbreak 2: Mall Mayhem",
-  "description": "Outbreak 2: Mall Mayhem is a free-roam zombie survival VR game at Zero Latency Houston. Up to 8 players fight mutant zombies — spitters, spewers, and boomers — through a collapsing shopping mall in a 30-minute extreme-intensity session in Houston, Texas.",
+  "description": "Outbreak 2: Mall Mayhem is a free-roam zombie survival VR game at Zero Latency Webster, Houston. Up to 8 players fight mutant zombies — spitters, spewers, and boomers — through a collapsing shopping mall in a 30-minute extreme-intensity session in Houston, Texas.",
   "genre": "Zombie Survival",
   "numberOfPlayers": { "@type": "QuantitativeValue", "minValue": 1, "maxValue": 8 },
   "gamePlatform": "Virtual Reality",
   "url": "https://arcadehouston.com/games/outbreak-2-mall-mayhem",
-  "provider": { "@type": "Organization", "name": "Zero Latency Houston", "url": "https://arcadehouston.com" },
+  "provider": { "@type": "Organization", "name": "Zero Latency Webster, Houston", "url": "https://arcadehouston.com" },
 };
 
 const breadcrumb = {
@@ -76,7 +76,7 @@ export default function OutbreakMallMayhemPage() {
 
       {/* Hero */}
       <section className="relative min-h-[80vh] flex items-end pb-20">
-        <Image src="/mm_banner.webp" alt="Outbreak 2: Mall Mayhem — zombie chaos at Zero Latency Houston" fill sizes="100vw" className="object-cover" priority />
+        <Image src="/mm_banner.webp" alt="Outbreak 2: Mall Mayhem — zombie chaos at Zero Latency Webster, Houston" fill sizes="100vw" className="object-cover" priority />
         <div className="absolute inset-0 bg-gradient-to-t from-[#000C1A] via-[#000C1A]/60 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#000C1A]/50 to-transparent" />
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 w-full">
@@ -85,7 +85,7 @@ export default function OutbreakMallMayhemPage() {
             <span className="inline-block px-3 py-1 rounded-full text-xs font-bold font-orbitron bg-red-500/20 border border-red-500/40 text-red-300 uppercase tracking-widest">Extreme Intensity</span>
           </div>
           <h1 className="font-orbitron text-5xl md:text-7xl font-black text-white leading-none">Outbreak 2<br /><span className="text-rose-400">Mall Mayhem</span></h1>
-          <p className="mt-4 text-xl text-[#7DD3FC] max-w-2xl leading-relaxed">Zero Latency Houston's most intense zombie VR game. 1–8 players fight mutant zombies through a collapsing mall in 30 minutes of extreme free-roam VR.</p>
+          <p className="mt-4 text-xl text-[#7DD3FC] max-w-2xl leading-relaxed">Zero Latency Webster, Houston's most intense zombie VR game. 1–8 players fight mutant zombies through a collapsing mall in 30 minutes of extreme free-roam VR.</p>
           <div className="flex flex-wrap gap-3 mt-5 text-sm text-[#7DD3FC]/80">
             <span className="glass px-3 py-1.5 rounded-full border border-white/10">1–8 players</span>
             <span className="glass px-3 py-1.5 rounded-full border border-white/10">30 min</span>
@@ -132,9 +132,9 @@ export default function OutbreakMallMayhemPage() {
               <p className="font-orbitron text-xs tracking-[0.3em] text-rose-400 uppercase mb-2">Mission Briefing</p>
               <h2 className="font-orbitron text-2xl md:text-3xl font-black text-white mb-6">About <span className="text-rose-400">Mall Mayhem</span></h2>
               <div className="space-y-4 text-[#7DD3FC] leading-relaxed">
-                <p>Outbreak 2: Mall Mayhem at Zero Latency Houston drops 1–8 players into a zombie-overrun shopping mall for 30 minutes of free-roam multiplayer VR. The sequel to Outbreak increases enemy variety, adds fully destructible environments, and pushes structural hazards — collapsing floors, falling ceiling sections, burning corridors — into the combat zones.</p>
+                <p>Outbreak 2: Mall Mayhem at Zero Latency Webster, Houston drops 1–8 players into a zombie-overrun shopping mall for 30 minutes of free-roam multiplayer VR. The sequel to Outbreak increases enemy variety, adds fully destructible environments, and pushes structural hazards — collapsing floors, falling ceiling sections, burning corridors — into the combat zones.</p>
                 <p>Players move physically through the free-roam VR arena in Houston, Texas, fighting new zombie classes that didn&apos;t appear in the original Outbreak. Spitters attack from range with acid. Spewers detonate on contact. Boomers rush the group in numbers. The harder your squad pushes into the mall, the more dangerous the enemy mix becomes. Game Masters monitor every session from a control room and adjust the challenge in real time.</p>
-                <p>Outbreak 2 works for groups who completed the original Outbreak and want a step up in difficulty, and for first-timers who want to start with the most intense zombie VR experience Zero Latency Houston offers. Groups of 2–4 still have a strong chance of completing the mission; groups of 5–8 get a chaotic, team-focused run that rewards communication and coordination.</p>
+                <p>Outbreak 2 works for groups who completed the original Outbreak and want a step up in difficulty, and for first-timers who want to start with the most intense zombie VR experience Zero Latency Webster, Houston offers. Groups of 2–4 still have a strong chance of completing the mission; groups of 5–8 get a chaotic, team-focused run that rewards communication and coordination.</p>
               </div>
             </div>
             <div className="space-y-2">
@@ -214,7 +214,7 @@ export default function OutbreakMallMayhemPage() {
         <div className="relative z-10 text-center px-4 max-w-2xl mx-auto">
           <p className="font-orbitron text-xs tracking-[0.3em] text-rose-400 uppercase mb-3">Book a Session</p>
           <h2 className="font-orbitron text-2xl md:text-3xl font-black text-white mb-3">
-            Book Mall Mayhem at <span className="text-[#38BDF8]">Zero Latency Houston</span>
+            Book Mall Mayhem at <span className="text-[#38BDF8]">Zero Latency Webster, Houston</span>
           </h2>
           <p className="text-[#7DD3FC] text-sm mb-8 leading-relaxed">1–8 players. 30-minute extreme-intensity free-roam VR session in Houston, Texas. Book your Outbreak 2: Mall Mayhem game online now.</p>
           <BookGameButton label="Book Mall Mayhem" source="game-cta" />
@@ -224,7 +224,7 @@ export default function OutbreakMallMayhemPage() {
       {/* Other Games */}
       <section className="py-12 pb-24" style={{ background: 'radial-gradient(ellipse at center, rgba(8,145,178,0.1) 0%, #000C1A 70%)' }}>
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <h2 className="font-orbitron text-2xl font-black text-white mb-6">More Free-Roam VR Games at Zero Latency Houston</h2>
+          <h2 className="font-orbitron text-2xl font-black text-white mb-6">More Free-Roam VR Games at Zero Latency Webster, Houston</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {otherGames.slice(0, 8).map((game) => (
               <Link key={game.slug} href={`/games/${game.slug}`} className="group block glass rounded-xl overflow-hidden hover:border-cyan-500/50 transition-colors">

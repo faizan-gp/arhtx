@@ -26,23 +26,23 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "What is the best arcade in Houston?",
-    a: "The best arcade in Houston depends on what you want. Cidercade Houston has the most games (275+ on free play for $12). The Game Preserve is the best retro arcade with pinball machines and classic cabinets. Zero Latency Houston is the best VR arcade with 8 free-roam multiplayer games for 2-8 players. Dave & Buster's is the best for food, drinks, and watching sports.",
+    a: "The best arcade in Houston depends on what you want. Cidercade Houston has the most games (275+ on free play for $12). The Game Preserve is the best retro arcade with pinball machines and classic cabinets. Zero Latency Webster, Houston is the best VR arcade with 8 free-roam multiplayer games for 2-8 players. Dave & Buster's is the best for food, drinks, and watching sports.",
   },
   {
     q: "What is the biggest arcade in Houston?",
-    a: "Cidercade Houston has the most games at 275+. The Game Preserve NASA location in Webster has the largest floor space at 11,000 sq ft with 100+ retro games. Zero Latency Houston has a 2,000 sq ft VR arena dedicated to free-roam virtual reality.",
+    a: "Cidercade Houston has the most games at 275+. The Game Preserve NASA location in Webster has the largest floor space at 11,000 sq ft with 100+ retro games. Zero Latency Webster, Houston has a 2,000 sq ft VR arena dedicated to free-roam virtual reality.",
   },
   {
     q: "Are there arcades in Houston for adults?",
-    a: "Yes. Cidercade Houston switches to 18+ at 9pm and has a full bar with hard ciders and craft beers on tap. Dave & Buster's has a bar with cocktails at every Houston location. Zero Latency Houston's VR games are popular for adult groups, date nights, and bachelor and bachelorette parties.",
+    a: "Yes. Cidercade Houston switches to 18+ at 9pm and has a full bar with hard ciders and craft beers on tap. Dave & Buster's has a bar with cocktails at every Houston location. Zero Latency Webster, Houston's VR games are popular for adult groups, date nights, and bachelor and bachelorette parties.",
   },
   {
     q: "Are there arcades in Houston for kids?",
-    a: "Yes. The Game Preserve is family-oriented and allows all ages (under 16 must be with an adult). Cidercade is kid-friendly during daytime hours (18+ starts at 9pm). Zero Latency Houston has Engineerium, a non-combat VR game for ages 6 and up.",
+    a: "Yes. The Game Preserve is family-oriented and allows all ages (under 16 must be with an adult). Cidercade is kid-friendly during daytime hours (18+ starts at 9pm). Zero Latency Webster, Houston has Engineerium, a non-combat VR game for ages 6 and up.",
   },
   {
     q: "How much does it cost to go to an arcade in Houston?",
-    a: "Cidercade costs $12 for all-day free play on 275+ games. Game Preserve charges $15 for a day pass with unlimited play. Zero Latency Houston VR sessions run $35-50 per person for 30-50 minutes. Dave & Buster's uses a Power Card system where you load credits (prices vary by game).",
+    a: "Cidercade costs $12 for all-day free play on 275+ games. Game Preserve charges $15 for a day pass with unlimited play. Zero Latency Webster, Houston VR sessions run $35-50 per person for 30-50 minutes. Dave & Buster's uses a Power Card system where you load credits (prices vary by game).",
   },
   {
     q: "Is there a free-play arcade in Houston?",
@@ -50,19 +50,19 @@ const faqs = [
   },
   {
     q: "What is free-roam VR?",
-    a: "Free-roam VR is full-body virtual reality where players physically walk, run, and move through a large tracked space while wearing wireless headsets and backpacks. Zero Latency Houston operates a 2,000 sq ft free-roam VR arena where up to 8 players move together through virtual worlds with no cables attached.",
+    a: "Free-roam VR is full-body virtual reality where players physically walk, run, and move through a large tracked space while wearing wireless headsets and backpacks. Zero Latency Webster, Houston operates a 2,000 sq ft free-roam VR arena where up to 8 players move together through virtual worlds with no cables attached.",
   },
   {
     q: "Can I host a birthday party at a Houston arcade?",
-    a: "Yes. Every major Houston arcade offers party options. Zero Latency Houston has private arena sessions with a Game Master. Game Preserve rents a private party room for $250 (10 people, 2 hours). Cidercade has private party zones. Dave & Buster's has birthday packages with food and Power Card credits.",
+    a: "Yes. Every major Houston arcade offers party options. Zero Latency Webster, Houston has private arena sessions with a Game Master. Game Preserve rents a private party room for $250 (10 people, 2 hours). Cidercade has private party zones. Dave & Buster's has birthday packages with food and Power Card credits.",
   },
   {
     q: "Which Houston arcade has a bar?",
     a: "Cidercade Houston and Dave & Buster's both have full bars. Cidercade brews their own hard ciders and craft beers. Dave & Buster's serves classic cocktails and specialty drinks. Cidercade is 18+ after 9pm.",
   },
   {
-    q: "Is Zero Latency Houston an arcade?",
-    a: "Zero Latency Houston is a VR arcade — a free-roam virtual reality arena with 8 multiplayer games. Players wear wireless backpacks and VR headsets to physically move through a 2,000 sq ft space. Games include zombie survival, sci-fi missions, PvP esports, and family adventures for 2-8 players per session.",
+    q: "Is Zero Latency Webster, Houston an arcade?",
+    a: "Zero Latency Webster, Houston is a VR arcade — a free-roam virtual reality arena with 8 multiplayer games. Players wear wireless backpacks and VR headsets to physically move through a 2,000 sq ft space. Games include zombie survival, sci-fi missions, PvP esports, and family adventures for 2-8 players per session.",
   },
   {
     q: "Where is Cidercade Houston located?",
@@ -70,7 +70,7 @@ const faqs = [
   },
   {
     q: "Do any Houston arcades have VR?",
-    a: "Zero Latency Houston has the most advanced VR — wireless free-roam arena-scale virtual reality for up to 8 players. Dave & Buster's has some seated VR games on the Power Card system. AR Entertainment Hub in Baytown has a Valo Arena mixed-reality experience.",
+    a: "Zero Latency Webster, Houston has the most advanced VR — wireless free-roam arena-scale virtual reality for up to 8 players. Dave & Buster's has some seated VR games on the Power Card system. AR Entertainment Hub in Baytown has a Valo Arena mixed-reality experience.",
   },
 ];
 
@@ -162,7 +162,7 @@ const venues = [
   { name: "Game Preserve - NASA", address: "20810 Gulf Freeway Suite Z, Webster", price: "$15 day pass", bestFor: "Retro, pinball, families" },
   { name: "Game Preserve - Woodlands", address: "473 Sawdust Road, Spring", price: "$15 day pass", bestFor: "Retro, 125 games" },
   { name: "Dave & Buster's", address: "Multiple Houston locations", price: "Power Card (varies)", bestFor: "Food, sports, bar" },
-  { name: "Zero Latency Houston", address: "20801 Gulf Fwy Suite 5, Webster", price: "$35–50/session", bestFor: "VR, groups, immersion" },
+  { name: "Zero Latency Webster, Houston", address: "20801 Gulf Fwy Suite 5, Webster", price: "$35–50/session", bestFor: "VR, groups, immersion" },
   { name: "Great Wolf Lodge Arcade", address: "Webster, TX", price: "Credits (varies)", bestFor: "Hotel guests, families" },
   { name: "AR Entertainment Hub", address: "Baytown, TX", price: "Varies", bestFor: "Multi-activity, kids" },
 ];
@@ -171,7 +171,7 @@ const hours = [
   { venue: "Cidercade Houston", hours: "10am–Midnight daily. 18+ at 9pm. Kitchen closes 11:45pm." },
   { venue: "Game Preserve (both)", hours: "11am–12am daily" },
   { venue: "Dave & Buster's", hours: "Varies by location (typically 11am–midnight)" },
-  { venue: "Zero Latency Houston", hours: "Mon–Tue 3–11pm, Wed–Thu 2–11pm, Fri–Sun 11am–11pm" },
+  { venue: "Zero Latency Webster, Houston", hours: "Mon–Tue 3–11pm, Wed–Thu 2–11pm, Fri–Sun 11am–11pm" },
   { venue: "Great Wolf Lodge Arcade", hours: "Check lodge hours" },
   { venue: "AR Entertainment Hub", hours: "Check website" },
 ];
@@ -289,13 +289,13 @@ export default function Page() {
           <div className="mb-12">
             <h3 className="font-orbitron text-2xl font-bold text-cyan-400 mb-6">VR Experiences</h3>
             <p className="text-gray-300 mb-8">
-              Houston has one dedicated free-roam VR arcade: Zero Latency Houston in Webster. It operates a 2,000 sq ft wireless VR arena with 8 multiplayer games for 2–8 players. This is the most immersive arcade experience available in the Houston metro area.
+              Houston has one dedicated free-roam VR arcade: Zero Latency Webster, Houston in Webster. It operates a 2,000 sq ft wireless VR arena with 8 multiplayer games for 2–8 players. This is the most immersive arcade experience available in the Houston metro area.
             </p>
             <div className="grid md:grid-cols-2 gap-6 mb-8">
               {[
                 {
                   title: "Full-Body Movement VR",
-                  body: "Zero Latency Houston's 2,000 sq ft arena tracks every player's movements in real time. Players walk, run, crouch, and dodge — no cables, no fixed stations, no tethers. 8 players move simultaneously through the same physical space.",
+                  body: "Zero Latency Webster, Houston's 2,000 sq ft arena tracks every player's movements in real time. Players walk, run, crouch, and dodge — no cables, no fixed stations, no tethers. 8 players move simultaneously through the same physical space.",
                   link: null,
                 },
                 {
@@ -396,7 +396,7 @@ export default function Page() {
                 <ul className="space-y-2 text-gray-300 text-sm">
                   <li><strong className="text-white">Game Preserve:</strong> $15 — unlimited play all day. All 100+ games set to free play. No tokens, no quarters.</li>
                   <li><strong className="text-white">Cidercade:</strong> $12 — all-day access to 275+ games on free play. Crane machines cost extra.</li>
-                  <li><strong className="text-white">Zero Latency Houston:</strong> $35–50 per person. 30–50 minute sessions. 8 games to choose from.</li>
+                  <li><strong className="text-white">Zero Latency Webster, Houston:</strong> $35–50 per person. 30–50 minute sessions. 8 games to choose from.</li>
                 </ul>
               </div>
               <div className="border border-white/10 rounded-lg p-6">
@@ -430,7 +430,7 @@ export default function Page() {
               </div>
             </div>
             <p className="text-gray-400 text-sm">
-              Zero Latency Houston offers private VR arena sessions for birthdays, corporate events, and bachelor parties.{" "}
+              Zero Latency Webster, Houston offers private VR arena sessions for birthdays, corporate events, and bachelor parties.{" "}
               <Link href="/private-events" className="text-cyan-400 hover:underline">View private event packages →</Link>
             </p>
           </div>
@@ -441,7 +441,7 @@ export default function Page() {
               <div>
                 <h4 className="text-lg font-bold text-white mb-3">Birthday Specials</h4>
                 <ul className="space-y-2 text-gray-300 text-sm">
-                  <li><strong className="text-white">Zero Latency Houston:</strong> Private arena session, dedicated Game Master.</li>
+                  <li><strong className="text-white">Zero Latency Webster, Houston:</strong> Private arena session, dedicated Game Master.</li>
                   <li><strong className="text-white">Cidercade:</strong> Party zones with all-day free play.</li>
                   <li><strong className="text-white">Game Preserve:</strong> $250 private room with 10 people included.</li>
                   <li><strong className="text-white">Dave &amp; Buster&apos;s:</strong> Birthday packages with Power Card credits and reserved seating.</li>
@@ -506,7 +506,7 @@ export default function Page() {
                 { title: "Load Your Power Card", tip: "Download the Dave & Buster's app for digital card management, or grab a physical card at the front desk." },
                 { title: "Don't Leave Yourself Unseated", tip: "Cidercade gets busy on weekends — book a dinner table in advance. Zero Latency: book your VR session online for Fridays and Saturdays." },
                 { title: "Know the Age Policies", tip: "Cidercade is 18+ at 9pm. Game Preserve: under 16 needs an adult. Zero Latency: ages 13+ for most games, 6+ for Engineerium." },
-                { title: "Arrive Early for VR", tip: "At Zero Latency Houston, arrive 10–15 minutes before your session. Wear comfortable closed-toe shoes." },
+                { title: "Arrive Early for VR", tip: "At Zero Latency Webster, Houston, arrive 10–15 minutes before your session. Wear comfortable closed-toe shoes." },
               ].map((item, i) => (
                 <li key={i} className="border border-white/10 rounded-lg p-4 list-none">
                   <strong className="text-white">{item.title}: </strong>
@@ -546,7 +546,7 @@ export default function Page() {
           <div className="mb-10">
             <h3 className="font-orbitron text-xl font-bold text-cyan-400 mb-4">Location</h3>
             <p className="text-gray-300 mb-3">
-              Zero Latency Houston is at BayWay Village Shopping Center, 20801 Gulf Fwy Suite 5, Webster, TX 77598. Ample free parking on site.
+              Zero Latency Webster, Houston is at BayWay Village Shopping Center, 20801 Gulf Fwy Suite 5, Webster, TX 77598. Ample free parking on site.
             </p>
             <p className="text-gray-400 text-sm mb-3">
               The venue serves Houston, Clear Lake, League City, Pearland, Friendswood, Pasadena, Sugar Land, Katy, The Woodlands, Baytown, La Porte, Galveston, Nassau Bay, Seabrook, and Kemah — covering Harris, Galveston, and Brazoria counties.
@@ -570,14 +570,14 @@ export default function Page() {
             <div className="border border-white/10 rounded-lg p-5">
               <h3 className="font-orbitron text-lg font-bold text-cyan-400 mb-3">Careers</h3>
               <p className="text-gray-300 text-sm mb-3">
-                Houston arcades hire game attendants, Game Masters, and front-of-house staff. Zero Latency Houston is hiring Game Masters and team members.
+                Houston arcades hire game attendants, Game Masters, and front-of-house staff. Zero Latency Webster, Houston is hiring Game Masters and team members.
               </p>
               <Link href="/contact-us" className="text-cyan-400 hover:underline text-sm">Contact us about openings →</Link>
             </div>
             <div className="border border-white/10 rounded-lg p-5">
               <h3 className="font-orbitron text-lg font-bold text-cyan-400 mb-3">Gift Cards &amp; Vouchers</h3>
               <p className="text-gray-300 text-sm mb-3">
-                Game Preserve sells gift cards for memberships and merchandise. Dave &amp; Buster&apos;s Power Card gift cards available in-store and online. Zero Latency Houston VR gift vouchers cover any session for 2–8 players and never expire.
+                Game Preserve sells gift cards for memberships and merchandise. Dave &amp; Buster&apos;s Power Card gift cards available in-store and online. Zero Latency Webster, Houston VR gift vouchers cover any session for 2–8 players and never expire.
               </p>
               <a href="https://booking.zerolatencyvr.com/en/book-now/webster" className="text-cyan-400 hover:underline text-sm">Buy VR gift vouchers →</a>
             </div>
@@ -588,7 +588,7 @@ export default function Page() {
         <section className="text-center border border-cyan-500/30 rounded-2xl p-10 bg-cyan-500/5">
           <h2 className="font-orbitron text-2xl font-bold text-white mb-4">Book the Best VR Arcade in Houston</h2>
           <p className="text-gray-300 mb-6 max-w-lg mx-auto">
-            Zero Latency Houston at Arcade Houston is the city&apos;s only free-roam VR arena. 8 games, 2–8 players, wireless — no cables. Sessions fill fast on weekends.
+            Zero Latency Webster, Houston at Arcade Houston is the city&apos;s only free-roam VR arena. 8 games, 2–8 players, wireless — no cables. Sessions fill fast on weekends.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

@@ -23,7 +23,7 @@ const schemaData = [
   {
     "@context": "https://schema.org",
     "@type": "Service",
-    "name": "Private VR Events at Zero Latency Houston",
+    "name": "Private VR Events at Zero Latency Webster, Houston",
     "description": "Host birthday parties, corporate team building, bachelor parties, and group outings in Houston's premier free-roam VR arena. Sessions for 2–8 players. Book online.",
     "serviceType": "Private VR Event Venue",
     "provider": { "@id": "https://arcadehouston.com/#organization" },
@@ -52,7 +52,7 @@ const EVENT_TYPES = [
     subtitle: 'The birthday they actually remember.',
     img: '/venue-birthday-party.webp',
     color: '#38BDF8',
-    desc: 'Zero Latency Houston gives your birthday crew a private arena-scale VR session — up to 8 players sharing the same virtual world. Pick your game, show up, and let our Game Masters handle everything else.',
+    desc: 'Zero Latency Webster, Houston gives your birthday crew a private arena-scale VR session — up to 8 players sharing the same virtual world. Pick your game, show up, and let our Game Masters handle everything else.',
     features: [
       'Private arena session for your group of 2–8 players',
       'Choose from 6+ multiplayer VR games or get a recommendation',
@@ -69,7 +69,7 @@ const EVENT_TYPES = [
     subtitle: 'Teams that play together work better together.',
     img: '/venue-team-building.webp',
     color: '#3B82F6',
-    desc: 'Zero Latency Houston puts your Houston Texas team into multiplayer VR missions where communication and strategy decide the outcome. Groups run 2–8 players per session, with back-to-back booking for larger corporate teams.',
+    desc: 'Zero Latency Webster, Houston puts your Houston Texas team into multiplayer VR missions where communication and strategy decide the outcome. Groups run 2–8 players per session, with back-to-back booking for larger corporate teams.',
     features: [
       'Co-op missions built around communication and leadership',
       'PvP tournament mode for competitive team-vs-team events',
@@ -86,7 +86,7 @@ const EVENT_TYPES = [
     subtitle: 'Start the night with something worth talking about.',
     img: '/venue-bachelor-party.webp',
     color: '#22D3EE',
-    desc: 'Kick off the celebration at Zero Latency Houston before heading out in Houston Texas. Run PvP battles against each other, survive a zombie outbreak together, or take on a co-op mission — then take the party wherever the night goes.',
+    desc: 'Kick off the celebration at Zero Latency Webster, Houston before heading out in Houston Texas. Run PvP battles against each other, survive a zombie outbreak together, or take on a co-op mission — then take the party wherever the night goes.',
     features: [
       'PvP mode pits the squad against each other in free-roam VR',
       'Zombie survival and co-op missions for groups of 2–8 players',
@@ -103,7 +103,7 @@ const EVENT_TYPES = [
     subtitle: 'Works for any group, any occasion.',
     img: '/venue-waiting-area.webp',
     color: '#10B981',
-    desc: 'Zero Latency Houston hosts school trips, family reunions, church groups, and friend outings. Sessions support 2–8 players, with back-to-back bookings for groups of 9 or more. Players must be at least 6 years old.',
+    desc: 'Zero Latency Webster, Houston hosts school trips, family reunions, church groups, and friend outings. Sessions support 2–8 players, with back-to-back bookings for groups of 9 or more. Players must be at least 6 years old.',
     features: [
       'Family-friendly VR game options rated for all ages',
       'Back-to-back sessions for groups larger than 8 players',
@@ -141,7 +141,7 @@ export default function PrivateEventsPage() {
       {/* ── HERO ─────────────────────────────────────────────── */}
       <section className="relative min-h-[60vh] flex flex-col items-center justify-center text-center overflow-hidden py-20">
         <div className="absolute inset-0">
-          <Image src="/events-hero-bg.webp" alt="Private VR events at Zero Latency Houston" fill sizes="100vw" className="object-cover opacity-10" priority />
+          <Image src="/events-hero-bg.webp" alt="Private VR events at Zero Latency Webster, Houston" fill sizes="100vw" className="object-cover opacity-10" priority />
           <div className="absolute inset-0 bg-gradient-to-b from-[#000C1A] via-[#000C1A]/70 to-[#000C1A]" />
           <div
             className="absolute inset-0 opacity-[0.04]"
@@ -168,7 +168,7 @@ export default function PrivateEventsPage() {
             </span>
           </h1>
           <p className="mt-5 text-[#7DD3FC] text-lg max-w-2xl mx-auto leading-relaxed">
-            Zero Latency Houston hosts birthday parties, corporate team building, bachelor and bachelorette parties, and group outings — all in a 2,000+ sq ft free-roam VR arena in Webster, TX.
+            Zero Latency Webster, Houston hosts birthday parties, corporate team building, bachelor and bachelorette parties, and group outings — all in a 2,000+ sq ft free-roam VR arena in Webster, TX.
           </p>
 
           {/* quick-jump pills */}
@@ -298,7 +298,7 @@ export default function PrivateEventsPage() {
               <span className="text-transparent" style={{ WebkitTextStroke: '1px #22D3EE' }}>Needs On-Site</span>
             </h2>
             <p className="mt-4 text-[#7DD3FC] max-w-xl mx-auto text-sm leading-relaxed">
-              Zero Latency Houston covers your full event from check-in through final replay — arena, café, staff, and spectator screens all in one location in Webster, TX.
+              Zero Latency Webster, Houston covers your full event from check-in through final replay — arena, café, staff, and spectator screens all in one location in Webster, TX.
             </p>
           </div>
 
@@ -306,10 +306,10 @@ export default function PrivateEventsPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
             {/* Large image card — spans 2 cols on lg */}
             <div className="relative lg:col-span-2 rounded-2xl overflow-hidden h-64 sm:h-72 border border-cyan-800/20">
-              <Image src="/venue-arena.webp" alt="Zero Latency Houston private event arena" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
+              <Image src="/venue-arena.webp" alt="Zero Latency Webster, Houston private event arena" fill sizes="(max-width: 1024px) 100vw, 50vw" className="object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-[#000C1A]/80 via-transparent to-transparent" />
               <div className="absolute bottom-5 left-5">
-                <span className="font-orbitron text-xs text-cyan-300 tracking-widest uppercase">Zero Latency Houston — Webster, TX</span>
+                <span className="font-orbitron text-xs text-cyan-300 tracking-widest uppercase">Zero Latency Webster, Houston — Webster, TX</span>
                 <p className="font-orbitron text-xl font-black text-white mt-1">2,000+ Sq Ft of Arena-Scale VR Space</p>
               </div>
             </div>
@@ -430,7 +430,7 @@ export default function PrivateEventsPage() {
                   </span>
                 </h2>
                 <p className="text-[#7DD3FC] text-sm leading-relaxed mb-8">
-                  Book your private event at Zero Latency Houston in under 5 minutes. Pick your date, group size (up to 8 players per session), and preferred game.
+                  Book your private event at Zero Latency Webster, Houston in under 5 minutes. Pick your date, group size (up to 8 players per session), and preferred game.
                 </p>
                 <a
                   href={BOOKING_URL}

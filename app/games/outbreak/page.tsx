@@ -8,14 +8,14 @@ import VideoPlayer from "@/components/VideoPlayer";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Outbreak at Zero Latency Houston | Zombie Survival Free-Roam VR",
-  description: "Outbreak at Zero Latency Houston puts 2–8 players in a free-roam VR zombie survival mission across post-apocalyptic environments. 30-minute sessions. Book now in Houston, Texas.",
+  title: "Outbreak at Zero Latency Webster, Houston | Zombie Survival Free-Roam VR",
+  description: "Outbreak at Zero Latency Webster, Houston puts 2–8 players in a free-roam VR zombie survival mission across post-apocalyptic environments. 30-minute sessions. Book now in Houston, Texas.",
   alternates: { canonical: "https://arcadehouston.com/games/outbreak" },
   openGraph: {
-    title: "Outbreak at Zero Latency Houston",
-    description: "Play Outbreak at Zero Latency Houston — free-roam multiplayer VR for 2–8 players set in a zombie-overrun world. 30-minute sessions in Houston, Texas.",
+    title: "Outbreak at Zero Latency Webster, Houston",
+    description: "Play Outbreak at Zero Latency Webster, Houston — free-roam multiplayer VR for 2–8 players set in a zombie-overrun world. 30-minute sessions in Houston, Texas.",
     url: "https://arcadehouston.com/games/outbreak",
-    images: [{ url: "https://arcadehouston.com/game-outbreak.webp", width: 1200, height: 630, alt: "Outbreak zombie survival VR at Zero Latency Houston" }],
+    images: [{ url: "https://arcadehouston.com/game-outbreak.webp", width: 1200, height: 630, alt: "Outbreak zombie survival VR at Zero Latency Webster, Houston" }],
   },
 };
 
@@ -23,12 +23,12 @@ const gameSchema = {
   "@context": "https://schema.org",
   "@type": "VideoGame",
   "name": "Outbreak",
-  "description": "Outbreak is a free-roam zombie survival VR experience at Zero Latency Houston where 2–8 players navigate post-apocalyptic environments — sewers, streets, and fortified holdouts — fighting through infected hordes to reach extraction.",
+  "description": "Outbreak is a free-roam zombie survival VR experience at Zero Latency Webster, Houston where 2–8 players navigate post-apocalyptic environments — sewers, streets, and fortified holdouts — fighting through infected hordes to reach extraction.",
   "genre": "Zombie Survival",
   "numberOfPlayers": { "@type": "QuantitativeValue", "minValue": 2, "maxValue": 8 },
   "gamePlatform": "Virtual Reality",
   "url": "https://arcadehouston.com/games/outbreak",
-  "provider": { "@type": "Organization", "name": "Zero Latency Houston", "url": "https://arcadehouston.com" },
+  "provider": { "@type": "Organization", "name": "Zero Latency Webster, Houston", "url": "https://arcadehouston.com" },
 };
 
 const breadcrumb = {
@@ -83,7 +83,7 @@ export default function OutbreakPage() {
 
       {/* Hero */}
       <section className="relative min-h-[80vh] flex items-end pb-20">
-        <Image src="/outbreak-hero-bg.webp" alt="Outbreak zombie survival VR at Zero Latency Houston" fill sizes="100vw" className="object-cover" priority />
+        <Image src="/outbreak-hero-bg.webp" alt="Outbreak zombie survival VR at Zero Latency Webster, Houston" fill sizes="100vw" className="object-cover" priority />
         <div className="absolute inset-0 bg-gradient-to-t from-[#000C1A] via-[#000C1A]/60 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#000C1A]/50 to-transparent" />
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 w-full">
@@ -92,7 +92,7 @@ export default function OutbreakPage() {
             <span className="inline-block px-3 py-1 rounded-full text-xs font-bold font-orbitron bg-orange-500/20 border border-orange-500/40 text-orange-300 uppercase tracking-widest">High Intensity</span>
           </div>
           <h1 className="font-orbitron text-5xl md:text-7xl font-black text-white leading-none">Outbreak</h1>
-          <p className="mt-4 text-xl text-[#7DD3FC] max-w-2xl leading-relaxed">Zero Latency Houston's zombie survival free-roam VR game for 2–8 players. Fight through the infected. Reach extraction. Do it together.</p>
+          <p className="mt-4 text-xl text-[#7DD3FC] max-w-2xl leading-relaxed">Zero Latency Webster, Houston's zombie survival free-roam VR game for 2–8 players. Fight through the infected. Reach extraction. Do it together.</p>
           <div className="flex flex-wrap gap-3 mt-5 text-sm text-[#7DD3FC]/80">
             <span className="glass px-3 py-1.5 rounded-full border border-white/10">2–8 players</span>
             <span className="glass px-3 py-1.5 rounded-full border border-white/10">30 min</span>
@@ -139,9 +139,9 @@ export default function OutbreakPage() {
               <p className="font-orbitron text-xs tracking-[0.3em] text-green-400 uppercase mb-2">Mission Briefing</p>
               <h2 className="font-orbitron text-2xl md:text-3xl font-black text-white mb-6">About <span className="text-green-400">Outbreak</span></h2>
               <div className="space-y-4 text-[#7DD3FC] leading-relaxed">
-                <p>Outbreak at Zero Latency Houston puts 2–8 players in a free-roam VR arena set in a world overrun by the infected. Your group moves physically through the space — no controllers strapped to a chair — navigating sewers, collapsing streets, and fortified holdouts while fighting off zombie hordes across a 30-minute session.</p>
+                <p>Outbreak at Zero Latency Webster, Houston puts 2–8 players in a free-roam VR arena set in a world overrun by the infected. Your group moves physically through the space — no controllers strapped to a chair — navigating sewers, collapsing streets, and fortified holdouts while fighting off zombie hordes across a 30-minute session.</p>
                 <p>The game rewards coordinated teamwork. Players who communicate — sharing ammo, calling out enemy positions, covering each other's flanks — reach extraction. Players who don't get overwhelmed. Outbreak is one of the most physically active multiplayer VR games available in Houston, Texas, and it works for first-timers and experienced VR players alike.</p>
-                <p>Each section of the mission ramps up pressure. The infected don't come in waves you can predict — they push from multiple directions as your group advances. Game Masters at Zero Latency Houston monitor every session from a control room and can adjust difficulty in real time, so the experience stays challenging no matter your group's skill level.</p>
+                <p>Each section of the mission ramps up pressure. The infected don't come in waves you can predict — they push from multiple directions as your group advances. Game Masters at Zero Latency Webster, Houston monitor every session from a control room and can adjust difficulty in real time, so the experience stays challenging no matter your group's skill level.</p>
               </div>
             </div>
             <div className="space-y-2">
@@ -220,7 +220,7 @@ export default function OutbreakPage() {
         <div className="relative z-10 text-center px-4 max-w-2xl mx-auto">
           <p className="font-orbitron text-xs tracking-[0.3em] text-green-400 uppercase mb-3">Book a Session</p>
           <h2 className="font-orbitron text-2xl md:text-3xl font-black text-white mb-3">
-            Book Outbreak at <span className="text-[#38BDF8]">Zero Latency Houston</span>
+            Book Outbreak at <span className="text-[#38BDF8]">Zero Latency Webster, Houston</span>
           </h2>
           <p className="text-[#7DD3FC] text-sm mb-8 leading-relaxed">Groups of 2–8 players. 30-minute free-roam VR session. Available now in Houston, Texas — book your Outbreak game online.</p>
           <BookGameButton label="Book Outbreak" source="game-cta" />
@@ -230,7 +230,7 @@ export default function OutbreakPage() {
       {/* Other Games */}
       <section className="py-12 pb-24" style={{ background: 'radial-gradient(ellipse at center, rgba(8,145,178,0.1) 0%, #000C1A 70%)' }}>
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <h2 className="font-orbitron text-2xl font-black text-white mb-6">More Free-Roam VR Games at Zero Latency Houston</h2>
+          <h2 className="font-orbitron text-2xl font-black text-white mb-6">More Free-Roam VR Games at Zero Latency Webster, Houston</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {otherGames.slice(0, 8).map((game) => (
               <Link key={game.slug} href={`/games/${game.slug}`} className="group block glass rounded-xl overflow-hidden hover:border-cyan-500/50 transition-colors">

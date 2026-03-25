@@ -8,14 +8,14 @@ import VideoPlayer from "@/components/VideoPlayer";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "Sol Raiders at Zero Latency Houston | PvP Team vs Team Free-Roam VR",
-  description: "Sol Raiders at Zero Latency Houston is a team vs team PvP free-roam VR game for 4–8 players. Split into 2 squads and compete in objective-based arenas for 30–50 minutes in Houston, Texas.",
+  title: "Sol Raiders at Zero Latency Webster, Houston | PvP Team vs Team Free-Roam VR",
+  description: "Sol Raiders at Zero Latency Webster, Houston is a team vs team PvP free-roam VR game for 4–8 players. Split into 2 squads and compete in objective-based arenas for 30–50 minutes in Houston, Texas.",
   alternates: { canonical: "https://arcadehouston.com/games/sol-raiders" },
   openGraph: {
-    title: "Sol Raiders at Zero Latency Houston",
-    description: "Sol Raiders at Zero Latency Houston splits 4–8 players into 2 rival squads for objective-based PvP free-roam VR combat. 30–50 minute sessions. Ages 13+. Houston, Texas.",
+    title: "Sol Raiders at Zero Latency Webster, Houston",
+    description: "Sol Raiders at Zero Latency Webster, Houston splits 4–8 players into 2 rival squads for objective-based PvP free-roam VR combat. 30–50 minute sessions. Ages 13+. Houston, Texas.",
     url: "https://arcadehouston.com/games/sol-raiders",
-    images: [{ url: "https://arcadehouston.com/game-sol-raiders.webp", width: 1200, height: 630, alt: "Sol Raiders PvP VR at Zero Latency Houston" }],
+    images: [{ url: "https://arcadehouston.com/game-sol-raiders.webp", width: 1200, height: 630, alt: "Sol Raiders PvP VR at Zero Latency Webster, Houston" }],
   },
 };
 
@@ -23,12 +23,12 @@ const gameSchema = {
   "@context": "https://schema.org",
   "@type": "VideoGame",
   "name": "Sol Raiders",
-  "description": "Sol Raiders at Zero Latency Houston is a competitive PvP free-roam VR game for 4–8 players in Houston, Texas. Two teams compete in objective-based arenas — controlling zones, gathering resources, and eliminating opponents — across 30–50 minute sessions. The only team vs team virtual reality game in the Zero Latency Houston lineup.",
+  "description": "Sol Raiders at Zero Latency Webster, Houston is a competitive PvP free-roam VR game for 4–8 players in Houston, Texas. Two teams compete in objective-based arenas — controlling zones, gathering resources, and eliminating opponents — across 30–50 minute sessions. The only team vs team virtual reality game in the Zero Latency Webster, Houston lineup.",
   "genre": "PvP Esports",
   "numberOfPlayers": { "@type": "QuantitativeValue", "minValue": 4, "maxValue": 8 },
   "gamePlatform": "Virtual Reality",
   "url": "https://arcadehouston.com/games/sol-raiders",
-  "provider": { "@type": "Organization", "name": "Zero Latency Houston", "url": "https://arcadehouston.com" },
+  "provider": { "@type": "Organization", "name": "Zero Latency Webster, Houston", "url": "https://arcadehouston.com" },
 };
 
 const breadcrumb = {
@@ -60,7 +60,7 @@ const GALLERY = [
 const FEATURES = [
   { img: "/sol-raiders-esports.webp", title: "Team vs Team PvP Combat", desc: "Sol Raiders splits your group into 2 rival squads who fight each other directly — not AI enemies. Every opponent adapts, counters, and makes decisions in real time. No scripted behavior." },
   { img: "/sol-raiders-objectives.webp", title: "Objective-Based Match Structure", desc: "Teams compete across multiple objective types — control zone capture, resource gathering, and direct elimination. Squads that coordinate movement and communicate positions win more consistently than squads who play individually." },
-  { img: "/sol-raiders-8p.webp", title: "4–8 Players Per Session", desc: "Sol Raiders requires a minimum of 4 players to run a PvP session. At 8 players — 4 per team — the match intensity increases significantly. Game Masters at Zero Latency Houston manage scoring and session timing from a control room." },
+  { img: "/sol-raiders-8p.webp", title: "4–8 Players Per Session", desc: "Sol Raiders requires a minimum of 4 players to run a PvP session. At 8 players — 4 per team — the match intensity increases significantly. Game Masters at Zero Latency Webster, Houston manage scoring and session timing from a control room." },
 ];
 
 export default function SolRaidersPage() {
@@ -83,7 +83,7 @@ export default function SolRaidersPage() {
 
       {/* Hero */}
       <section className="relative min-h-[80vh] flex items-end pb-16">
-        <Image src="/sol-raiders-hero-bg.webp" alt="Sol Raiders PvP VR at Zero Latency Houston" fill sizes="100vw" className="object-cover" priority />
+        <Image src="/sol-raiders-hero-bg.webp" alt="Sol Raiders PvP VR at Zero Latency Webster, Houston" fill sizes="100vw" className="object-cover" priority />
         <div className="absolute inset-0 bg-gradient-to-t from-[#000C1A] via-[#000C1A]/50 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-r from-[#000C1A]/70 to-transparent" />
         <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 w-full">
@@ -92,7 +92,7 @@ export default function SolRaidersPage() {
             <span className="inline-block px-3 py-1 rounded-full text-xs font-bold font-orbitron bg-white/5 border border-white/10 text-[#7DD3FC] uppercase tracking-widest">Extreme Intensity</span>
           </div>
           <h1 className="font-orbitron text-5xl md:text-7xl font-black text-white leading-none">Sol Raiders</h1>
-          <p className="mt-4 text-lg text-[#7DD3FC] max-w-xl">Zero Latency Houston's only team vs team PvP free-roam VR game. 4–8 players split into 2 squads and compete in objective-based arenas for 30–50 minutes. Ages 13 and up.</p>
+          <p className="mt-4 text-lg text-[#7DD3FC] max-w-xl">Zero Latency Webster, Houston's only team vs team PvP free-roam VR game. 4–8 players split into 2 squads and compete in objective-based arenas for 30–50 minutes. Ages 13 and up.</p>
           <div className="flex flex-wrap gap-3 mt-5 text-sm text-[#7DD3FC]/80">
             <span className="glass px-3 py-1 rounded-full border border-white/10">4–8 players</span>
             <span className="glass px-3 py-1 rounded-full border border-white/10">30–50 min</span>
@@ -137,9 +137,9 @@ export default function SolRaidersPage() {
               <p className="font-orbitron text-xs tracking-[0.3em] text-yellow-400 uppercase mb-3">Mission Briefing</p>
               <h2 className="font-orbitron text-2xl md:text-3xl font-black text-white mb-6">About <span className="text-yellow-400">Sol Raiders</span></h2>
               <div className="space-y-4 text-[#7DD3FC] leading-relaxed text-sm">
-                <p>Sol Raiders at Zero Latency Houston is the only game in the lineup where players fight each other directly. Groups of 4–8 players aged 13 and older split into 2 teams and compete in objective-based free-roam VR arenas for 30–50 minutes in Houston, Texas. Objectives include zone control, resource mining, and direct player-vs-player combat — teams accumulate points across the session and a scoreboard determines the winner.</p>
-                <p>Every opponent in Sol Raiders is a human player making real-time decisions. There are no scripted enemy behaviors or predictable attack patterns. A team that identifies and counters the opposing squad's strategy — by flanking, cutting off resource lines, or coordinating 2-on-1 engagements — wins the match. Game Masters at Zero Latency Houston track scoring and timing from a control room and can run multiple rounds if your group wants to play again.</p>
-                <p>Sol Raiders works for corporate team-building events, competitive friend groups, and office parties at Zero Latency Houston in Houston, Texas. The team structure creates a natural competitive format — 4 vs 4 is the maximum supported per session. Groups that have already completed co-op games like Outbreak or Far Cry VR and want a player-vs-player challenge book Sol Raiders as a natural next step.</p>
+                <p>Sol Raiders at Zero Latency Webster, Houston is the only game in the lineup where players fight each other directly. Groups of 4–8 players aged 13 and older split into 2 teams and compete in objective-based free-roam VR arenas for 30–50 minutes in Houston, Texas. Objectives include zone control, resource mining, and direct player-vs-player combat — teams accumulate points across the session and a scoreboard determines the winner.</p>
+                <p>Every opponent in Sol Raiders is a human player making real-time decisions. There are no scripted enemy behaviors or predictable attack patterns. A team that identifies and counters the opposing squad's strategy — by flanking, cutting off resource lines, or coordinating 2-on-1 engagements — wins the match. Game Masters at Zero Latency Webster, Houston track scoring and timing from a control room and can run multiple rounds if your group wants to play again.</p>
+                <p>Sol Raiders works for corporate team-building events, competitive friend groups, and office parties at Zero Latency Webster, Houston in Houston, Texas. The team structure creates a natural competitive format — 4 vs 4 is the maximum supported per session. Groups that have already completed co-op games like Outbreak or Far Cry VR and want a player-vs-player challenge book Sol Raiders as a natural next step.</p>
               </div>
             </div>
             <div className="space-y-3">
@@ -207,7 +207,7 @@ export default function SolRaidersPage() {
         <div className="absolute inset-0 opacity-[0.04] rounded-2xl" style={{ backgroundImage: 'linear-gradient(rgba(234,179,8,1) 1px, transparent 1px), linear-gradient(90deg, rgba(234,179,8,1) 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
         <div className="relative z-10 text-center px-4 max-w-2xl mx-auto">
           <p className="font-orbitron text-xs tracking-[0.3em] text-yellow-400 uppercase mb-3">Book a Session</p>
-          <h2 className="font-orbitron text-2xl md:text-3xl font-black text-white mb-3">Book Sol Raiders at <span className="text-yellow-400">Zero Latency Houston</span></h2>
+          <h2 className="font-orbitron text-2xl md:text-3xl font-black text-white mb-3">Book Sol Raiders at <span className="text-yellow-400">Zero Latency Webster, Houston</span></h2>
           <p className="text-[#7DD3FC] text-sm mb-8">4–8 players. 30–50 minute team vs team PvP free-roam VR session in Houston, Texas. Minimum 4 players to run a match. Book your Sol Raiders session online now.</p>
           <BookGameButton label="Book Sol Raiders" source="game-cta" />
         </div>
@@ -216,7 +216,7 @@ export default function SolRaidersPage() {
       {/* Other Games */}
       <section className="py-12 pb-24" style={{ background: 'radial-gradient(ellipse at center, rgba(8,145,178,0.1) 0%, #000C1A 70%)' }}>
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <h2 className="font-orbitron text-2xl font-black text-white mb-6">More Free-Roam VR Games at Zero Latency Houston</h2>
+          <h2 className="font-orbitron text-2xl font-black text-white mb-6">More Free-Roam VR Games at Zero Latency Webster, Houston</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
             {otherGames.slice(0, 8).map((game) => (
               <Link key={game.slug} href={`/games/${game.slug}`} className="group block glass rounded-xl overflow-hidden hover:border-cyan-500/50 transition-colors">

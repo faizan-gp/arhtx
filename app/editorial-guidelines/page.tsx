@@ -12,7 +12,7 @@ const sections = [
     title: 'Who We Are',
     content: (
       <p className="text-sm text-[#7DD3FC]/80 leading-relaxed">
-        Content published on arcadehouston.com is written and reviewed by the Zero Latency Houston team — staff with direct, hands-on experience running and playing free-roam VR sessions in Houston. Our writers have operated sessions, briefed hundreds of players, and tested every game title available in our arena.
+        Content published on arcadehouston.com is written and reviewed by the Zero Latency Webster, Houston team — staff with direct, hands-on experience running and playing free-roam VR sessions in Houston. Our writers have operated sessions, briefed hundreds of players, and tested every game title available in our arena.
       </p>
     ),
   },
@@ -31,7 +31,7 @@ const sections = [
     title: 'Accuracy Policy',
     content: (
       <p className="text-sm text-[#7DD3FC]/80 leading-relaxed">
-        Game specs, pricing, and session details published on this site reflect current operations at Zero Latency Houston. When details change, we update the relevant page within 7 days. Historical blog posts are reviewed quarterly to ensure accuracy.
+        Game specs, pricing, and session details published on this site reflect current operations at Zero Latency Webster, Houston. When details change, we update the relevant page within 7 days. Historical blog posts are reviewed quarterly to ensure accuracy.
       </p>
     ),
   },
@@ -47,7 +47,7 @@ const sections = [
     title: 'Independence',
     content: (
       <p className="text-sm text-[#7DD3FC]/80 leading-relaxed">
-        Zero Latency Houston creates content about its own services and the Houston VR and entertainment space. We are affiliated with Zero Latency VR (the global brand and technology provider). This relationship is disclosed where relevant to the content.
+        Zero Latency Webster, Houston creates content about its own services and the Houston VR and entertainment space. We are affiliated with Zero Latency VR (the global brand and technology provider). This relationship is disclosed where relevant to the content.
       </p>
     ),
   },

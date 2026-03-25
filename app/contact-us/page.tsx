@@ -35,7 +35,7 @@ export default function ContactPage() {
           </div>
           <div className="glass rounded-2xl p-8 flex flex-col justify-center text-center">
             <h2 className="font-orbitron text-xl font-black text-white mb-4">Ready to Book Your Session?</h2>
-            <p className="text-[#7DD3FC] text-sm mb-6">The fastest way to secure your spot at Zero Latency Houston is to book directly through our online booking system.</p>
+            <p className="text-[#7DD3FC] text-sm mb-6">The fastest way to secure your spot at Zero Latency Webster, Houston is to book directly through our online booking system.</p>
             <BookGameButton label="Book Online Now" source="contact" />
             <p className="mt-6 text-xs text-[#7DD3FC]/50">Walk-ins welcome when slots are available.</p>
           </div>

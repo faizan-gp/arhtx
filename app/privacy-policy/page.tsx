@@ -33,7 +33,7 @@ const sections = [
     content: (
       <>
         <p className="text-sm text-[#7DD3FC]/80 leading-relaxed">
-          Zero Latency Houston uses Google Analytics (with anonymized IP addresses), Meta Pixel, and session cookies to improve your experience on our site. You can opt out of cookies at any time through your browser settings. Disabling cookies may affect certain site features.
+          Zero Latency Webster, Houston uses Google Analytics (with anonymized IP addresses), Meta Pixel, and session cookies to improve your experience on our site. You can opt out of cookies at any time through your browser settings. Disabling cookies may affect certain site features.
         </p>
       </>
     ),
@@ -76,7 +76,7 @@ const sections = [
     content: (
       <>
         <p className="text-sm text-[#7DD3FC]/80 leading-relaxed">
-          Zero Latency Houston<br />
+          Zero Latency Webster, Houston<br />
           20801 Gulf Fwy Suite 5, Webster TX 77598<br />
           <a href="mailto:zero@zlwebster.com" className="text-cyan-400 hover:text-white transition-colors">zero@zlwebster.com</a><br />
           <a href="tel:+14694049149" className="text-cyan-400 hover:text-white transition-colors">(469) 404-9149</a>
@@ -96,7 +96,7 @@ export default function PrivacyPolicyPage() {
           </h1>
           <div className="glass rounded-2xl p-6">
             <p className="text-sm text-[#7DD3FC]/80 leading-relaxed">
-              Zero Latency Houston operates at 20801 Gulf Fwy Suite 5, Webster TX 77598. This policy explains what data we collect and how we use it. Last updated: March 20, 2026.
+              Zero Latency Webster, Houston operates at 20801 Gulf Fwy Suite 5, Webster TX 77598. This policy explains what data we collect and how we use it. Last updated: March 20, 2026.
             </p>
           </div>
         </div>
